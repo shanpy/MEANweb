@@ -7,6 +7,9 @@ angular.module('webappApp')
     }, {
       'title': 'Settings',
       'link': '/settings'
+    },{
+      'title': 'Contact Me',
+      'link': '/sendemail'
     }];
     
     $scope.logout = function() {

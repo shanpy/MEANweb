@@ -22,7 +22,9 @@
 <hr/>
   <!-- Blog List Section-->
   <p>There are {{blogs.length}} posts</p>
+  <p></p>
   <div ng-repeat = 'blog in blogs'>
+    <hr/>
     <h3>{{blog.title}}</h3>
     <div>{{blog.content}}</div>
     <a href='/readblog/{{blog.id}}'>Read Full Article</a>
@@ -32,6 +34,7 @@
     </div>
   </div>
 
+<p></p>
 <hr/>
 <!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
