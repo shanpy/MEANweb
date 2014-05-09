@@ -50,6 +50,11 @@ angular.module('webappApp', [
         controller: 'DeleteblogCtrl',
         authenticate: true
       })
+      //Send Email
+      .when('/sendemail',{
+        templateUrl:'partials/sendemail',
+        controller:'SendemailCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });

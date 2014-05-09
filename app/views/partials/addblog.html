@@ -1,3 +1,4 @@
+<div ng-include="'partials/navbar.html'"></div>
 <div ng-controller='AddblogCtrl'>
 <h2>Write New Article</h2>
 <label for='title'>Title: </label>
@@ -6,6 +7,6 @@
 	<textarea ng-model='form.content' cols='50' rows='15'></textarea>
 </p>
 <p>
-	<button ng-click='submitblog()'>Submite Article</button>
+	<button ng-click='submitblog()'>Add Article</button>
 </p>
 </div>
