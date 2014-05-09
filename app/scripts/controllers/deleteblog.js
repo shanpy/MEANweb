@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('projectApp')
+angular.module('webappApp')
 	.controller('DeleteblogCtrl', function ($scope,$http,$location,$routeParams) {
 		 $http.get('/api/blog/' + $routeParams.id)
             .success(function(data) {

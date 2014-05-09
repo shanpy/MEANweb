@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('projectApp')
+angular.module('webappApp')
 	.controller('AddblogCtrl', function ($scope,$http,$location) {
 		$scope.form = {};
 		$scope.submitblog = function(){

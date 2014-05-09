@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('projectApp')
+angular.module('webappApp')
 	.controller('ReadblogCtrl', function ($scope,$http,$location,$routeParams) {
 	
 	$http.get('/api/blog/'+ $routeParams.id)

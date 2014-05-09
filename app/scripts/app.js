@@ -2,7 +2,7 @@
 
 console.log("app.js is called");
 
-angular.module('projectApp', [
+angular.module('webappApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

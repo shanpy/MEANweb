@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('projectApp')
+angular.module('webappApp')
   .controller('LoginCtrl', function ($scope, Auth, $location) {
     $scope.user = {};
     $scope.errors = {};

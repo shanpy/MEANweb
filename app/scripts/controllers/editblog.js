@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('projectApp')
+angular.module('webappApp')
 	.controller('EditblogCtrl', function ($scope,$http,$location, $routeParams) {
         
         console.log("editblog.js: " + $routeParams.id);
