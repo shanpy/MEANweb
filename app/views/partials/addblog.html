@@ -1,0 +1,11 @@
+<div ng-controller='AddblogCtrl'>
+<h2>Write New Article</h2>
+<label for='title'>Title: </label>
+<input ng-model='form.title' name='title'/>
+<p>Content:
+	<textarea ng-model='form.content' cols='50' rows='15'></textarea>
+</p>
+<p>
+	<button ng-click='submitblog()'>Submite Article</button>
+</p>
+</div>

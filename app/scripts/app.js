@@ -1,16 +1,21 @@
 'use strict';
 
-angular.module('webappApp', [
+console.log("app.js is called");
+
+angular.module('projectApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.sortable'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
+
+
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/main',
-        controller: 'MainCtrl'
+        templateUrl: 'partials/home',
+        controller: 'IndexblogCtrl'
       })
       .when('/login', {
         templateUrl: 'partials/login',
@@ -23,6 +28,26 @@ angular.module('webappApp', [
       .when('/settings', {
         templateUrl: 'partials/settings',
         controller: 'SettingsCtrl',
+        authenticate: true
+      })
+      //Blog Part
+      .when('/addblog', {
+        templateUrl: 'partials/addblog',
+        controller: 'AddblogCtrl',
+        authenticate: true
+      })
+      .when('/readblog/:id', {
+        templateUrl: 'partials/readblog',
+        controller: 'ReadblogCtrl'
+      })
+      .when('/editblog/:id', {
+        templateUrl: 'partials/editblog',
+        controller: 'EditblogCtrl',
+        authenticate: true
+      })
+      .when('/deleteblog/:id', {
+        templateUrl: 'partials/deleteblog',
+        controller: 'DeleteblogCtrl',
         authenticate: true
       })
       .otherwise({

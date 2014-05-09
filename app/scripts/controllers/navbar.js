@@ -1,6 +1,5 @@
 'use strict';
-
-angular.module('webappApp')
+angular.module('projectApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
       'title': 'Home',
@@ -9,6 +8,8 @@ angular.module('webappApp')
       'title': 'Settings',
       'link': '/settings'
     }];
+
+    console.log("navbar.js is called");
     
     $scope.logout = function() {
       Auth.logout()
@@ -16,8 +17,9 @@ angular.module('webappApp')
         $location.path('/login');
       });
     };
-    
+
     $scope.isActive = function(route) {
       return route === $location.path();
     };
+
   });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('webappApp')
+angular.module('projectApp')
 
   /**
    * Removes server error when user updates input

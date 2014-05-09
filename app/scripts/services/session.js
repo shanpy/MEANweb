@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('webappApp')
+angular.module('projectApp')
   .factory('Session', function ($resource) {
     return $resource('/api/session/');
   });

@@ -1,0 +1,11 @@
+<div ng-controller='EditblogCtrl'>
+<h2>Edit Article</h2>
+<label for='title'>Title: </label>
+<input ng-model='form.title' name='title'/>
+<p>Content:
+	<textarea ng-model='form.content' cols='50' rows='15'></textarea>
+</p>
+<p>
+	<button ng-click='editblog()'>Edit Article</button>
+</p>
+</div>

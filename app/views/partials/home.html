@@ -1,0 +1,47 @@
+<div ng-include="'partials/navbar.html'"></div>
+
+<div ng-controller='IndexblogCtrl'>
+  <div class='top'>
+  <h1>Hello <span ng-show="currentUser">{{ currentUser.name }}</span>!</h1>
+  <p class="lead">
+    Welcome to Pengyin Shan's Website!
+  </p>
+  </div>
+
+<hr/>
+<div>
+  This website is a study corner/blog for Pengyin Shan to practice skills in web development. Website is built by NodeJS, AngularJS with Moongoose and Yeoman.
+</div>
+
+
+<p></p>
+<hr/>
+  <!-- Blog List Section-->
+  <p>There are {{blogs.length}} posts</p>
+  <div ng-repeat = 'blog in blogs'>
+    <h3>{{blog.title}}</h3>
+    <div>{{blog.content}}</div>
+    <a href='/readblog/{{blog.id}}'>Read Full Article</a>
+    <div ng-show="getadmin(currentUser)">
+    <a href='/editblog/{{blog.id}}'>Edit Article</a>
+    <a href='/deleteblog/{{blog.id}}'>Delete Article</a>
+    </div>
+  </div>
+
+<hr/>
+<!--Blog Options-->
+<div ng-show="getadmin(currentUser)">
+<a href='/addblog'>Add Article</a>
+<p></p>
+
+
+<div class="footer">
+  <p>Pengyin Shan, graduated from The Ohio State University on Dec, 2013, is digging into the world of web development. </p>
+</div>
+        <script src='scripts/controllers/blogindex.js'></script>
+        <script src='scripts/controllers/addblog.js'></script>
+        <script src='scripts/controllers/editblog.js'></script>
+        <script src='scripts/controllers/deleteblog.js'></script>
+        <script src='scripts/controllers/readblog.js'></script>
+
+</div>
