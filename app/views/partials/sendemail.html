@@ -1,6 +1,8 @@
 <div ng-include="'partials/navbar.html'"></div>
 <div ng-controller='SendemailCtrl'>
+<center>
 <h2>Create An Email to Pengyin Shan</h2>
+<hr/>
 <label for='from'>From: </label>
 <input ng-model='form.From' name='from'/>
 <br/>
@@ -13,8 +15,6 @@
 <label for='textbody'>Content: </label>
 <textarea ng-model='form.TextBody' cols='50' rows='15' name='textbody'></textarea>
 <br/>
-	<ul class="nav nav-pills pull-left">
-	<li><a ng-click='sendemail()'>Send Email<a></li>
-	<li><a href="/home">Back</a></li>
-	</ul>
+	<button ng-click='sendemail()'>Send Email</button>
+</center>
 </div>
