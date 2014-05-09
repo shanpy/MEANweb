@@ -13,8 +13,8 @@
 <label for='textbody'>Content: </label>
 <textarea ng-model='form.TextBody' cols='50' rows='15' name='textbody'></textarea>
 <br/>
-<p>
-	<button ng-click='sendemail()'>Send Email</button>
-	<button href="/home">Cancel</button>
-</p>
+	<ul class="nav nav-pills pull-left">
+	<li><a ng-click='sendemail()'>Send Email<a></li>
+	<li><a href="/home">Back</a></li>
+	</ul>
 </div>
