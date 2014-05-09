@@ -8,8 +8,6 @@ angular.module('webappApp')
       'title': 'Settings',
       'link': '/settings'
     }];
-
-    console.log("navbar.js is called");
     
     $scope.logout = function() {
       Auth.logout()
