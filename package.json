@@ -71,20 +71,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test",
-    "start": "node server.js"
-  },
-  "main": "Gruntfile.js",
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@heroku.com:pengyinshan.git"
-  },
-  "keywords": [
-    "pengyinshan"
-  ],
-  "author": "Pengyin Shan",
-  "license": "ISC"
+    "test": "grunt test"
+  }
 }
