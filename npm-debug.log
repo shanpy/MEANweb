@@ -1,0 +1,244 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json webapp@0.0.0 No description
+6 warn package.json webapp@0.0.0 No repository field.
+7 warn package.json webapp@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ 'C:\\Users\\Pengyin Shan\\Desktop\\webapp',
+9 verbose install   [ 'express',
+9 verbose install     'morgan',
+9 verbose install     'body-parser',
+9 verbose install     'method-override',
+9 verbose install     'static-favicon',
+9 verbose install     'cookie-parser',
+9 verbose install     'express-session',
+9 verbose install     'errorhandler',
+9 verbose install     'compression',
+9 verbose install     'lodash',
+9 verbose install     'mongoose',
+9 verbose install     'connect-mongo',
+9 verbose install     'passport',
+9 verbose install     'passport-local',
+9 verbose install     'ejs',
+9 verbose install     'jquery_ui',
+9 verbose install     'grunt',
+9 verbose install     'grunt-autoprefixer',
+9 verbose install     'grunt-bower-install',
+9 verbose install     'grunt-concurrent',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-coffee',
+9 verbose install     'grunt-contrib-compass',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-google-cdn',
+9 verbose install     'grunt-newer',
+9 verbose install     'grunt-ngmin',
+9 verbose install     'grunt-rev',
+9 verbose install     'grunt-svgmin',
+9 verbose install     'grunt-usemin',
+9 verbose install     'jshint-stylish',
+9 verbose install     'load-grunt-tasks',
+9 verbose install     'time-grunt',
+9 verbose install     'grunt-express-server',
+9 verbose install     'grunt-open',
+9 verbose install     'connect-livereload',
+9 verbose install     'karma-ng-scenario',
+9 verbose install     'grunt-karma',
+9 verbose install     'karma-firefox-launcher',
+9 verbose install     'karma-script-launcher',
+9 verbose install     'karma-html2js-preprocessor',
+9 verbose install     'karma-jasmine',
+9 verbose install     'karma-chrome-launcher',
+9 verbose install     'requirejs',
+9 verbose install     'karma-requirejs',
+9 verbose install     'karma-coffee-preprocessor',
+9 verbose install     'karma-phantomjs-launcher',
+9 verbose install     'karma',
+9 verbose install     'karma-ng-html2js-preprocessor',
+9 verbose install     'grunt-mocha-test',
+9 verbose install     'supertest',
+9 verbose install     'should',
+9 verbose install     'grunt-env',
+9 verbose install     'grunt-node-inspector',
+9 verbose install     'grunt-nodemon',
+9 verbose install     'open' ] ]
+10 info preinstall webapp@0.0.0
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping express@~4.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+13 verbose already installed skipping morgan@~1.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+14 verbose already installed skipping body-parser@~1.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+15 verbose already installed skipping method-override@~1.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+16 verbose already installed skipping static-favicon@~1.0.1 C:\Users\Pengyin Shan\Desktop\webapp
+17 verbose already installed skipping cookie-parser@~1.0.1 C:\Users\Pengyin Shan\Desktop\webapp
+18 verbose already installed skipping express-session@~1.0.2 C:\Users\Pengyin Shan\Desktop\webapp
+19 verbose already installed skipping errorhandler@~1.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+20 verbose already installed skipping compression@~1.0.1 C:\Users\Pengyin Shan\Desktop\webapp
+21 verbose already installed skipping lodash@~2.4.1 C:\Users\Pengyin Shan\Desktop\webapp
+22 verbose already installed skipping mongoose@~3.8.8 C:\Users\Pengyin Shan\Desktop\webapp
+23 verbose cache add [ 'connect-mongo@mrzepinski/connect-mongo#2135988', null ]
+24 verbose cache add name=undefined spec="connect-mongo@mrzepinski/connect-mongo#2135988" args=["connect-mongo@mrzepinski/connect-mongo#2135988",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: '#2135988',
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'connect-mongo@mrzepinski/connect-mongo',
+25 verbose parsed url   path: 'connect-mongo@mrzepinski/connect-mongo',
+25 verbose parsed url   href: 'connect-mongo@mrzepinski/connect-mongo#2135988' }
+26 verbose already installed skipping passport@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+27 verbose already installed skipping passport-local@~0.1.6 C:\Users\Pengyin Shan\Desktop\webapp
+28 verbose already installed skipping ejs@~0.8.4 C:\Users\Pengyin Shan\Desktop\webapp
+29 verbose cache add [ 'jquery_ui@*', null ]
+30 verbose cache add name=undefined spec="jquery_ui@*" args=["jquery_ui@*",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'jquery_ui@*',
+31 verbose parsed url   path: 'jquery_ui@*',
+31 verbose parsed url   href: 'jquery_ui@*' }
+32 verbose cache add name="jquery_ui" spec="*" args=["jquery_ui","*"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '*',
+33 verbose parsed url   path: '*',
+33 verbose parsed url   href: '*' }
+34 verbose addNamed [ 'jquery_ui', '*' ]
+35 verbose addNamed [ null, '*' ]
+36 verbose already installed skipping grunt@~0.4.1 C:\Users\Pengyin Shan\Desktop\webapp
+37 verbose cache add name="connect-mongo" spec="mrzepinski/connect-mongo#2135988" args=["connect-mongo","mrzepinski/connect-mongo#2135988"]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: '#2135988',
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'mrzepinski/connect-mongo',
+38 verbose parsed url   path: 'mrzepinski/connect-mongo',
+38 verbose parsed url   href: 'mrzepinski/connect-mongo#2135988' }
+39 verbose addNamed [ 'connect-mongo', 'mrzepinski/connect-mongo#2135988' ]
+40 verbose addNamed [ null, null ]
+41 silly lockFile edc58816-jquery-ui jquery_ui@*
+42 verbose lock jquery_ui@* C:\Users\Pengyin Shan\AppData\Roaming\npm-cache\edc58816-jquery-ui.lock
+43 silly lockFile 93a216bd-mrzepinski-connect-mongo-2135988 connect-mongo@mrzepinski/connect-mongo#2135988
+44 verbose lock connect-mongo@mrzepinski/connect-mongo#2135988 C:\Users\Pengyin Shan\AppData\Roaming\npm-cache\93a216bd-mrzepinski-connect-mongo-2135988.lock
+45 silly addNameRange { name: 'jquery_ui', range: '*', hasData: false }
+46 info addNameTag [ 'connect-mongo', 'mrzepinski/connect-mongo#2135988' ]
+47 verbose url raw jquery_ui
+48 verbose url resolving [ 'https://registry.npmjs.org/', './jquery_ui' ]
+49 verbose url resolved https://registry.npmjs.org/jquery_ui
+50 info trying registry request attempt 1 at 12:51:49
+51 http GET https://registry.npmjs.org/jquery_ui
+52 verbose already installed skipping grunt-autoprefixer@~0.4.0 C:\Users\Pengyin Shan\Desktop\webapp
+53 verbose already installed skipping grunt-bower-install@~0.7.0 C:\Users\Pengyin Shan\Desktop\webapp
+54 verbose already installed skipping grunt-concurrent@~0.4.1 C:\Users\Pengyin Shan\Desktop\webapp
+55 verbose already installed skipping grunt-contrib-clean@~0.5.0 C:\Users\Pengyin Shan\Desktop\webapp
+56 verbose already installed skipping grunt-contrib-coffee@~0.7.0 C:\Users\Pengyin Shan\Desktop\webapp
+57 verbose already installed skipping grunt-contrib-compass@~0.6.0 C:\Users\Pengyin Shan\Desktop\webapp
+58 verbose already installed skipping grunt-contrib-concat@~0.3.0 C:\Users\Pengyin Shan\Desktop\webapp
+59 verbose already installed skipping grunt-contrib-copy@~0.4.1 C:\Users\Pengyin Shan\Desktop\webapp
+60 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 C:\Users\Pengyin Shan\Desktop\webapp
+61 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 C:\Users\Pengyin Shan\Desktop\webapp
+62 verbose already installed skipping grunt-contrib-imagemin@~0.5.0 C:\Users\Pengyin Shan\Desktop\webapp
+63 verbose already installed skipping grunt-contrib-jshint@~0.7.1 C:\Users\Pengyin Shan\Desktop\webapp
+64 verbose already installed skipping grunt-contrib-uglify@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+65 verbose already installed skipping grunt-contrib-watch@~0.5.2 C:\Users\Pengyin Shan\Desktop\webapp
+66 verbose already installed skipping grunt-google-cdn@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+67 verbose already installed skipping grunt-newer@~0.5.4 C:\Users\Pengyin Shan\Desktop\webapp
+68 verbose already installed skipping grunt-ngmin@~0.0.2 C:\Users\Pengyin Shan\Desktop\webapp
+69 verbose already installed skipping grunt-rev@~0.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+70 verbose already installed skipping grunt-svgmin@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+71 verbose already installed skipping grunt-usemin@~2.0.0 C:\Users\Pengyin Shan\Desktop\webapp
+72 verbose already installed skipping jshint-stylish@~0.1.3 C:\Users\Pengyin Shan\Desktop\webapp
+73 verbose already installed skipping load-grunt-tasks@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+74 verbose already installed skipping time-grunt@~0.2.1 C:\Users\Pengyin Shan\Desktop\webapp
+75 verbose already installed skipping grunt-express-server@~0.4.5 C:\Users\Pengyin Shan\Desktop\webapp
+76 verbose already installed skipping grunt-open@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+77 verbose already installed skipping connect-livereload@~0.3.0 C:\Users\Pengyin Shan\Desktop\webapp
+78 verbose already installed skipping karma-ng-scenario@~0.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+79 verbose already installed skipping grunt-karma@~0.6.2 C:\Users\Pengyin Shan\Desktop\webapp
+80 verbose already installed skipping karma-firefox-launcher@~0.1.3 C:\Users\Pengyin Shan\Desktop\webapp
+81 verbose already installed skipping karma-script-launcher@~0.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+82 verbose already installed skipping karma-html2js-preprocessor@~0.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+83 verbose url raw connect-mongo
+84 verbose url resolving [ 'https://registry.npmjs.org/', './connect-mongo' ]
+85 verbose url resolved https://registry.npmjs.org/connect-mongo
+86 info trying registry request attempt 1 at 12:51:49
+87 verbose etag "199HNWH6KLX9R0P4FM2LMXLWI"
+88 http GET https://registry.npmjs.org/connect-mongo
+89 verbose already installed skipping karma-jasmine@~0.1.5 C:\Users\Pengyin Shan\Desktop\webapp
+90 verbose already installed skipping karma-chrome-launcher@~0.1.2 C:\Users\Pengyin Shan\Desktop\webapp
+91 verbose already installed skipping requirejs@~2.1.10 C:\Users\Pengyin Shan\Desktop\webapp
+92 verbose already installed skipping karma-requirejs@~0.2.1 C:\Users\Pengyin Shan\Desktop\webapp
+93 verbose already installed skipping karma-coffee-preprocessor@~0.1.2 C:\Users\Pengyin Shan\Desktop\webapp
+94 verbose already installed skipping karma-phantomjs-launcher@~0.1.1 C:\Users\Pengyin Shan\Desktop\webapp
+95 verbose already installed skipping karma@~0.10.9 C:\Users\Pengyin Shan\Desktop\webapp
+96 verbose already installed skipping karma-ng-html2js-preprocessor@~0.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+97 verbose already installed skipping grunt-mocha-test@~0.8.1 C:\Users\Pengyin Shan\Desktop\webapp
+98 verbose already installed skipping supertest@~0.8.2 C:\Users\Pengyin Shan\Desktop\webapp
+99 verbose already installed skipping should@~2.1.0 C:\Users\Pengyin Shan\Desktop\webapp
+100 verbose already installed skipping grunt-env@~0.4.1 C:\Users\Pengyin Shan\Desktop\webapp
+101 verbose already installed skipping grunt-node-inspector@~0.1.3 C:\Users\Pengyin Shan\Desktop\webapp
+102 verbose already installed skipping grunt-nodemon@~0.2.0 C:\Users\Pengyin Shan\Desktop\webapp
+103 verbose already installed skipping open@~0.0.4 C:\Users\Pengyin Shan\Desktop\webapp
+104 http 404 https://registry.npmjs.org/jquery_ui
+105 silly registry.get cb [ 404,
+105 silly registry.get   { date: 'Fri, 09 May 2014 16:51:40 GMT',
+105 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+105 silly registry.get     'content-type': 'application/json',
+105 silly registry.get     via: '1.1 varnish',
+105 silly registry.get     'cache-control': 'max-age=0',
+105 silly registry.get     'content-length': '52',
+105 silly registry.get     'accept-ranges': 'bytes',
+105 silly registry.get     age: '0',
+105 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-d45-DAL',
+105 silly registry.get     'x-cache': 'MISS, MISS',
+105 silly registry.get     'x-cache-hits': '0, 0',
+105 silly registry.get     'x-timer': 'S1399654300.758823156,VS0,VS18,VE29,VE45',
+105 silly registry.get     'keep-alive': 'timeout=10, max=50',
+105 silly registry.get     connection: 'Keep-Alive' } ]
+106 silly lockFile edc58816-jquery-ui jquery_ui@*
+107 silly lockFile edc58816-jquery-ui jquery_ui@*
+108 error 404 'jquery_ui' is not in the npm registry.
+108 error 404 You should bug the author to publish it
+108 error 404 It was specified as a dependency of 'webapp'
+108 error 404
+108 error 404 Note that you can also install from a
+108 error 404 tarball, folder, or http url, or git url.
+109 error System Windows_NT 6.2.9200
+110 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+111 error cwd C:\Users\Pengyin Shan\Desktop\webapp
+112 error node -v v0.10.26
+113 error npm -v 1.4.3
+114 error code E404
+115 verbose exit [ 1, true ]
