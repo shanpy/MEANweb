@@ -18,7 +18,8 @@
     "passport-local": "~0.1.6",
     "ejs": "~0.8.4",
     "nodemailer": "*",
-    "postmark":"*"
+    "postmark":"*",
+    "mongoose-auto-increment":"*"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
