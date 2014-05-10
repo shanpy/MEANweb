@@ -10,6 +10,10 @@ angular.module('webappApp')
 				.success(function(data){
 					window.alert("Thank you very much for email!");
 					$location.path('/home');
+				})
+				.error(function(data){
+					window.alert("Thank you very much for email!");
+					$location.path('/home');
 				});
 		};
 		$scope.cancel=function(){
