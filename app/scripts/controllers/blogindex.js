@@ -10,7 +10,7 @@ angular.module('webappApp')
 		});
 
 		$scope.deleteblog = function(){
-			$http.delete('/api/blog/' + $scope.blogs.blog.id)
+			$http.delete('/api/blog/' + $scope.blog.id)
 				.success(function(data){
 					$location.url('/blogoptions');
 				});
