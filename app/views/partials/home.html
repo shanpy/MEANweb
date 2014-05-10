@@ -17,7 +17,11 @@
 <p>
   Sorry, currently I'm still working on this website and a few functions still not work. I'm working hard to solve problems and add more functions. Thanks for visiting and please come back to check updates!
 </p>
-<p>I would like to communicate with anyone who is interested in web developement. Please don't hesitate to <a href='/sendemail'>contact me</a> ! </p>
+<p>I would like to communicate with anyone who is interested in web developement. Please don't hesitate to 
+<div ng-repat="email in emails">
+  <a href='/sendemail/{email.id}'>contact me</a> ! 
+<div>
+</p>
 <p></p>
 <hr/>
   <!-- Blog List Section-->
@@ -37,23 +41,22 @@
   </div>
 
 <p></p>
-<hr/>
 <!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
+<hr/>
 <a href='/addblog'>Add Article</a>
-<p></p>
+<hr/>
 </div>
 
 <div class="footer">
   <center>
   <p>Pengyin Shan, who graduated from The Ohio State University on Dec, 2013, is digging into the world of web development. Please feel free to contact me on LinkedIn.
   </p>
-
+</div>
   <!--LinkIn Profile-->
 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/pengyin-shan/31/490/9b6" data-format="inline" data-related="false"></script>
+</center>
 
-  </center>
-</div>
 </div>
 
