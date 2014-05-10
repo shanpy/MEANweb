@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('webappApp')
-	.controller('DeleteblogCtrl', function ($scope,$http,$location,$routeParams) {
+	.controller('DeleteblogCtrl', function ($scope,$http,$routeParams) {
 		 $http.get('/api/blog/' + $routeParams.id)
             .success(function(data) {
 				console.log(JSON.stringify(data));

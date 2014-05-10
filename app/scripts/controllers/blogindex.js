@@ -9,6 +9,13 @@ angular.module('webappApp')
 			$scope.blogs = data;
 		});
 
+		$scope.deleteblog = function(){
+			$http.delete('/api/blog/' + $scope.blogs.blog.id)
+				.success(function(data){
+					$location.url('/blogoptions');
+				});
+		};
+
 		$scope.getadmin = function(){
 		if($rootScope.currentUser !== null){
 			if($rootScope.currentUser.name === "Pengyin Shan")

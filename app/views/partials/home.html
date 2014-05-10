@@ -40,8 +40,8 @@ $.getScript("http://platform.linkedin.com/in.js")
     <a href='/readblog'>Read Full Article</a>
 
     <div ng-show="getadmin(currentUser)">
-    <a href='/editblog/{{blog.id}}'>Edit Article</a>
-    <a href='/deleteblog/{{blog.id}}'>Delete Article</a>
+    <a href='/editblog'>Edit Article</a>
+    <button ng-click='deleteblog()'>Delete Article</a>
     </div>
   </div>
 
