@@ -45,7 +45,7 @@ angular.module('webappApp', [
         controller: 'EditblogCtrl',
         authenticate: true
       })
-      .when('/deleteblog/:id', {
+      .when('/deleteblog', {
         templateUrl: 'partials/deleteblog',
         controller: 'DeleteblogCtrl',
         authenticate: true
