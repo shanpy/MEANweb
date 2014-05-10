@@ -8,6 +8,9 @@ angular.module('webappApp')
 				.success(function(data){
 					console.log(data);
 					$location.path('/home');
+				})
+				.error(function(err){
+					window.alert("error when adding article: " + err);
 				});
 		};
 	});
