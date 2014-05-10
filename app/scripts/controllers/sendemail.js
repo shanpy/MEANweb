@@ -2,6 +2,7 @@
 
 angular.module('webappApp')
 	.controller('SendemailCtrl', function ($scope,$http,$location) {
+		document.getElementById('sendemailprocess').innerHTML="In process of sending out your email";
 		$scope.form = {};
 		$scope.sendemail = function(){
 			$scope.form.to="shanpy901115@gmail.com";
