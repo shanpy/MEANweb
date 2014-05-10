@@ -6,8 +6,9 @@ angular.module('webappApp')
 	.controller('IndexblogCtrl', function ($scope,$http,$rootScope) {
 
 		$http.get('/api/blogs').success(function(data){
+			//return data as an object
 			console.log(data);
-			$scope.blogs = data.blogs;
+			$scope.blogs = data;
 		});
 
 		$scope.getadmin = function(){
