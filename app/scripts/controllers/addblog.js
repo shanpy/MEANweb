@@ -6,6 +6,7 @@ angular.module('webappApp')
 		$scope.submitblog = function(){
 			$http.post('/api/blog', $scope.form)
 				.success(function(data){
+					console.log(data);
 					$location.path('/home');
 				});
 		};
