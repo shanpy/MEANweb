@@ -3,10 +3,11 @@
 angular.module('webappApp')
 	.controller('ReadblogCtrl', function ($scope,$http) {
 	
-    console.log("readblog.js is called");
+    console.log($scope);
 
-	$http.get('/api/blog/'+ $scope.blog.id)
+	$http.get('/api/blog/'+ $scope.id)
 		.success(function(data){
-			$scope.blog = data;
+			console.log(data);
+			$scope.title= data.title;
 		});
 	});
