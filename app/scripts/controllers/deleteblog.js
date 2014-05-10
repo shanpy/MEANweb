@@ -2,6 +2,7 @@
 
 angular.module('webappApp')
 	.controller('DeleteblogCtrl', function ($scope,$http,$routeParams) {
+		console.log($scope.title);
 		 $http.get('/api/blog/' + $routeParams.id)
             .success(function(data) {
 				console.log(JSON.stringify(data));
