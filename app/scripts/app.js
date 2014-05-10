@@ -36,7 +36,7 @@ angular.module('webappApp', [
         controller: 'AddblogCtrl',
         authenticate: true
       })
-      .when('/readblog/:id', {
+      .when('/readblog', {
         templateUrl: 'partials/readblog',
         controller: 'ReadblogCtrl'
       })
