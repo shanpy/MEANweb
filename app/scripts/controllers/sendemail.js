@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('webappApp')
-	.controller('SendemailCtrl', function ($scope,$http,$location $routeParams) {
+	.controller('SendemailCtrl', function ($scope,$http,$location) {
 		$scope.form = {};
 		$scope.sendemail = function(){
 			console.log($scope.form);
