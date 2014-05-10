@@ -9,6 +9,6 @@ angular.module('webappApp')
 
 	$http.get('/api/blog/'+ $routeParams.id)
 		.success(function(data){
-			$scope.blog = data.blogs;
+			$scope.blog = data;
 		});
 	});
