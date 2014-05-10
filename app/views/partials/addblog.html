@@ -3,9 +3,13 @@
 <h2>Write New Article</h2>
 <label for='title'>Title: </label>
 <input ng-model='form.title' name='title'/>
+<br/>
+<label for='date'>Date: </label>
+<input ng-model='form.date' name='date'/>
 <p>Content:
 	<textarea ng-model='form.content' cols='50' rows='15'></textarea>
 </p>
+<p></p>
 <p>
 	<button ng-click='submitblog()'>Add Article</button>
 </p>
