@@ -34,7 +34,7 @@ $.getScript("http://platform.linkedin.com/in.js")
   <p></p>
 
   <accordin close-others="oneAtATime">
-  <accordin-group heading = '{{blog.id}} : {{blog.title}} - {{blog.introduction}} ' ng-repeat ='blog in blogs'>
+  <accordin-group heading = '{{blog.title}}' ng-repeat ='blog in blogs'>
     <h6>{{blog.date}}</h6>  
     <!--
     <button id="readfull" class="btn btn-default" ng-click=" checkCollapse(); readblog(blog.id)"></button> 
