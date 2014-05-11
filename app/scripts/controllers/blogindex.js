@@ -52,11 +52,9 @@ angular.module('webappApp')
 		};
 
 		$scope.doedit = function(id){
-				console.log("doedit is called");
 				$http.put('/api/blog/'+ id, $scope.form)
                 .success(function(data){
                 	console.log(data);
-                	editpart.innerHTML="";
                     $location.url('/home');
                 })
                 .error(function(error){
