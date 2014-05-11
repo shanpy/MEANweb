@@ -17,15 +17,18 @@ angular.module('webappApp')
 		};
 
 		$scope.readblog = function(id){
-
-			console.log(id);
+			var show = document.getElementById("fullblog");
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 			console.log(data);
-			$scope.title= data.title;
+			show.innerHTML = data.content;
+		})
+			.error(function(err){
+				console.log(err);
+				show.innerHTML="Sorry, we can't bring full version blog now..."
 		});
-		}
+		};
 
 		$scope.getadmin = function(){
 		if($rootScope.currentUser !== null){
