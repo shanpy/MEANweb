@@ -43,8 +43,15 @@ $.getScript("http://platform.linkedin.com/in.js")
     <button ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
+    <!--Read Blog Part -->
     <div collapse="isCollapsed">
     <div id="fullblog"></div>
+    </div>
+    <!--Edit Blog Part -->
+    <div id="editblog">
+      <input ng-model="edit.title"/>
+      <input ng-model="edit.introduction"/>
+      <iput ng-model="edit.content"/>
     </div>
   </div>
 

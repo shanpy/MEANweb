@@ -8,7 +8,7 @@ angular.module('webappApp')
 		$http.get('/api/blogs').success(function(data){
 			$scope.blogs = data;
 		});
-
+/***************************************************************/
 		$scope.deleteblog = function(id){
 			$http.delete('/api/blog/' + id)
 				.success(function(data){
@@ -18,7 +18,7 @@ angular.module('webappApp')
 				window.alert(err);
 		});
 		};
-
+/***************************************************************/
 		$scope.readblog = function(id){
 			if($scope.isCollapsed == true){
 				$scope.isCollapsed = false;
@@ -38,22 +38,29 @@ angular.module('webappApp')
 				show.innerHTML="Sorry, we can't bring full version blog now...";
 		});
 		};
-
+/***************************************************************/
 		$scope.editblog = function(id){
 			
-        $scope.form = {};
-        $http.get('/api/blog/' + $routeParams.id)
+		var editpart = document.getElementById('editblog');
+		editpart.innerHTML = 
+      '<input ng-model="edit.title"/>'+
+      '<input ng-model="edit.introduction"/>' + 
+      '<input ng-model="edit.content"/>';
+
+        $http.get('/api/blog/' + id)
             .success(function(response) {
-                    console.log(JSON.stringify(response));
-                    $scope.form = response.blogs;
+                    $scope.edit.title = response[0].title;
+                    $scope.edit.introduction = response[0].introduction;
+                    $scope.edit.title = response[0].content;
                 });
 
-        $http.put('/api/blog/'+ $routeParams.id, $scope.form)
+        $http.put('/api/blog/'+ $response[0].id, $scope.edit)
                 .success(function(data){
+                	editpart.innerHTML="";
                     $location.url('/home');
                 });
 		};
-
+/***************************************************************/
 		$scope.getadmin = function(){
 		if($rootScope.currentUser !== null){
 			if($rootScope.currentUser.name === "Pengyin Shan")
