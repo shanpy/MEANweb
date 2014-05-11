@@ -25,12 +25,30 @@ angular.module('webappApp')
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 			console.log(data);
-			show.innerHTML = data[0].content;
+			show.innerHTML = '<center>' + '<h3>'+ data[0].title + '</h3>'
+							+ '<p>' + data[0].content + '</p>';
+							+ '</center>';
 		})
 			.error(function(err){
 				console.log(err);
 				show.innerHTML="Sorry, we can't bring full version blog now...";
 		});
+		};
+
+		$scope.editblog = function(id){
+			
+        $scope.form = {};
+        $http.get('/api/blog/' + $routeParams.id)
+            .success(function(response) {
+                    console.log(JSON.stringify(response));
+                    $scope.form = response.blogs;
+                });
+
+        $scope.editblog = function(){
+            $http.put('/api/blog/'+ $routeParams.id, $scope.form)
+                .success(function(data){
+                    $location.url('/home');
+                });
 		};
 
 		$scope.getadmin = function(){

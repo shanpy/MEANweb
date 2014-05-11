@@ -35,16 +35,18 @@ $.getScript("http://platform.linkedin.com/in.js")
   <div ng-repeat = 'blog in blogs'>
     <hr/>
     <h2>{{blog.title}}</h2>
-    <br/>
     <h5>{{blog.date}}</h5>    
     <div>{{blog.introduction}}</div>    
     <button ng-click="readblog(blog.id)">Read Full Article</button>
-    <div id="fullblog"></div>
     <div ng-show="getadmin(currentUser)">
     <button ng-click="editblog(blog.id)">Edit Article</button>
     <button ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
+    <hr/>
+    <div id="fullblog"></div>
   </div>
+
+
 
 <p></p>
 <!--Blog Options-->
