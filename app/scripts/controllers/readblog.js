@@ -2,7 +2,7 @@
 
 angular.module('webappApp')
 	.controller('ReadblogCtrl', function ($scope,Blog,$http) {
-	
+	console.log(Blog);
     $scope.blog = Blog;
 
 	$http.get('/api/blog/'+ $scope.blog.id)
