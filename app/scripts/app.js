@@ -36,10 +36,11 @@ angular.module('webappApp', [
         controller: 'AddblogCtrl',
         authenticate: true
       })
+      /*
       .when('/readblog/:id', {
         templateUrl: 'partials/readblog',
         controller: 'ReadblogCtrl'
-      })
+      })*/
       .when('/editblog/:id', {
         templateUrl: 'partials/editblog',
         controller: 'EditblogCtrl',
