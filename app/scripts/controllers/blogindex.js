@@ -20,12 +20,15 @@ angular.module('webappApp')
 		};
 
 		$scope.readblog = function(id){
+			 $scope.isCollapsed = true;
+
 			var show = document.getElementById("fullblog");
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 			console.log(data);
-			show.innerHTML = '<center>' + '<h3>'+ data[0].title + '</h3>' + '<p>' + data[0].content + '</p>' + '</center>';
+			show.innerHTML = '<center>' + '<h5>'+ data[0].title + '</h5>' + '</center>' 
+							+ '<p>' + data[0].content + '</p>' ;
 		})
 			.error(function(err){
 				console.log(err);

@@ -7,7 +7,8 @@ angular.module('webappApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.sortable'
+  'ui.sortable',
+  'ui.bootstarp'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
 

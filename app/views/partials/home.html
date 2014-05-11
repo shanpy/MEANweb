@@ -34,7 +34,7 @@ $.getScript("http://platform.linkedin.com/in.js")
   <p></p>
   <div ng-repeat = 'blog in blogs'>
     <hr/>
-    <h2>{{blog.title}}</h2>
+    <h4>{{blog.title}}</h4>
     <h5>{{blog.date}}</h5>    
     <div>{{blog.introduction}}</div>    
     <button ng-click="readblog(blog.id)">Read Full Article</button>
@@ -43,7 +43,9 @@ $.getScript("http://platform.linkedin.com/in.js")
     <button ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
+    <div collapse="isCollapsed">
     <div id="fullblog"></div>
+    </div>
   </div>
 
 
