@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('webappApp')
-	.controller('ReadblogCtrl', function ($scope,Blog,$http) {
-	console.log(Blog);
-    $scope.blog = Blog;
+	.controller('ReadblogCtrl', function ($scope,$http) {
+	
+	console.log($scope.id);
 
-	$http.get('/api/blog/'+ $scope.blog.id)
+	$http.get('/api/blog'+ $scope.blog.id)
 		.success(function(data){
 			console.log(data);
 			$scope.blog.title= data.title;
