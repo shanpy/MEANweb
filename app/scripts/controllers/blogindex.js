@@ -37,7 +37,8 @@ angular.module('webappApp')
 		};
 
 		$scope.checkCollapse = function(){
-			if($scope.isCollapsed == true){
+
+			if($scope.isCollapsed === true){
 				$scope.isCollapsed = false;
 				$scope.read= "Finish Reading";
 			}

@@ -62,15 +62,13 @@ $.getScript("http://platform.linkedin.com/in.js")
 
 <hr/>
 <!--Read Blog Part -->
-    <div collapse="isCollapsed">
-    <div id="fullblog"></div>
+    <div id="fullblog" collapse="isCollapsed" class="panel-collapse collapse in">
     </div>
 <hr/>
 
 <p></p>
 <!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
-<hr/>
 <a href='/addblog'>Add Article</a>
 <hr/>
 </div>
