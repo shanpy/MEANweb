@@ -35,8 +35,9 @@ $.getScript("http://platform.linkedin.com/in.js")
   <div ng-repeat = 'blog in blogs'>
     <hr/>
     <h4>{{blog.title}}</h4>
-    <h5>{{blog.date}}</h5>    
-    <button ng-click="readblog(blog.id); readfull = !readfull">Read Full Article</button><div>{{blog.introduction}}</div> 
+    <h5>{{blog.date}}</h5>  
+    <h6>{{blog.introduction}}</h6>  
+    <button class="btn btn-default" ng-click="readblog(blog.id); isCollapsed = !isCollapsed">Read Full Article</button> 
 
     <div ng-show="getadmin(currentUser)">
     <button ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
@@ -44,7 +45,7 @@ $.getScript("http://platform.linkedin.com/in.js")
     </div>
     <hr/>
     <!--Read Blog Part -->
-    <div ng-show="readfull">
+    <div collapse="isCollapsed">
     <div id="fullblog"></div>
     </div>
     <!--Edit Blog Part -->
