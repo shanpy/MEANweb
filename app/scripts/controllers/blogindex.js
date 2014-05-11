@@ -20,7 +20,10 @@ angular.module('webappApp')
 		};
 
 		$scope.readblog = function(id){
-			 $scope.isCollapsed = $scope.!isCollapsed;
+			if($scope.isCollapsed == true){
+				$scope.isCollapsed = false;
+			}
+			else($scope.isCollapsed = true;)
 
 			var show = document.getElementById("fullblog");
 
