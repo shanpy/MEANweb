@@ -9,11 +9,14 @@ angular.module('webappApp')
 			$scope.blogs = data;
 		});
 
-		$scope.deleteblog = function(){
-			$http.delete('/api/blog/' + $scope.blog.id)
+		$scope.deleteblog = function(id){
+			$http.delete('/api/blog/' + id)
 				.success(function(data){
+					window.alert('Blog has been deleted!');
 					$location.url('/blogoptions');
-				});
+				}).error(function(err){
+				window.alert(err);
+		});
 		};
 
 		$scope.readblog = function(id){
@@ -26,7 +29,7 @@ angular.module('webappApp')
 		})
 			.error(function(err){
 				console.log(err);
-				show.innerHTML="Sorry, we can't bring full version blog now..."
+				show.innerHTML="Sorry, we can't bring full version blog now...";
 		});
 		};
 
