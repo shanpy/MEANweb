@@ -26,7 +26,7 @@ angular.module('webappApp')
 			.success(function(data){
 			console.log(data);
 			show.innerHTML = '<center>' + '<h3>'+ data[0].title + '</h3>'
-							+ '<p>' + data[0].content + '</p>';
+							+ '<p>' + data[0].content + '</p>'
 							+ '</center>';
 		})
 			.error(function(err){
