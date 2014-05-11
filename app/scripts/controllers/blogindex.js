@@ -22,7 +22,7 @@ angular.module('webappApp')
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 			console.log(data);
-			show.innerHTML = data.content;
+			show.innerHTML = data[0].content;
 		})
 			.error(function(err){
 				console.log(err);
