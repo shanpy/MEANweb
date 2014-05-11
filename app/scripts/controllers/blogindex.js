@@ -46,17 +46,17 @@ angular.module('webappApp')
 			
 		var editpart = document.getElementById('editblog');
 		editpart.innerHTML = 
-      '<input ng-model="edit.title"/>'+
-      '<input ng-model="edit.introduction"/>' + 
-      '<input ng-model="edit.content"/>'
-      '<button ng-click="doedit(edit.id)">Finish Edit</button>';
+      '<input ng-model="title"/>'+
+      '<input ng-model="introduction"/>' + 
+      '<input ng-model="content"/>' +
+      '<button ng-click="doedit(blog.id)">Finish Edit</button>';
 
         $http.get('/api/blog/' + id)
             .success(function(data) {
-            		$scope.edit.id = data[0].id;
-                    $scope.edit.title = data[0].title;
-                    $scope.edit.introduction = data[0].introduction;
-                    $scope.edit.title = data[0].content;
+            		$scope.id = data[0].id;
+                    $scope.title = data[0].title;
+                    $scope.introduction = data[0].introduction;
+                    $scope.content = data[0].content;
                 });
 
         $scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
