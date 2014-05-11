@@ -25,9 +25,7 @@ angular.module('webappApp')
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 			console.log(data);
-			show.innerHTML = '<center>' + '<h3>'+ data[0].title + '</h3>'
-							+ '<p>' + data[0].content + '</p>'
-							+ '</center>';
+			show.innerHTML = '<center>' + '<h3>'+ data[0].title + '</h3>' + '<p>' + data[0].content + '</p>' + '</center>';
 		})
 			.error(function(err){
 				console.log(err);
@@ -44,8 +42,7 @@ angular.module('webappApp')
                     $scope.form = response.blogs;
                 });
 
-        $scope.editblog = function(){
-            $http.put('/api/blog/'+ $routeParams.id, $scope.form)
+        $http.put('/api/blog/'+ $routeParams.id, $scope.form)
                 .success(function(data){
                     $location.url('/home');
                 });
