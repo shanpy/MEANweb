@@ -23,7 +23,7 @@ angular.module('webappApp')
 			if($scope.isCollapsed == true){
 				$scope.isCollapsed = false;
 			}
-			else($scope.isCollapsed = true;)
+			else{$scope.isCollapsed = true;}
 
 			var show = document.getElementById("fullblog");
 
