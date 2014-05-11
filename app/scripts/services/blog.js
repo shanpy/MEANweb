@@ -2,7 +2,7 @@
 
 angular.module('webappApp')
   .factory('Blog', function ($resource) {
-    return $resource('/api/blogs/:blogId', {}, {
+    return $resource('/api/blogs/:id', {}, {
               query: { method: 'GET', params: { blogId: 'blog' }, isArray: true }
             });
   });
