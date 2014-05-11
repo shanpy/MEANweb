@@ -37,9 +37,9 @@ $.getScript("http://platform.linkedin.com/in.js")
     <h4>{{blog.title}}</h4>
     <h5>{{blog.date}}</h5>    
     <div>{{blog.introduction}}</div>    
-    <button ng-click="readblog(blog.id)">Read Full Article</button>
+    <button ng-click="readblog(blog.id);checkCollapse()">Read Full Article</button>
     <div ng-show="getadmin(currentUser)">
-    <button ng-click="editblog(blog.id)">Edit Article</button>
+    <button ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
     <button ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
@@ -48,7 +48,11 @@ $.getScript("http://platform.linkedin.com/in.js")
     <div id="fullblog"></div>
     </div>
     <!--Edit Blog Part -->
-    <div id="editblog">
+    <div id="editblog" ng-show="editmode">
+       <input ng-model="edit.title"/>
+       <input ng-model="edit.introduction"/>
+       <input ng-model="edit.content"/>
+       <button ng-click="edit.doedit(blog.id)">Finish Edit</button>
     </div>
   </div>
 
