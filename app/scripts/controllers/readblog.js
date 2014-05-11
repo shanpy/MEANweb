@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('webappApp')
-	.controller('ReadblogCtrl', function ($scope,$http) {
-	
-	console.log($scope.introduction);
-	console.log($scope.blogs);
 
-	$http.get('/api/blog0')
+angular.module('projectApp')
+	.controller('ReadblogCtrl', function ($scope,$http,$location,$routeParams) {
+	
+	$http.get('/api/blog/'+ $routeParams.id)
 		.success(function(data){
-			console.log(data);
-			$scope.blog.title= data.title;
+			$scope.blog = data.blogs;
 		});
+	$scope.back = function(){
+		$location.url('/home');
+	};
 	});
