@@ -53,13 +53,16 @@ angular.module('webappApp')
 
         $http.get('/api/blog/' + id)
             .success(function(data) {
+            		console.log(data);
             		$scope.id = data[0].id;
                     $scope.title = data[0].title;
                     $scope.introduction = data[0].introduction;
                     $scope.content = data[0].content;
                 });
 
-        $scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
+		};
+
+		$scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
                 .success(function(data){
                 	editpart.innerHTML="";
                     $location.url('/home');
@@ -68,7 +71,6 @@ angular.module('webappApp')
                 	$location.url('/home');
                 })
             };
-		};
 /***************************************************************/
 		$scope.getadmin = function(){
 		if($rootScope.currentUser !== null){
