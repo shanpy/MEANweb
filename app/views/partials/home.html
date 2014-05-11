@@ -44,10 +44,6 @@ $.getScript("http://platform.linkedin.com/in.js")
     <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
-    <!--Read Blog Part -->
-    <div collapse="isCollapsed">
-    <div id="fullblog"></div>
-    </div>
     <!--Edit Blog Part -->
     <div id="editblog" ng-show="editmode">
       <h2>Edit Article</h2>
@@ -61,10 +57,15 @@ $.getScript("http://platform.linkedin.com/in.js")
       <p>
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
-    </div>
+     </div>
   </div>
 
-
+<hr/>
+<!--Read Blog Part -->
+    <div collapse="isCollapsed">
+    <div id="fullblog"></div>
+    </div>
+<hr/>
 
 <p></p>
 <!--Blog Options-->
