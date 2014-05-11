@@ -37,7 +37,7 @@ $.getScript("http://platform.linkedin.com/in.js")
     <h3>Article {{blog.id}} : </h3><h3 ng-model="title">{{blog.title}}</h3>
     <h5>{{blog.date}}</h5>    
     <div>{{blog.introduction}}</div>    
-    <a href='/readblog'>Read Full Article</a>
+    <button href='readblog()'>Read Full Article</button>
 
     <div ng-show="getadmin(currentUser)">
     <a href='/editblog'>Edit Article</a>
