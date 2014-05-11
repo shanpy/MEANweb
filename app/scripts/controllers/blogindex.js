@@ -33,28 +33,27 @@ angular.module('webappApp')
 		});
 		};
 
+		/*
 		$scope.checkCollapse = function(){
 			if($scope.isCollapsed == true){
 				$scope.isCollapsed = false;
 			}
 			else{$scope.isCollapsed = true;}
-		};
+		}; */
 /***************************************************************/
 		$scope.editblog = function(id){
 			
         $http.get('/api/blog/' + id)
             .success(function(data) {
             		console.log(data);
-                    $scope.edit.title = data[0].title;
-                    $scope.edit.introduction = data[0].introduction;
-                    $scope.edit.content = data[0].content;
+                    $scope.form = data[0];
                 });
 
 		};
 
 		$scope.doedit = function(id){
 				console.log("doedit is called");
-				$http.put('/api/blog/'+ id, $scope.edit)
+				$http.put('/api/blog/'+ id, $scope.form)
                 .success(function(data){
                 	console.log(data);
                 	editpart.innerHTML="";

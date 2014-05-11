@@ -36,23 +36,30 @@ $.getScript("http://platform.linkedin.com/in.js")
     <hr/>
     <h4>{{blog.title}}</h4>
     <h5>{{blog.date}}</h5>    
-    <div>{{blog.introduction}}</div>    
-    <button ng-click="readblog(blog.id);checkCollapse()">Read Full Article</button>
+    <button ng-click="readblog(blog.id); readfull = !readfull">Read Full Article</button><div>{{blog.introduction}}</div> 
+
     <div ng-show="getadmin(currentUser)">
     <button ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
     <button ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
     <!--Read Blog Part -->
-    <div collapse="isCollapsed">
+    <div ng-show="readfull">
     <div id="fullblog"></div>
     </div>
     <!--Edit Blog Part -->
     <div id="editblog" ng-show="editmode">
-       <input ng-model="edit.title"/>
-       <input ng-model="edit.introduction"/>
-       <input ng-model="edit.content"/>
-       <button ng-click="edit.doedit(blog.id)">Finish Edit</button>
+      <h2>Edit Article</h2>
+      <label for='title'>Title: </label>
+      <input ng-model='form.title' name='title'/>
+      <label for='introduction'>Introduction: </label>
+      <input ng-model='form.introduction' name='title'/>
+      <p>Content:
+        <textarea ng-model='form.content' cols='50' rows='15'></textarea>
+      </p>
+      <p>
+        <button ng-click='doedit(blog.id)'>Finish Editing</button>
+      </p>
     </div>
   </div>
 
