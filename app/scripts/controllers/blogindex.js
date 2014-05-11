@@ -29,7 +29,6 @@ angular.module('webappApp')
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
-			console.log(data);
 			show.innerHTML = '<center>' + '<h5>'+ data[0].title + '</h5>' + '</center>' 
 							+ '<p>' + data[0].content + '</p>' ;
 		})
@@ -45,20 +44,26 @@ angular.module('webappApp')
 		editpart.innerHTML = 
       '<input ng-model="edit.title"/>'+
       '<input ng-model="edit.introduction"/>' + 
-      '<input ng-model="edit.content"/>';
+      '<input ng-model="edit.content"/>'
+      '<button ng-click="doedit(edit.id)">Finish Edit</button>';
 
         $http.get('/api/blog/' + id)
-            .success(function(response) {
+            .success(function(data) {
+            		$scope.edit.id = response[0].id;
                     $scope.edit.title = response[0].title;
                     $scope.edit.introduction = response[0].introduction;
                     $scope.edit.title = response[0].content;
                 });
 
-        $http.put('/api/blog/'+ $response[0].id, $scope.edit)
+        $scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
                 .success(function(data){
                 	editpart.innerHTML="";
                     $location.url('/home');
-                });
+                })
+                .error(function(error){
+                	$location.url('/home');
+                })
+            };
 		};
 /***************************************************************/
 		$scope.getadmin = function(){
