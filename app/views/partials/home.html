@@ -40,12 +40,12 @@ $.getScript("http://platform.linkedin.com/in.js")
     <button class="btn btn-default" ng-click="readblog(blog.id); isCollapsed = !isCollapsed">Read Full Article</button> 
 
     <div ng-show="getadmin(currentUser)">
-    <button ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
-    <button ng-click="deleteblog(blog.id)">Delete Article</button>
+    <button class="btn btn-default" ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
+    <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
     <!--Read Blog Part -->
-    <div collapse="isCollapsed">
+    <div collapse="!isCollapsed">
     <div id="fullblog"></div>
     </div>
     <!--Edit Blog Part -->
@@ -59,7 +59,7 @@ $.getScript("http://platform.linkedin.com/in.js")
         <textarea ng-model='form.content' cols='50' rows='15'></textarea>
       </p>
       <p>
-        <button ng-click='doedit(form.id)'>Finish Editing</button>
+        <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
     </div>
   </div>

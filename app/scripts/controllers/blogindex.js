@@ -33,13 +33,12 @@ angular.module('webappApp')
 		});
 		};
 
-		/*
 		$scope.checkCollapse = function(){
 			if($scope.isCollapsed == true){
 				$scope.isCollapsed = false;
 			}
 			else{$scope.isCollapsed = true;}
-		}; */
+		}; 
 /***************************************************************/
 		$scope.editblog = function(id){
 			
