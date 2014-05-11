@@ -64,10 +64,12 @@ angular.module('webappApp')
 
 		$scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
                 .success(function(data){
+                	console.log(data);
                 	editpart.innerHTML="";
                     $location.url('/home');
                 })
                 .error(function(error){
+                	console.log(error);
                 	$location.url('/home');
                 })
             };
