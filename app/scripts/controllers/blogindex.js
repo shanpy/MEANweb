@@ -34,10 +34,14 @@ angular.module('webappApp')
 		};
 
 		$scope.checkCollapse = function(){
+			var readfull = document.getElementById("readfull");
+
 			if($scope.isCollapsed == true){
 				$scope.isCollapsed = false;
+				readfull.value = "Finish Reading";
 			}
-			else{$scope.isCollapsed = true;}
+			else{$scope.isCollapsed = true;
+				readfull.value = "Read Full Article";}
 		}; 
 /***************************************************************/
 		$scope.editblog = function(id){
