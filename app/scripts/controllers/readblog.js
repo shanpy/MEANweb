@@ -1,10 +1,13 @@
 'use strict';
 
 angular.module('webappApp')
-	.controller('ReadblogCtrl', function ($scope,$http) {
+	.controller('ReadblogCtrl', function ($scope,$rootScope,$http) {
 	
-    console.log($scope.title);
-    console.log($scope.blogs[0].title);
+    //console.log($scope.title);
+    //console.log($scope.blogs[0].title);
+    console.log($scope);
+    console.log($rootScope.blogs);
+    console.log($rootScope.title);
 
 	$http.get('/api/blog/'+ $scope.id)
 		.success(function(data){
