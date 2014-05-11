@@ -34,7 +34,7 @@ $.getScript("http://platform.linkedin.com/in.js")
   <p></p>
   <div ng-repeat = 'blog in blogs'>
     <hr/>
-    <h3>Article {{blog.id}} : </h3><h3 ng-model="blog.title"></h3>
+    <h3>Article {{blog.id}} : </h3><input ng-model="blog.title"/>
     <h5>{{blog.date}}</h5>    
     <div>{{blog.introduction}}</div>    
     <button ng-click='readblog()'>Read Full Article</button>
