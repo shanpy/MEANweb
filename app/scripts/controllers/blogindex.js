@@ -62,7 +62,9 @@ angular.module('webappApp')
 
 		};
 
-		$scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
+		$scope.doedit = function(id){
+				console.log("doedit is called");
+				$http.put('/api/blog/'+ id, $scope.content)
                 .success(function(data){
                 	console.log(data);
                 	editpart.innerHTML="";
