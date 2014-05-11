@@ -20,7 +20,7 @@ angular.module('webappApp')
 		});
 		};
 /***************************************************************/
-		$scope.read.button = "Read More";
+		$scope.read = "Read More";
 
 		$scope.readblog = function(id){
 			var show = document.getElementById("fullblog");
@@ -40,10 +40,11 @@ angular.module('webappApp')
 			if($scope.isCollapsed == true){
 				$scope.
 				$scope.isCollapsed = false;
-				$scope.read.button= "Finish Reading";
+				$scope.read= "Finish Reading";
 			}
 			else{$scope.isCollapsed = true;
-				 $scope.read.button= "Read More"}
+				 $scope.read= "Read More";
+				}
 		}; 
 /***************************************************************/
 		$scope.editblog = function(id){
