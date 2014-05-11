@@ -32,19 +32,26 @@ $.getScript("http://platform.linkedin.com/in.js")
   <!-- Blog List Section-->
   <p>There are {{blogs.length}} posts</p>
   <p></p>
-  <div ng-repeat = 'blog in blogs'>
-    <hr/>
-    <h4>{{blog.title}}</h4>
-    <h5>{{blog.date}}</h5>  
-    <h6>{{blog.introduction}}</h6>  
-    <button id="readfull" class="btn btn-default" ng-click=" checkCollapse(); readblog(blog.id)">{{read}}</button> 
 
+  <accordin close-others="oneAtATime">
+  <accordin-group heading = '{{blog.id}} : {{blog.title}} - {{blog.introduction}} ' ng-repeat ='blog in blogs'>
+    <h6>{{blog.date}}</h6>  
+    <!--
+    <button id="readfull" class="btn btn-default" ng-click=" checkCollapse(); readblog(blog.id)"></button> 
+    -->
+    {{blog.content}}
     <div ng-show="getadmin(currentUser)">
     <button class="btn btn-default" ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
     <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
+    </div> 
+  </accordin-group>
+  </accordin>
+  <hr/>
+<!--Read Blog Part -->
+    <div id="fullblog" collapse="!isCollapsed" class="panel-collapse collapse in">
     </div>
-    <hr/>
-    <!--Edit Blog Part -->
+<hr/>
+<!--Edit Blog Part -->
     <div id="editblog" ng-show="editmode">
       <h2>Edit Article</h2>
       <label for='title'>Title: </label>
@@ -58,14 +65,6 @@ $.getScript("http://platform.linkedin.com/in.js")
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
      </div>
-  </div>
-
-<hr/>
-<!--Read Blog Part -->
-    <div id="fullblog" collapse="isCollapsed" class="panel-collapse collapse in">
-    </div>
-<hr/>
-
 <p></p>
 <!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
