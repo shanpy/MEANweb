@@ -20,21 +20,25 @@ angular.module('webappApp')
 		};
 /***************************************************************/
 		$scope.readblog = function(id){
-			if($scope.isCollapsed == true){
-				$scope.isCollapsed = false;
-			}
-			else{$scope.isCollapsed = true;}
 
 			var show = document.getElementById("fullblog");
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
+			if($scope.isCollapsed == true){
+				$scope.isCollapsed = false;
+			}
+			else{$scope.isCollapsed = true;}
 			show.innerHTML = '<center>' + '<h5>'+ data[0].title + '</h5>' + '</center>' 
 							+ '<p>' + data[0].content + '</p>' ;
 		})
 			.error(function(err){
-				console.log(err);
-				show.innerHTML="Sorry, we can't bring full version blog now...";
+			console.log(err);
+			if($scope.isCollapsed == true){
+				$scope.isCollapsed = false;
+			}
+			else{$scope.isCollapsed = true;}
+			show.innerHTML="Sorry, we can't bring full version blog now...";
 		});
 		};
 /***************************************************************/
@@ -49,10 +53,10 @@ angular.module('webappApp')
 
         $http.get('/api/blog/' + id)
             .success(function(data) {
-            		$scope.edit.id = response[0].id;
-                    $scope.edit.title = response[0].title;
-                    $scope.edit.introduction = response[0].introduction;
-                    $scope.edit.title = response[0].content;
+            		$scope.edit.id = data[0].id;
+                    $scope.edit.title = data[0].title;
+                    $scope.edit.introduction = data[0].introduction;
+                    $scope.edit.title = data[0].content;
                 });
 
         $scope.doedit = function(id){$http.put('/api/blog/'+ id, $scope.edit)
