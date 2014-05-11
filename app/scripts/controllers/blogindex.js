@@ -18,9 +18,6 @@ angular.module('webappApp')
 
 		$scope.readblog = function(){
 
-			//console.log($scope.blog.title);
-			//console.log($scope.title);
-			//console.log($scope.blog.title);
 			console.log($scope.blogs[0].title);
 
 			$http.get('/api/blog/'+ $scope.id)

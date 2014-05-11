@@ -1,8 +1,9 @@
 <div ng-include="partials/navbar.html"></div>
 <div ng-controller="ReadblogCtrl">
-<h3 ng-model="title">{{blog.title}}</h3>
-<h5 ng-model="date">{{blog.date}}</h5>
-<div ng-model="content">{{blog.content}}</div>
+<h3>{{blog.title}}</h3>
+<h5>{{blog.date}}</h5>
+<textarea ng-model="introduction"></textarea>
+<div>{{blog.content}}</div>
 <hr/>
 
 <ul class="nav nav-pills pull-left">

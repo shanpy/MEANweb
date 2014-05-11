@@ -34,11 +34,11 @@ $.getScript("http://platform.linkedin.com/in.js")
   <p></p>
   <div ng-repeat = 'blog in blogs'>
     <hr/>
-    <h3>Article {{blog.id}} : </h3><label ng-model="blog.title"/>
+    <h3>Article {{blog.id}} : </h3><h2>{{blog.title}}</h2>
     <br/>
     <label ng-model="blog.date"/>   
     <div>{{blog.introduction}}</div>    
-    <button ng-click='readblog()'>Read Full Article</button>
+    <a href='/readblog'>Read Full Article</a>
 
     <div ng-show="getadmin(currentUser)">
     <a href='/editblog'>Edit Article</a>
