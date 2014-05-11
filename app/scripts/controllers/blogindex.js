@@ -8,6 +8,7 @@ angular.module('webappApp')
 		$http.get('/api/blogs').success(function(data){
 			$scope.blogs = data;
 		});
+
 /***************************************************************/
 		$scope.deleteblog = function(id){
 			$http.delete('/api/blog/' + id)
@@ -19,6 +20,8 @@ angular.module('webappApp')
 		});
 		};
 /***************************************************************/
+		$scope.read.button = "Read More";
+
 		$scope.readblog = function(id){
 			var show = document.getElementById("fullblog");
 			$http.get('/api/blog/'+ id)
@@ -34,14 +37,13 @@ angular.module('webappApp')
 		};
 
 		$scope.checkCollapse = function(){
-			var readfull = document.getElementById("readfull");
-
 			if($scope.isCollapsed == true){
+				$scope.
 				$scope.isCollapsed = false;
-				readfull.value = "Finish Reading";
+				$scope.read.button= "Finish Reading";
 			}
 			else{$scope.isCollapsed = true;
-				readfull.value = "Read Full Article";}
+				 $scope.read.button= "Read More"}
 		}; 
 /***************************************************************/
 		$scope.editblog = function(id){

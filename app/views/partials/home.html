@@ -37,7 +37,7 @@ $.getScript("http://platform.linkedin.com/in.js")
     <h4>{{blog.title}}</h4>
     <h5>{{blog.date}}</h5>  
     <h6>{{blog.introduction}}</h6>  
-    <button id="readfull" value="Read Full Article" class="btn btn-default" ng-click=" checkCollapse(); readblog(blog.id)"/> 
+    <button id="readfull" class="btn btn-default" ng-click=" checkCollapse(); readblog(blog.id)"/>{{read.button}}</button> 
 
     <div ng-show="getadmin(currentUser)">
     <button class="btn btn-default" ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
