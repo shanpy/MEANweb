@@ -37,9 +37,10 @@ $.getScript("http://platform.linkedin.com/in.js")
     <hr/>
     <h4>{{blog.title}}</h4>
     <h5>{{blog.date}}</h5>  
-    <h6>{{blog.introduction}}</h6>  
+    <h6>{{blog.introduction}}</h6> 
+    <!-- 
     <button id="readfull" class="btn btn-primary" ng-click="getModal(blog.id)">Read More</button> 
-
+    -->
     <div ng-show="getadmin(currentUser)">
     <button class="btn btn-default" ng-click="editblog(blog.id); editmode = !editmode">Edit Article</button>
     <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
