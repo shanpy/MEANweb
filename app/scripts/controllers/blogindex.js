@@ -36,6 +36,7 @@ angular.module('webappApp').service("blogservice", function($http){
 		$scope.getModal = function(id){
 
 		var resultdata = blogservice.readbloginfo(id);
+		console.log(resultdata);
 			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
