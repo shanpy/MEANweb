@@ -4,13 +4,12 @@ console.log("blogindex.js is called");
 
 angular.module('webappApp').service("blogservice", function($http){
 
-	this.readbloginfo = function(id){
-		var promise = $http.get('/api/blog/'+ id)
+	return {readbloginfo : function(id,callback){
+			$http.get('/api/blog/'+ id)
 			.success(function(data){
 				console.log(data)
-				return data;
-			});
-		return promise;
+				callback(data);
+			})
 	};
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
 
@@ -33,7 +32,7 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-		blogservice.fn(id, function(data){
+		blogservice.readbloginfo(id, function(data){
 			console.log(data);
 			var resultdata = data;
 		});
