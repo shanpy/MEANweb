@@ -2,8 +2,23 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp')
-	.controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal) {
+var app = angular.module('webappApp',[]);
+
+app.service("blogservice", function(){
+
+	this.readbloginfo = function(id){
+		$http.get('/api/blog/'+ id)
+			.success(function(data){
+				return data;
+			})
+			.error(function(err){
+			console.log(err);
+			return null;
+			});
+	};
+});
+
+app.controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
 
 
 		$http.get('/api/blogs').success(function(data){
@@ -24,23 +39,14 @@ angular.module('webappApp')
 
 		$scope.getModal = function(id){
 
-		var resultdata;
-
-			$http.get('/api/blog/'+ id)
-			.success(function(data){
-				console.log(data);
-				resultdata = data;
-			})
-			.error(function(err){
-			console.log(err);
-			});
+		var resultdata = blogservice.readbloginfo(id);
 			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blogtitle: function(){return resultdata.title;},
+					blogtitle: function(){return resultdata.title},
 					blogcontent: function(){return resultdata.content;}
 				}
 			});
