@@ -30,7 +30,7 @@ angular.module('webappApp')
 				controller: IndexblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: $scope.getBlog(id);
+					blog: $scope.getBlog(id)
 				}
 			});
 		};
