@@ -33,7 +33,14 @@ angular.module('webappApp').factory("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-			var read = blogservice.readbloginfo(id);
+			var read = function(id){
+			$http.get('/api/blog/'+ id)
+			.then(function(tem){
+				console.log(tem.data);
+				return tem.data;
+			});
+		};
+		
 			console.log(read);
 
 			var modalInstance = $modal.open({
