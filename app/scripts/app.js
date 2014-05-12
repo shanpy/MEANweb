@@ -11,7 +11,7 @@ angular.module('webappApp', [
   'ui.bootstrap.collapse',
   "ui.bootstrap.buttons",
   "ui.bootstrap.accordion",
-  "ui.bootstrap.model"
+  "ui.bootstrap.modal"
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
