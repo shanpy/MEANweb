@@ -48,6 +48,14 @@ angular.module('webappApp')
 		});
 		};
 
+		var ReadblogCtrl = function($scope, $modalInstance, blog){
+				$scope.blog = blog;
+				
+				$scope.back = function(){
+				$location.url('/home');
+		};
+
+		/*
 		$scope.checkCollapse = function(){
 
 			if($scope.isCollapsed === true){
@@ -57,7 +65,7 @@ angular.module('webappApp')
 			else{$scope.isCollapsed = true;
 				 $scope.read= "Read More";
 				}
-		}; 
+		}; */
 /***********************Edit Blog******************************/
 		$scope.editblog = function(id){
 			
@@ -95,12 +103,7 @@ angular.module('webappApp')
 			return false;
 		}
       };
+/***************************************************************/
+});
 
-    });
-
-		var ReadblogCtrl = function($scope, $modalInstance, blog){
-				$scope.blog = blog;
-				
-				$scope.back = function(){
-				$location.url('/home');
-		};
+		
