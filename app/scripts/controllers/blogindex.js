@@ -53,6 +53,7 @@ angular.module('webappApp')
 				
 				$scope.back = function(){
 				$location.url('/home');
+		}
 		};
 
 		/*
