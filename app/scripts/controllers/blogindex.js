@@ -30,11 +30,21 @@ angular.module('webappApp')
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: $scope.getBlog(id)
+					blog: function(id) {
+						$http.get('/api/blog/'+ id)
+								.success(function(data){
+									return data;
+								})
+								.error(function(err){
+								console.log(err);
+								return null;
+							});
+					}
 				}
 			});
 		};
-
+		
+		/*
 		$scope.getBlog = function(id){
 
 			$http.get('/api/blog/'+ id)
@@ -47,7 +57,7 @@ angular.module('webappApp')
 			return null;
 		});
 		};
-
+		*/
 		
 
 		/*
