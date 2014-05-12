@@ -8,6 +8,7 @@ angular.module('webappApp', [
   'ngSanitize',
   'ngRoute',
   'ui.sortable',
+  'ui.bootstrap',
   'ui.bootstrap.collapse',
   "ui.bootstrap.buttons",
   "ui.bootstrap.accordion",
