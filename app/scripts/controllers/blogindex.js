@@ -31,7 +31,7 @@ angular.module('webappApp')
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: function(){return scope.getBlog(useid);}
+					blog: function(){return $scope.getBlog(useid);}
 				}
 			});
 
