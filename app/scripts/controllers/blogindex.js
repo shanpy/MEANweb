@@ -48,13 +48,7 @@ angular.module('webappApp')
 		});
 		};
 
-		var ReadblogCtrl = function($scope, $modalInstance, blog){
-				$scope.blog = blog;
-				
-				$scope.back = function(){
-				$location.url('/home');
-		}
-		};
+		
 
 		/*
 		$scope.checkCollapse = function(){
