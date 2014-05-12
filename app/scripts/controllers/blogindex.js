@@ -31,7 +31,7 @@ angular.module('webappApp')
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: $scope.getBlog(useid)
+					blog: function(){return scope.getBlog(useid);}
 				}
 			});
 
@@ -43,8 +43,8 @@ angular.module('webappApp')
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
-				$scope.blog = data;
-				return $scope.blog;
+				console.log(data);
+				return data;
 			})
 			.error(function(err){
 			console.log(err);

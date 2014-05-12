@@ -41,6 +41,10 @@ angular.module('webappApp', [
         controller: 'AddblogCtrl',
         authenticate: true
       })
+      .when('/readblog', {
+        templateUrl: 'partials/readblog',
+        controller: 'BlogblogCtrl'
+      })
       //Send Email
       .when('/sendemail',{
         templateUrl:'partials/sendemail',
