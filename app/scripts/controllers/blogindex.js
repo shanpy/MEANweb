@@ -10,6 +10,7 @@ angular.module('webappApp').service("blogservice", function($http){
 				console.log(data)
 				callback(data);
 			})
+		}
 	};
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
 
