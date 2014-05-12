@@ -33,16 +33,13 @@ angular.module('webappApp').factory("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-			var readtitle = blogservice.readbloginfo(id).title;
-			var readcontent = blogservice.readbloginfo(id).content;
-		
+			var read = blogservice.readbloginfo(id);
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blogtitle: function (){return readtitle;}
-					blogcontent: function (){return readcontent;}
+					blog: function (){return read}
 				}
 			});
 		};

@@ -1,7 +1,7 @@
 'use strict';
-var ReadblogCtrl = function($scope, $location, $modalInstance, blogtitle, blogcontent){
+var ReadblogCtrl = function($scope, $location, $modalInstance, blog){
 
-				console.log(blogtitle);	
+				console.log(blog.title);	
 				$scope.back = function(){
 				$location.url('/home');}
 		};
