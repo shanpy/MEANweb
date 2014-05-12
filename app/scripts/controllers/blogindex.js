@@ -23,32 +23,22 @@ angular.module('webappApp')
 /************************Read Blog***************************/
 
 		$scope.getModal = function(id){
-			//var show = document.getElementById("fullblog");
-			
-			console.log("getModal is called");
+
 			var useid = id;
+			console.log(useid);
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: function(useid) {
-						$http.get('/api/blog/'+ useid)
-								.success(function(data){
-									return data;
-								})
-								.error(function(err){
-								console.log(err);
-								return null;
-							});
-					}
+					blog: $scope.getBlog(useid)
 				}
 			});
 
 			console.log(id);
 		};
 
-		/*
+		
 		$scope.getBlog = function(id){
 
 			$http.get('/api/blog/'+ id)
@@ -61,7 +51,7 @@ angular.module('webappApp')
 			return null;
 		});
 		};
-		*/
+		
 		
 
 		/*
