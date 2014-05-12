@@ -24,18 +24,17 @@ angular.module('webappApp')
 
 		$scope.getModal = function(id){
 
-			var resultdata = function(id){
+		var resultdata;
 
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
 				console.log(data);
-				return data;
+				resultdata = data;
 			})
 			.error(function(err){
 			console.log(err);
-			return null;
-		});
-		};
+			});
+
 
 			console.log(resultdata);
 			
