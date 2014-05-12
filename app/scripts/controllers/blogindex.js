@@ -7,11 +7,8 @@ angular.module('webappApp').service("blogservice", function($http){
 	this.readbloginfo = function(id){
 		$http.get('/api/blog/'+ id)
 			.success(function(data){
+				console.log(data)
 				return data;
-			})
-			.error(function(err){
-			console.log(err);
-			return null;
 			});
 	};
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
@@ -37,7 +34,7 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		var resultdata = blogservice.readbloginfo(id);
 		console.log(resultdata);
-			
+
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
