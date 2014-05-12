@@ -26,12 +26,13 @@ angular.module('webappApp')
 
 			var useid = id;
 			console.log(useid);
+			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: function(){return $scope.getBlog(useid);}
+					fullblog: function(){return $scope.getBlog(useid);}
 				}
 			});
 
@@ -52,13 +53,13 @@ angular.module('webappApp')
 		});
 		};
 		
-		var ReadblogCtrl = function($scope, $location, $modalInstance, blog){
+		var ReadblogCtrl = function($scope, $location, $modalInstance, fullblog){
 
-				console.log(blog);
+				console.log(fullblog);
 
-				$scope.blog.title = blog.title;
-				$scope.blog.content = blog.content;
-				$scope.blog.date = blog.date;
+				$scope.blog.title = fullblog.title;
+				$scope.blog.content = fullblog.content;
+				$scope.blog.date = fullblog.date;
 				
 				$scope.back = function(){
 				$location.url('/home');}
