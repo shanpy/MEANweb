@@ -27,7 +27,7 @@ angular.module('webappApp')
 			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
-				controller: IndexblogCtrl,
+				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
 					blog: $scope.getBlog(id)
