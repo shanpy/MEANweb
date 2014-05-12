@@ -7,8 +7,8 @@ angular.module('webappApp').factory("blogservice", function($http){
 		readbloginfo : function(id){
 			$http.get('/api/blog/'+ id)
 			.then(function(tem){
-				console.log(tem[0]);
-				return tem[0];
+				console.log(tem.data);
+				return tem.data;
 			});
 		}
 	};
