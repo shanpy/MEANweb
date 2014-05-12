@@ -22,9 +22,11 @@ angular.module('webappApp')
 		};
 /************************Read Blog***************************/
 
-		$scope.readblog = function(id){
+		$scope.getModal = function(id){
 			//var show = document.getElementById("fullblog");
 			
+			console.log("readblog in blogindex.")
+
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
@@ -42,8 +44,10 @@ angular.module('webappApp')
 					}
 				}
 			});
+
+			console.log(id);
 		};
-		
+
 		/*
 		$scope.getBlog = function(id){
 
