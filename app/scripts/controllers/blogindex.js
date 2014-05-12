@@ -45,19 +45,12 @@ angular.module('webappApp').factory("blogservice", function($http){
 		};
 
 		
-		$scope.getBlog = function(id){
+		var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 
-			$http.get('/api/blog/'+ id)
-			.success(function(data){
-				console.log(data);
-				return data;
-			})
-			.error(function(err){
-			console.log(err);
-			return null;
-		});
+				console.log(readblog.title);	
+				$scope.back = function(){
+				$location.url('/home');}
 		};
-
 		/*
 		$scope.checkCollapse = function(){
 
