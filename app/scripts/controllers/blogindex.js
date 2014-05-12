@@ -39,7 +39,7 @@ angular.module('webappApp').factory("blogservice", function($http){
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blog: function (){return read}
+					readblog: function(){return read;}
 				}
 			});
 		};
