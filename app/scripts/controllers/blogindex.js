@@ -6,9 +6,9 @@ angular.module('webappApp').service("blogservice", function($http){
 
 	return {readbloginfo : function(id,callback){
 			$http.get('/api/blog/'+ id)
-			.success(function(data){
-				console.log(data)
-				callback(data);
+			.success(function(tem){
+				console.log(tem);
+				callback(tem);
 			})
 		}
 	};
@@ -35,19 +35,17 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		blogservice.readbloginfo(id, function(data){
 			console.log(data);
-			var resultdata = data;
+			$scope.tem = data;
 		});
 
 		
-		console.log(resultdata);
-
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blogtitle: function(){return resultdata.title},
-					blogcontent: function(){return resultdata.content;}
+					blogtitle: function(){return $scope.tem.title},
+					blogcontent: function(){return $scope.tem.content;}
 				}
 			});
 
