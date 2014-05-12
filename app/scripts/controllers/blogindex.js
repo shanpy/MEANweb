@@ -24,15 +24,27 @@ angular.module('webappApp')
 
 		$scope.getModal = function(id){
 
-			var useid = id;
-			console.log(useid);
+			var resultdata = function(id){
+
+			$http.get('/api/blog/'+ id)
+			.success(function(data){
+				console.log(data);
+				return data;
+			})
+			.error(function(err){
+			console.log(err);
+			return null;
+		});
+		};
+
+			console.log(resultdata);
 			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					fullblog: function(){return $scope.getBlog(useid);}
+					fullblog: function(){return resultdata;}
 				}
 			});
 
