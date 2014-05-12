@@ -1,7 +1,7 @@
 'use strict';
-var ReadblogCtrl = function($scope, $location, $modalInstance, blog){
+var ReadblogCtrl = function($scope, $location, $modalInstance, fullblog){
 
-				console.log(blog);
+				console.log(fullblog);
 
 				$scope.blog.title = blog.title;
 				$scope.blog.content = blog.content;
