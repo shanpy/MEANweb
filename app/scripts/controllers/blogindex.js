@@ -2,14 +2,14 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').service("blogservice", function($http){
-
-	return {readbloginfo : function(id,callback){
+angular.module('webappApp').factory("blogservice", function($http){
+	return {
+		readbloginfo : function(id){
 			$http.get('/api/blog/'+ id)
-			.success(function(tem){
+			.then(function(tem){
 				console.log(tem);
-				callback(tem);
-			})
+				return tem;
+			});
 		}
 	};
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
