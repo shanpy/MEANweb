@@ -1,9 +1,10 @@
 'use strict';
-console.log("readblog.js");
 var ReadblogCtrl = function($scope, $location, $modalInstance, blog){
+
+				console.log("readblog.js");
+
 				$scope.blog = blog;
 				
 				$scope.back = function(){
-				$location.url('/home');
-		}
+				$location.url('/home');}
 		};
