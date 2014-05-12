@@ -1,12 +1,14 @@
-<div ng-include="partials/navbar.html"></div>
-<div ng-controller="ReadblogCtrl">
-<h3>{{blog.title}}</h3>
-<h5>{{blog.date}}</h5>
-<textarea ng-model="introduction"></textarea>
+<div ng-controller="IndexBlogCtrl">
+<script type="text/ng-template" id="readblog.html">
+<div class="modal-hearder">	
+<h3 class="modal-title">{{blog.title}}</h3>
+</div>
+<div class="modal-body">
+<h6>{{blog.date}}</h6>
 <div>{{blog.content}}</div>
-<hr/>
-
-<ul class="nav nav-pills pull-left">
-<li><a href="/home">Back</a></li>
-</ul>
+</div>
+<div class="modal-footer">
+<button class = "btn btn-primary" ng-click="back()">OK</button>
+</div>
+</script>
 </div>

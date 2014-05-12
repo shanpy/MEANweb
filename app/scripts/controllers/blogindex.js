@@ -3,7 +3,8 @@
 console.log("blogindex.js is called");
 
 angular.module('webappApp')
-	.controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location) {
+	.controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal) {
+
 
 		$http.get('/api/blogs').success(function(data){
 			$scope.blogs = data;
@@ -19,20 +20,31 @@ angular.module('webappApp')
 				window.alert(err);
 		});
 		};
-/***************************************************************/
-		$scope.read = "Read More";
+/************************Read Blog***************************/
 
 		$scope.readblog = function(id){
-			var show = document.getElementById("fullblog");
+			//var show = document.getElementById("fullblog");
+			
+			var modalInstance = $modal.open({
+				templateUrl: 'readblog.html',
+				controller: IndexblogCtrl,
+				size:'lg',
+				resolve:{
+					blog: $scope.getBlog(id);
+				}
+			});
+		};
+
+		$scope.getBlog = function(id){
+
 			$http.get('/api/blog/'+ id)
 			.success(function(data){
-			if($scope.isCollapsed == true){
-			show.innerHTML = '<center>' + '<h5>'+ data[0].title + '</h5>' + '</center>' 
-							+ '<p>' + data[0].content + '</p>' ;
-		}})
+				$scope.blog = data;
+				return $scope.blog;
+			})
 			.error(function(err){
 			console.log(err);
-			show.innerHTML="Sorry, we can't bring full version blog now...";
+			return null;
 		});
 		};
 
@@ -46,7 +58,7 @@ angular.module('webappApp')
 				 $scope.read= "Read More";
 				}
 		}; 
-/***************************************************************/
+/***********************Edit Blog******************************/
 		$scope.editblog = function(id){
 			
         $http.get('/api/blog/' + id)
