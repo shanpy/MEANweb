@@ -1,11 +1,9 @@
 'use strict';
-var ReadblogCtrl = function($scope, $location, $modalInstance, fullblog){
+var ReadblogCtrl = function($scope, $location, $modalInstance, blogtitle, blogcontent){
 
-				console.log($modalInstance.result);
+				console.log(blogtitle);
 
-				$scope.blog.title = blog.title;
-				$scope.blog.content = blog.content;
-				$scope.blog.date = blog.date;
+				
 				
 				$scope.back = function(){
 				$location.url('/home');}

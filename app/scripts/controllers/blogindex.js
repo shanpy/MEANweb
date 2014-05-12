@@ -34,16 +34,14 @@ angular.module('webappApp')
 			.error(function(err){
 			console.log(err);
 			});
-
-
-			console.log(resultdata);
 			
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					fullblog: function(){return resultdata;}
+					blogtitle: function(){return resultdata.title;},
+					blogcontent: function(){return resultdata.content;}
 				}
 			});
 
