@@ -2,7 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').service("blogservice", function(){
+angular.module('webappApp').service("blogservice", function($http){
 
 	this.readbloginfo = function(id){
 		$http.get('/api/blog/'+ id)
