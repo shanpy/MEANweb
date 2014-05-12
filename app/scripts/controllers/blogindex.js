@@ -35,12 +35,12 @@ angular.module('webappApp').factory("blogservice", function($http){
 
 			var read = function(id){
 			$http.get('/api/blog/'+ id)
-			.then(function(tem){
+			.success(function(tem){
 				console.log(tem.data);
 				return tem.data;
 			});
 		};
-		
+
 			console.log(read);
 
 			var modalInstance = $modal.open({
@@ -58,7 +58,7 @@ angular.module('webappApp').factory("blogservice", function($http){
 		
 		var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 
-				console.log(readblog.title);	
+				console.log(readblog);	
 				$scope.back = function(){
 				$location.url('/home');}
 		};
