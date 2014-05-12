@@ -7,8 +7,8 @@ angular.module('webappApp').factory("blogservice", function($http){
 		readbloginfo : function(id){
 			$http.get('/api/blog/'+ id)
 			.then(function(tem){
-				console.log(tem);
-				return tem;
+				console.log(tem[0]);
+				return tem[0];
 			});
 		}
 	};
@@ -32,20 +32,14 @@ angular.module('webappApp').factory("blogservice", function($http){
 /************************Read Blog***************************/
 
 		$scope.getModal = function(id){
-
-		blogservice.readbloginfo(id, function(data){
-			console.log(data);
-			$scope.tem = data;
-		});
-
 		
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					blogtitle: function(){return $scope.tem.title},
-					blogcontent: function(){return $scope.tem.content;}
+					blogtitle: function(){return blogservice.readbloginfo(id).title},
+					blogcontent: function(){return blogservice.readbloginfo(id).content;}
 				}
 			});
 
