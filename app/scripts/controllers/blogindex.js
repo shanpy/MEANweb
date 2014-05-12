@@ -2,9 +2,7 @@
 
 console.log("blogindex.js is called");
 
-var app = angular.module('webappApp',[]);
-
-app.service("blogservice", function(){
+angular.module('webappApp').service("blogservice", function(){
 
 	this.readbloginfo = function(id){
 		$http.get('/api/blog/'+ id)
@@ -16,9 +14,7 @@ app.service("blogservice", function(){
 			return null;
 			});
 	};
-});
-
-app.controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
+}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
 
 
 		$http.get('/api/blogs').success(function(data){
