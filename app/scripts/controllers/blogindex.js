@@ -39,6 +39,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 		$scope.getModal = function(getid){
 
+			console.log($scope.blogs[getid]);
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
@@ -66,7 +67,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 /***********************Edit Blog******************************/
 		$scope.editmode = false;
-		
+
 		$scope.editblog = function(id){
 			
         $http.get('/api/blog/' + id)
