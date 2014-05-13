@@ -38,7 +38,8 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-		var read = ReadblogFactory.read({id:getid}).then(function(data){return data;});
+		console.log(getid);
+		var read = ReadblogFactory.read({id:getid}).function(data){return data;}
         var read2 = function(id){
         	var temp ={};
         	var defer = $q.defer();
