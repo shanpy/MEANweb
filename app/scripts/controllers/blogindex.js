@@ -46,7 +46,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
         var read2 = blogservice.readbloginfo(getid);
 
 
-			console.log(ReadblogFactory.read.get({id:getid},function(data){return data;});
+			console.log(ReadblogFactory.read.get({id:getid},function(data){return data;}));
 			console.log(read2);
 
 			var modalInstance = $modal.open({
