@@ -55,14 +55,11 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					readblog: function(){
-					var test;
-					ReadblogFactory.read.get({id:getid},function(data){test = data;});
-					return test;
-				}
+					readblog: function(){return $scope.blog.test;}
 					}
 		});
 
+		
 		$scope.ok = function(){
 				$location.url('/home');};
 				
