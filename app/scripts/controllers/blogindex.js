@@ -6,7 +6,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
     return $resource('/api/blogs/:id', {}, {
               read: { method: 'GET', params: { id: '@id' }}
             });
-  })
+  }])
 .service("blogservice", function($http){
 	return {
 		readbloginfo : function(id){
