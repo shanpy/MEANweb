@@ -33,12 +33,12 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-			var read2 = blogservice.readbloginfo(id);
-			console.log(read2);
 			var read = function(id){
 			 $http.get('/api/blog/' + id)
-           		.then(function(tem){
+           		.success(function(tem){
 				console.log(tem.data);
+				console.log(tem);
+				console.log(tem[0]);
 				return tem.data;
 			});
         };
