@@ -52,11 +52,12 @@ $.getScript("http://platform.linkedin.com/in.js")
     <div>
     <script type="text/ng-template" id="readblog.html">
         <div class="modal-header">
-            <h3 class="modal-title">{{blog.test}}</h3>
+            <h3 class="modal-title">{{blog.readtitle}}</h3>
         </div>
         <div class="modal-body">
-            This function is under development. Please check again later!
+            {{blog.readcontent}}
         </div>
+        <button class = "btn btn-primary" ng-click="ok()">OK</button>
       </script>
     </div>
 

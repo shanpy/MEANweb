@@ -56,25 +56,14 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 	};
 
 	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
-				console.log(readblog);
-				$scope.read.title = readblog.title;
-				$scope.read.content = readblog.content;
+
+				$scope.blog.readtitle = readblog.title;
+				$scope.blog.readcontent = readblog.content;
 				
 				$scope.ok = function(){
 				$location.url('/home');}
 		};
-		
-		/*
-		$scope.checkCollapse = function(){
 
-			if($scope.isCollapsed === true){
-				$scope.isCollapsed = false;
-				$scope.read= "Finish Reading";
-			}
-			else{$scope.isCollapsed = true;
-				 $scope.read= "Read More";
-				}
-		}; */
 /***********************Edit Blog******************************/
 		$scope.editblog = function(id){
 			
