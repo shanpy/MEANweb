@@ -41,12 +41,13 @@ angular.module('webappApp').service("blogservice", function($http){
         	var temp ={};
         	var defer = $q.defer();
 			 $http.get('/api/blog/' + id).success(function(data){defer.resolve(data);});
+			 console.log(defer.promise);
 	         return defer.promise;
         };
 
 
 			console.log(read);
-			console.log(read2);
+			console.log(read2(id));
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
