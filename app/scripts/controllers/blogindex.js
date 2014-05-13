@@ -9,7 +9,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
   }])
 .service("blogservice", function($http){
 
-		this.readbloginfo : function(id){
+		readbloginfo : function(id){
 			var promise = $http.get('/api/blog/'+ id)
 			.then(function(tem){
 				console.log(tem.data);
