@@ -38,16 +38,16 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-		var read = ReadblogFactory.read.get({id:getid},function(data){return data;});
+		ReadblogFactory.read.get({id:getid},function(data){$scope.test = data;});
 		//ReadblogFactory.read.get({id:getid},function(data){
 			//console.log(data);
 			//read = data;
 		//});
        
-        var read2 = blogservice.readbloginfo(getid);
+        var read2 = blogservice;
 
 
-			console.log(read);
+			console.log($scope.test);
 			console.log(read2);
 
 			var modalInstance = $modal.open({
