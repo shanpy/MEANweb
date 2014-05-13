@@ -34,23 +34,20 @@ angular.module('webappApp').service("blogservice", function($http){
 		$scope.getModal = function(id){
 
 
-        var read = function(id){
+        var read = 0;
+        };
+
+
+        var read2 = function(id){
 			 $http.get('/api/blog/' + id)
            		.success(function(tem){
 				return tem;
 			});
         };
 
+        read = read2(id);
 
-        var read2 = function(){
-			 $http.get('/api/blog/' + id)
-           		.success(function(tem){
-				return tem;
-			});
-        };
-
-			console.log(read(id));
-			console.log(read2);
+			console.log(read);
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
