@@ -54,8 +54,12 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					readblog: ReadblogFactory.read.get({id:getid},function(data){return data;}
-			)}
+					readblog: function(){
+					var test;
+					ReadblogFactory.read.get({id:getid},function(data){test = data;});
+					return test;
+				}
+					}
 		});
 
 		
