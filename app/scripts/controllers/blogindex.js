@@ -3,9 +3,11 @@
 console.log("blogindex.js is called");
 
 angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($resource) {
-    return $resource('/api/blogs/:id', {}, {
-              read: { method: 'GET', params: { id: '@id' }}
+    var result = {};
+    result.read = $resource('/api/blogs/:id', {id: '@id'}, {
+              'get': { method: 'GET', params: { id: '@id' }}
             });
+    return result;
   }])
 .service("blogservice", function($http){
 
@@ -37,14 +39,14 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 		$scope.getModal = function(getid){
 		var read;
-		ReadblogFactory.read({id:getid},function(data){
+		ReadblogFactory.read.get({id:getid},function(data){
 			console.log(data);
 			read = data;});
        
         var read2 = blogservice.readbloginfo(getid);
 
 
-			console.log(read);
+			console.log(ReadblogFactory.read.get({id:getid},function(data){return data;});
 			console.log(read2);
 
 			var modalInstance = $modal.open({
@@ -52,12 +54,9 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					readblog: function(){
-						console.log(read(id));
-						return read;}
-				}
-			});
-		};
+					readblog: ReadblogFactory.read.get({id:getid},function(data){return data;}
+			)}
+		});
 
 		
 		var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
