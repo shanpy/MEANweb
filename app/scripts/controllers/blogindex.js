@@ -65,6 +65,8 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 		};
 
 /***********************Edit Blog******************************/
+		$scope.editmode = false;
+		
 		$scope.editblog = function(id){
 			
         $http.get('/api/blog/' + id)
