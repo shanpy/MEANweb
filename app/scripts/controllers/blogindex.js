@@ -43,7 +43,7 @@ angular.module('webappApp').service("blogservice", function($http){
         	defer.promise.then(function(id){
         		$http.get('/api/blog/' + id).success(function(data){return data;});
         	});
-			 console(defer.resolve(id));
+			 console.log(defer.resolve(id));
 			 return defer.resolve(id);
         };
 
