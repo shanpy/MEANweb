@@ -37,10 +37,10 @@ angular.module('webappApp').service("blogservice", function($http){
 			console.log(read2);
 			var read = function(id){
 			 $http.get('/api/blog/' + id)
-            .success(function(data) {
-            		console.log(data);
-                    return data[0];
-                });
+           		.then(function(tem){
+				console.log(tem.data);
+				return tem.data;
+			});
         };
 
 			console.log(read);
