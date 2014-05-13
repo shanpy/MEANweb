@@ -35,9 +35,6 @@ angular.module('webappApp').service("blogservice", function($http){
 
 
         var read = 0;
-        };
-
-
         var read2 = function(id){
 			 $http.get('/api/blog/' + id)
            		.success(function(tem){
