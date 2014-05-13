@@ -22,16 +22,12 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-			console.log($scope);
-			console.log(getid);
-			console.log($scope.blogs[getid]);
-
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					readblog: function(){return $scope.blogs[getid];}
+					readblog: function(){return $scope.blogs[getid-1];}
 					}
 		});
 

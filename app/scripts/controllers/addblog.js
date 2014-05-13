@@ -9,7 +9,7 @@ angular.module('webappApp')
 					$location.path('/home');
 				})
 				.error(function(err){
-					console.log(err);
+					window.alert("Please check id!");
 				});
 		};
 	});
