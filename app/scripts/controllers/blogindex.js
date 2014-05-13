@@ -13,7 +13,7 @@ angular.module('webappApp').service("blogservice", function($http){
 			return promise;
 		}
 	};
-}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice) {
+}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q) {
 
 
 		$http.get('/api/blogs').success(function(data){
