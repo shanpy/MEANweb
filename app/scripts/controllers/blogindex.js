@@ -38,8 +38,10 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-
+			console.log($scope);
+			console.log(getid);
 			console.log($scope.blogs[getid]);
+
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
 				controller: ReadblogCtrl,
