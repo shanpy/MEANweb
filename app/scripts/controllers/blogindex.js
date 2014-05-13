@@ -63,7 +63,9 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 					}
 		});
 
-		
+		$scope.ok = function(){
+				$location.url('/home');};
+				
 		var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 				console.log(readblog);
 				$scope.read.title = readblog.title;
