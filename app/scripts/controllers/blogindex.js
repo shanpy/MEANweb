@@ -9,7 +9,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
   }])
 .service("blogservice", function($http){
 
-		readbloginfo : function(id){
+		this.readbloginfo = function(id){
 			var promise = $http.get('/api/blog/'+ id)
 			.then(function(tem){
 				console.log(tem.data);
@@ -17,7 +17,6 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 			});
 			return promise;
 		}
-	};
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q, ReadblogFactory) {
 
 
