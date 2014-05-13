@@ -11,11 +11,10 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 		this.readbloginfo = function(id){
 			var promise = $http.get('/api/blog/'+ id)
-			.then(function(tem){
+			.success(function(tem){
 				console.log(tem.data);
 				return tem.data;
 			});
-			return promise;
 		}
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q, ReadblogFactory) {
 
