@@ -57,8 +57,8 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 
-				$scope.blog.readtitle = readblog.title;
-				$scope.blog.readcontent = readblog.content;
+				$scope.readtitle = readblog.title;
+				$scope.readcontent = readblog.content;
 				
 				$scope.ok = function(){
 				$location.url('/home');}
