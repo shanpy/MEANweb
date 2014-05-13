@@ -2,7 +2,12 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').service("blogservice", function($http){
+angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($resource) {
+    return $resource('/api/blogs/:id', {}, {
+              read: { method: 'GET', params: { id: '@id' }}
+            });
+  })
+.service("blogservice", function($http){
 	return {
 		readbloginfo : function(id){
 			var promise = $http.get('/api/blog/'+ id)
