@@ -42,11 +42,11 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 			console.log(data);
 			read = data;});
        
-        $scope.read2 = blogservice.readbloginfo(getid);
+        var read2 = blogservice.readbloginfo(getid);
 
 
 			console.log(read);
-			console.log(read2(id));
+			console.log(read2);
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
