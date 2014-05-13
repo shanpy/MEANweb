@@ -50,14 +50,13 @@ $.getScript("http://platform.linkedin.com/in.js")
     <div ng-controller="IndexblogCtrl">
     <script type="text/ng-template" id="readblog.html">
         <div class="modal-header">
-            <h3 class="modal-title">{{blog.title}}</h3>
+            <h3 class="modal-title">{{read.title}}</h3>
         </div>
         <div class="modal-body">
-            {{blog.content}}
+            {{read.content}}
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
         </div>
       </script>
     </div>
