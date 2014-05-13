@@ -34,11 +34,12 @@ angular.module('webappApp').factory("blogservice", function($http){
 		$scope.getModal = function(id){
 
 			var read = function(id){
-			$http.get('/api/blog/'+ id)
-			.success(function(tem){
-				return tem;
-			});
-		};
+			 $http.get('/api/blog/' + id)
+            .success(function(data) {
+            		console.log(data);
+                    return data[0];
+                });
+        };
 
 			console.log(read);
 
