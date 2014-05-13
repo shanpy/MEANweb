@@ -38,7 +38,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-		var read = ReadblogFactory.read({id:getid});
+		var read = ReadblogFactory.read({id:getid}).then(function(data){return data;});
         var read2 = function(id){
         	var temp ={};
         	var defer = $q.defer();
@@ -55,7 +55,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 
 			console.log(read);
-			console.log(read2(id));
+			//console.log(read2(id));
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
