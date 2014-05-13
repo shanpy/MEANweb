@@ -38,17 +38,6 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-		ReadblogFactory.read.get({id:getid},function(data){$scope.blog.test= data;});
-		//ReadblogFactory.read.get({id:getid},function(data){
-			//console.log(data);
-			//read = data;
-		//});
-       
-        var read2 = blogservice.readbloginfo(getid);
-
-
-			console.log($scope.blogs[getid].title);
-			console.log(read2);
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
@@ -63,7 +52,10 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 		$scope.ok = function(){
 				$location.url('/home');};
 				
-		var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
+		
+	};
+
+	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 				console.log(readblog);
 				$scope.read.title = readblog.title;
 				$scope.read.content = readblog.content;
@@ -71,7 +63,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				$scope.ok = function(){
 				$location.url('/home');}
 		};
-	}
+		
 		/*
 		$scope.checkCollapse = function(){
 
