@@ -39,9 +39,10 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 		$scope.getModal = function(getid){
 		var read;
-		ReadblogFactory.read.get({id:getid},function(data){
-			console.log(data);
-			read = data;});
+		//ReadblogFactory.read.get({id:getid},function(data){
+			//console.log(data);
+			//read = data;
+		//});
        
         var read2 = blogservice.readbloginfo(getid);
 
@@ -71,6 +72,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				$scope.ok = function(){
 				$location.url('/home');}
 		};
+	}
 		/*
 		$scope.checkCollapse = function(){
 
