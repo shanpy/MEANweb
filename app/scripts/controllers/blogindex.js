@@ -12,8 +12,8 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 		this.readbloginfo = function(id){
 			var promise = $http.get('/api/blog/'+ id)
 			.success(function(tem){
-				console.log(tem.data);
-				return tem.data;
+				console.log(tem);
+				return tem;
 			});
 		}
 }).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q, ReadblogFactory) {
