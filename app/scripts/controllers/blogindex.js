@@ -2,7 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').factory("blogservice", function($http){
+angular.module('webappApp').service("blogservice", function($http){
 	return {
 		readbloginfo : function(id){
 			$http.get('/api/blog/'+ id)
@@ -33,6 +33,8 @@ angular.module('webappApp').factory("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
+			var read2 = blogservice.readbloginfo(id);
+			console.log(read2);
 			var read = function(id){
 			 $http.get('/api/blog/' + id)
             .success(function(data) {
