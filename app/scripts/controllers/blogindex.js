@@ -2,7 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').service("blogservice", function($http, id){
+angular.module('webappApp').service("blogservice", function($http){
 	return {
 		readbloginfo : function(id){
 			var promise = $http.get('/api/blog/'+ id)
@@ -38,15 +38,15 @@ angular.module('webappApp').service("blogservice", function($http, id){
         var read = blogservice.readbloginfo(id)
         			.then(function(data){return data;});
         var read2 = function(id){
-			 return $http.get('/api/blog/' + id).success(function(data){return data;});
-           		//.success(function(tem){
-				//return tem;
-			//});
+        	var temp ={};
+        	var defer = $q.defer();
+			 $http.get('/api/blog/' + id).success(function(data){defer.resolve(data);});
+	         return defer.promise;
         };
 
-        read = read2(id);
 
 			console.log(read);
+			console.log(read2);
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
