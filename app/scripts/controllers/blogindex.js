@@ -8,8 +8,8 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
             });
   }])
 .service("blogservice", function($http){
-	return {
-		readbloginfo : function(id){
+
+		this.readbloginfo : function(id){
 			var promise = $http.get('/api/blog/'+ id)
 			.then(function(tem){
 				console.log(tem.data);
@@ -39,25 +39,15 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 
 		$scope.getModal = function(getid){
 		var read;
-		ReadblogFactory.read({id:getid},function(data){read = data;});
+		ReadblogFactory.read({id:getid},function(data){
+			console.log(data);
+			read = data;});
        
-        var read2 = function(id){
-        	var temp ={};
-        	var defer = $q.defer();
-        	defer.promise.then(function(id){
-        		$http.get('/api/blog/' + id)
-        		.success(function(data){
-        			var data2 = data;
-        			return data;});
-        		return data2;
-        	});
-			 console.log(defer.resolve(id));
-			 return defer.resolve(id);
-        };
+        $scope.read2 = blogservice.readbloginfo(getid);
 
 
 			console.log(read);
-			//console.log(read2(id));
+			console.log(read2(id));
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
