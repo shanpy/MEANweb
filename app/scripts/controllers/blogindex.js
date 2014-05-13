@@ -33,19 +33,24 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-			function getreadblog (id){
+
+        var read = function(id){
 			 $http.get('/api/blog/' + id)
            		.success(function(tem){
-				console.log(tem.data);
-				console.log(tem);
-				console.log(tem[0]);
-				return tem.data;
+				return tem;
 			});
         };
 
-        var read = getreadblog(id);
 
-			console.log(read);
+        var read2 = function(){
+			 $http.get('/api/blog/' + id)
+           		.success(function(tem){
+				return tem;
+			});
+        };
+
+			console.log(read(id));
+			console.log(read2);
 
 			var modalInstance = $modal.open({
 				templateUrl: 'readblog.html',
@@ -53,7 +58,7 @@ angular.module('webappApp').service("blogservice", function($http){
 				size:'lg',
 				resolve:{
 					readblog: function(){
-						console.log(read);
+						console.log(read(id));
 						return read;}
 				}
 			});
