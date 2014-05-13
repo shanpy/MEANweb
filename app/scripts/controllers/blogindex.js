@@ -47,7 +47,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
         var read2 = blogservice.readbloginfo(getid);
 
 
-			console.log($scope);
+			console.log($scope.blogs[getid].title);
 			console.log(read2);
 
 			var modalInstance = $modal.open({
@@ -55,7 +55,7 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 				controller: ReadblogCtrl,
 				size:'lg',
 				resolve:{
-					readblog: function(){return $scope.blogs[0];}
+					readblog: function(){return $scope.blogs[getid];}
 					}
 		});
 
