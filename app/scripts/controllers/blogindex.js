@@ -2,23 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($resource) {
-    var result = {};
-    result.read = $resource('/api/blogs/:id', {id: '@id'}, {
-              'get': { method: 'GET', params: { id: '@id' }}
-            });
-    return result;
-  }])
-.service("blogservice", function($http){
-
-		this.readbloginfo = function(id){
-			var promise = $http.get('/api/blog/'+ id)
-			.success(function(tem){
-				console.log(tem);
-				return tem;
-			});
-		}
-}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q, ReadblogFactory) {
+angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal) {
 
 
 		$http.get('/api/blogs').success(function(data){
