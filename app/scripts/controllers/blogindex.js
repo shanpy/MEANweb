@@ -33,7 +33,7 @@ angular.module('webappApp').service("blogservice", function($http){
 
 		$scope.getModal = function(id){
 
-			var read = function(id){
+			function getreadblog (id){
 			 $http.get('/api/blog/' + id)
            		.success(function(tem){
 				console.log(tem.data);
@@ -42,6 +42,8 @@ angular.module('webappApp').service("blogservice", function($http){
 				return tem.data;
 			});
         };
+
+        var read = getreadblog(id);
 
 			console.log(read);
 
