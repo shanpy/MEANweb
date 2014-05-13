@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('webappApp')
-  .factory('ReadBlogFactory', function ($http) {
+  .factory('ReadblogFactory', ['$resource',function ($resource) {
     return $resource('/api/blogs/:id', {}, {
-              query: { method: 'GET', params: { blogId: 'blog' }, isArray: true }
+              read: { method: 'GET', params: { id: '@id' }}
             });
   });

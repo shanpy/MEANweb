@@ -13,7 +13,7 @@ angular.module('webappApp').service("blogservice", function($http){
 			return promise;
 		}
 	};
-}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q) {
+}).controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,blogservice, $q, ReadblogFactory) {
 
 
 		$http.get('/api/blogs').success(function(data){
@@ -32,11 +32,8 @@ angular.module('webappApp').service("blogservice", function($http){
 		};
 /************************Read Blog***************************/
 
-		$scope.getModal = function(id){
-
-
-        var read = blogservice.readbloginfo(id)
-        			.then(function(data){return data;});
+		$scope.getModal = function(getid){
+		var read = ReadblogFactory.read({id:getid});
         var read2 = function(id){
         	var temp ={};
         	var defer = $q.defer();
