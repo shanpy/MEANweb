@@ -38,13 +38,13 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 /************************Read Blog***************************/
 
 		$scope.getModal = function(getid){
-		ReadblogFactory.read.get({id:getid},function(data){$scope.test = data;});
+		ReadblogFactory.read.get({id:getid},function(data){$scope.blog.test= data;});
 		//ReadblogFactory.read.get({id:getid},function(data){
 			//console.log(data);
 			//read = data;
 		//});
        
-        var read2 = blogservice;
+        var read2 = blogservice.readbloginfo();
 
 
 			console.log($scope.test);
