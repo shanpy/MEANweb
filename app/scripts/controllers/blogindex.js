@@ -44,10 +44,10 @@ angular.module('webappApp').factory('ReadblogFactory', ['$resource',function ($r
 			//read = data;
 		//});
        
-        var read2 = blogservice.readbloginfo();
+        var read2 = blogservice.readbloginfo(getid);
 
 
-			console.log($scope.test);
+			console.log($scope.blog.test);
 			console.log(read2);
 
 			var modalInstance = $modal.open({
