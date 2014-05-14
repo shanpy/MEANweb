@@ -51,6 +51,8 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 		$scope.isCollapsed = true;
 
 		$scope.editblog = function(id){
+
+		$scope.isCollapsed = false;	
 			
         $http.get('/api/blog/' + id)
             .success(function(data) {
