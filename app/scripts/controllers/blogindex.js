@@ -39,12 +39,10 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 	};
 
 	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
-
+				console.log(readblog.content);
 				$scope.readtitle = readblog.title;
 				$scope.readcontent = readblog.content;
 				
-				$scope.ok = function(){
-				$location.url('/home');}
 		};
 
 /***********************Edit Blog******************************/
