@@ -2,7 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal) {
+angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route) {
 
 
 		$http.get('/api/blogs').success(function(data){
@@ -64,10 +64,12 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 				$http.put('/api/blog/'+ id, $scope.form)
                 .success(function(data){
                 	$scope.isCollapsed = true;
+                	$route.reload();
                 })
                 .error(function(error){
                 	console.log(error);
                 	$scope.isCollapsed = true;
+                	$route.reload();
                 })
             };
 /***************************************************************/
