@@ -48,7 +48,7 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 		};
 
 /***********************Edit Blog******************************/
-		$scope.editmode = false;
+		$scope.isCollapsed = true;
 
 		$scope.editblog = function(id){
 			

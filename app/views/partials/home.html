@@ -41,7 +41,7 @@ $.getScript("http://platform.linkedin.com/in.js")
     <button id="readfull" class="btn btn-primary" ng-click="getModal(blog.id)">Read More</button> 
     
     <div ng-show="getadmin(currentUser)">
-    <button class="btn btn-default" ng-click="editmode = !editmode; editblog(blog.id)">Edit Article</button>
+    <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed; editblog(blog.id)">Edit Article</button>
     <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
     </div>
     <hr/>
@@ -57,13 +57,13 @@ $.getScript("http://platform.linkedin.com/in.js")
         <div class="modal-body">
             {{readcontent}}
         </div>
-        <center><button class = "btn btn-primary" ng-click="ok()">OK</button></center>
+       // <center><button class = "btn btn-primary" ng-click="ok()">OK</button></center>
       </script>
     </div>
 
 
 <!--Edit Blog Part -->
-    <div id="editblog" ng-show="editmode">
+    <div id="editblog" collapse = "isCollapsed">
       <h2>Edit Article</h2>
       <label for='title'>Title: </label>
       <input ng-model='form.title' name='title'/>
@@ -76,7 +76,7 @@ $.getScript("http://platform.linkedin.com/in.js")
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
      </div>
-<p></p>
+
 <!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
 <a href='/addblog'>Add Article</a>
