@@ -65,12 +65,11 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 		$scope.doedit = function(id){
 				$http.put('/api/blog/'+ id, $scope.form)
                 .success(function(data){
-                	console.log(data);
-                    $location.url('/home');
+                	$scope.isCollapsed = true;
                 })
                 .error(function(error){
                 	console.log(error);
-                	$location.url('/home');
+                	$scope.isCollapsed = true;
                 })
             };
 /***************************************************************/
