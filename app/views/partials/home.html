@@ -8,7 +8,7 @@
   <div class='top'>
   <center>  
   <h1>Hello <span ng-show="currentUser">{{ currentUser.name }}</span>!</h1>
-  <div ng-controller="CarouseDemoCtrl">
+
       <div class="slideshow">
         <carousel interval="slideshowInterval">
           <slide ng-repeat="slide in slides" active="slide.active">
@@ -19,7 +19,6 @@
           </slide> 
         </carousel> 
       </div>  
-  </div>
 </div>
 
 <hr/>
