@@ -77,3 +77,11 @@ body {
     border-bottom: 0;
   }
 }
+
+/*Self Define*/
+
+/*Nav Bar*/
+.center-block-cust
+{
+  text-align: center;
+}
