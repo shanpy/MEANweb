@@ -5,9 +5,9 @@
 <div ng-controller='IndexblogCtrl'>
       
 
-        <carousel interval="slideshowInterval" style="margin-left:15px;margin-right:15px;height:500px;">
+        <carousel interval="slideshowInterval" style="margin-left:15px;margin-right:15px;height:300px;">
           <slide ng-repeat="slide in slides" active="slide.active">
-            <img ng-src="{{slide.image}}" style="margin-left:15px;margin-right:15px;height:500px;;">
+            <img ng-src="{{slide.image}}" style="margin:auto;height:300px;;">
             <div class="carousel-caption">
               <p>{{slide.text}}</p>
              </div> 
