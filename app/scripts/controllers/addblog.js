@@ -4,6 +4,7 @@ angular.module('webappApp')
 	.controller('AddblogCtrl', function ($scope,$http,$location) {
 		$scope.form = {};
 		$scope.$watch('content', function(v){
+			console.log("content change");
 			$scope.form.content = v;
 		});
 		$scope.submitblog = function(){
