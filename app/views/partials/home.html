@@ -3,18 +3,20 @@
 <div ng-include="'partials/navbar.html'"></div>
 
 <div ng-controller='IndexblogCtrl'>
-      <div class="slideshow" style="height:30%">
+      
+      <div class="top">
+      <div class="slideshow" style="">
         <carousel interval="slideshowInterval">
           <slide ng-repeat="slide in slides" active="slide.active">
-            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <img ng-src="{{slide.image}}" style="margin-left:30px;margin-right=30px;">
             <div class="carousel-caption">
               <p>{{slide.text}}</p>
              </div> 
           </slide> 
         </carousel> 
       </div>  
-
-</div>
+    </div>
+    
 <hr/>
 <p>
   This website is a study corner/blog for Pengyin Shan to practice skills in web development. Website is built by Node.js, AngularJS with Moongoose and Yeoman. You may notice I'm currently using Yoeman's template for practice:) Thank you Yeoman team!
