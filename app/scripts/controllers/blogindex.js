@@ -4,6 +4,23 @@ console.log("blogindex.js is called");
 
 angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route) {
 
+/**************************Slide Show****************************/
+		$scope.slideshowInterval = 5000;
+		var slides = $scope.slides = [];
+		$scope.addSlide = function(){
+			slides.push(
+				{
+				image:"https://lh6.googleusercontent.com/-TEGDRbiZCLA/S096hMWuokI/AAAAAAAAAAU/M7VnooWvwzM/s800/P1010073.JPG"
+				text: "This is a test photo I took when I just begin my study in Ohio State. "
+				},
+				{
+				image: "https://lh5.googleusercontent.com/-wwm5oKtJ3x4/U3YprShFMQI/AAAAAAAAAoU/URUlGyHf238/s800/WP_000216.jpg"
+				text: "This is a test photo I took when I traved to Boston."
+				})
+		};
+		for (var i=0; i<2; i++){
+			$scope.addSlide();
+		}
 
 		$http.get('/api/blogs').success(function(data){
 			$scope.blogs = data;
