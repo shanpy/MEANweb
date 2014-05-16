@@ -3,14 +3,12 @@
 <div ng-include="'partials/navbar.html'"></div>
 
 <div ng-controller='IndexblogCtrl'>
-  
-
-      <div class="slideshow">
+      <div class="slideshow" style="height:30%">
         <carousel interval="slideshowInterval">
           <slide ng-repeat="slide in slides" active="slide.active">
             <img ng-src="{{slide.image}}" style="margin:auto;">
             <div class="carousel-caption">
-              <p>{{slide.index}}: {{slide.text}}</p>
+              <p>{{slide.text}}</p>
              </div> 
           </slide> 
         </carousel> 
