@@ -4,8 +4,8 @@
 
 <div ng-controller='IndexblogCtrl'>
       
-      <div class="slideshow" style="margin-left:15px;margin-right:15px;height:500px;">
-        <carousel interval="slideshowInterval">
+
+        <carousel interval="slideshowInterval" style="margin-left:15px;margin-right:15px;height:500px;">
           <slide ng-repeat="slide in slides" active="slide.active">
             <img ng-src="{{slide.image}}" style="margin:auto;">
             <div class="carousel-caption">
@@ -13,7 +13,6 @@
              </div> 
           </slide> 
         </carousel> 
-      </div>  
 
 <p>
   This website is a study corner/blog for Pengyin Shan to practice skills in web development. Website is built by Node.js, AngularJS with Moongoose and Yeoman. You may notice I'm currently using Yoeman's template for practice:) Thank you Yeoman team!
