@@ -67,10 +67,10 @@ $.getScript("http://platform.linkedin.com/in.js")
       <label for='title'>Title: </label>
       <input ng-model='form.title' name='title'/>
       <label for='introduction'>Introduction: </label>
-      <input ng-model='form.introduction' name='title'/>
-      <p>Content:
-        <textarea ng-model='form.content' cols='50' rows='15'></textarea>
-      </p>
+      <input ng-model='form.introduction' name='title'/>      
+        <div text-angular width="500" height="500" ng-model="form.content" ng-change="id=editcontent">
+        placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|
+        </div>
       <p>
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
