@@ -40,6 +40,11 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 
 	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
 				console.log(readblog.content);
+
+				$scope.renderHtml = function()
+				{
+					return $sce.trustAsHtml(readblog.content);
+				};
 				$scope.readtitle = readblog.title;
 				$scope.readcontent = readblog.content;
 				
