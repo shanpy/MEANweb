@@ -68,8 +68,8 @@ $.getScript("http://platform.linkedin.com/in.js")
       <input ng-model='form.title' name='title'/>
       <label for='introduction'>Introduction: </label>
       <input ng-model='form.introduction' name='title'/>      
-        <div text-angular width="500" height="500" ng-model="form.content" ng-change="id=editcontent">
-        placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|placeholder|
+        <div text-angular ng-change="id=editcontent">
+        {{form.content}}}
         </div>
       <p>
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
