@@ -8,6 +8,7 @@ angular.module('webappApp')
 			$scope.form.content = v;
 		});
 		$scope.submitblog = function(){
+			console.log($scope.form.content);
 			$http.post('/api/blog', $scope.form)
 				.success(function(data){
 					$location.path('/home');
