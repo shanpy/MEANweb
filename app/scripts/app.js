@@ -14,7 +14,7 @@ angular.module('webappApp', [
   "ui.bootstrap.accordion",
   "ui.bootstrap.modal",
   "ui.bootstrap.tpls",
-  "ui.bootstrap.carousel"
+  "ui.bootstrap.carousel",
   "textAngular"
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
