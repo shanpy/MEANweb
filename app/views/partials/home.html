@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="app/styles/blog.css">
+
 <div ng-include="'partials/navbar.html'"></div>
 
 <div ng-controller='IndexblogCtrl'>
@@ -28,6 +30,8 @@ $.getScript("http://platform.linkedin.com/in.js")
 <p>I would like to communicate with anyone who is interested in web developement. Please don't hesitate to <a href="/sendemail">contact me</a> !
 </p>
 <p></p>
+
+<div class="blogs">
 <hr/>
   <!-- Blog List Section-->
   <p>There are {{blogs.length}} posts</p>
@@ -81,6 +85,8 @@ $.getScript("http://platform.linkedin.com/in.js")
 <a href='/addblog'>Add Article</a>
 <hr/>
 </div>
+</div>
+
 
 <div class="footer">
   <center>
