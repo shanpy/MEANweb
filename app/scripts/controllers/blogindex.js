@@ -58,11 +58,8 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 		$scope.isCollapsed = false;	
 			
         $http.get('/api/blog/' + id)
-            .success(function(data) {
-            		var v = data[0].content;         		
-                    $scope.form.title = data[0].title;
-                    $scope.form.introduction = data[0].introduction;
-                    $scope.$watch('editcontent', function(v){$scope.form.content = v; console.log($scope.form.content);});
+            .success(function(data) {        		
+                    $scope.form = data[0];
                 });
 
 		};
