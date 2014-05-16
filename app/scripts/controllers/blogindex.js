@@ -59,12 +59,10 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 			
         $http.get('/api/blog/' + id)
             .success(function(data) {
-            		console.log(data);           		
+            		var v = data[0].content;         		
                     $scope.form.title = data[0].title;
                     $scope.form.introduction = data[0].introduction;
-                    $scope.$watch('editcontent', function(data[0].content){
-			$scope.form.content = data[0].content;
-					});
+                    $scope.$watch('editcontent', function(v){$scope.form.content = v;});
                 });
 
 		};
