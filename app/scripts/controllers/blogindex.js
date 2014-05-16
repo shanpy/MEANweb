@@ -38,7 +38,7 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 		
 	};
 
-	var ReadblogCtrl = function($scope, $location, $modalInstance, readblog){
+	var ReadblogCtrl = function($scope, $location, $sce, $modalInstance, readblog){
 				console.log(readblog.content);
 
 				$scope.renderHtml = function()
