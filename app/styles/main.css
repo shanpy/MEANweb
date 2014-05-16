@@ -2,7 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-
+  font-family: noticia-text, serif;
 }
 
 
@@ -19,14 +19,14 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
+  font-family: sofia, fantasy;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h1 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
-  padding-bottom: 19px;
-  font-family: sofia, fantasy;
+  padding-bottom: 19px;  
 }
 
 /* Custom page footer */
@@ -88,3 +88,9 @@ body {
 /*Self Define*/
 
 /*Nav Bar*/
+
+/*container*/
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
