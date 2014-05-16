@@ -13,7 +13,8 @@ angular.module('webappApp', [
   "ui.bootstrap.buttons",
   "ui.bootstrap.accordion",
   "ui.bootstrap.modal",
-  "ui.bootstrap.tpls"
+  "ui.bootstrap.tpls",
+  "textAngular"
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
