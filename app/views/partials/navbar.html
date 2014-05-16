@@ -1,6 +1,7 @@
 <div class="header" ng-controller="NavbarCtrl">
 
-  	<center><h1 class="text-muted">Pengyin Shan & Web</h1></center>
+  	<center><h1>Pengyin Shan & Web</h1>
+  			<h3>a study corner/blog for Pengyin Shan to practice skills in web development</h3></center>
   	<ul class="nav nav-pills nav-justified">
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
         <a ng-href="{{item.link}}">{{item.title}}</a>
