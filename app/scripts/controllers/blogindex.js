@@ -61,7 +61,7 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
             .success(function(data) {
             		console.log(data);           		
                     $scope.form.title = data[0].title;
-                    $scope.form..introduction = data[0].introduction;
+                    $scope.form.introduction = data[0].introduction;
                     $scope.$watch('editcontent', function(data[0].content){
 			$scope.form.content = data[0].content;
 					});
