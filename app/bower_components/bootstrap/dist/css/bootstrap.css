@@ -2039,9 +2039,10 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
+  color: white;
   background-color: #fff;
   border-color: #ccc;
+  background-color: #ebebeb;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -2050,7 +2051,6 @@ fieldset[disabled] .btn {
 .open .dropdown-toggle.btn-default {
   color: #333;
   background-color: #ebebeb;
-  border-color: #adadad;
 }
 .btn-default:active,
 .btn-default.active,
