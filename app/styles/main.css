@@ -25,6 +25,7 @@ body {
   line-height: 80px;
   padding-bottom: 19px;  
   color: #3d3d3d;
+  font-family: miama;
 }
 
 .header h3 {
@@ -33,6 +34,7 @@ body {
   line-height: 40px;
   padding-bottom: 19px;  
   color: #999;
+  font-family: sofia;
 }
 
 /* Custom page footer */
