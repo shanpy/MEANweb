@@ -288,7 +288,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: black;
   text-decoration: none;
 }
 a:hover,
@@ -2081,8 +2081,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #ebebeb;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3480,7 +3479,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eee;
-  border-color: #428bca;
 }
 .nav .nav-divider {
   height: 1px;
