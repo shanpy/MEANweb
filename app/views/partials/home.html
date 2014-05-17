@@ -2,9 +2,9 @@
 
 <div ng-include="'partials/navbar.html'"></div>
 
-<div ng-controller='IndexblogCtrl'>
+<div ng-controller='IndexblogCtrl' class="home">
       
-    
+
         <carousel interval="slideshowInterval" style="margin:auto;width='50%'">
           <slide ng-repeat="slide in slides" active="slide.active">
             <img ng-src="{{slide.image}}" style="margin:auto;width='50%';">
