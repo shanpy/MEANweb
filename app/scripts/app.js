@@ -7,6 +7,7 @@ angular.module('webappApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'ngAnimate',
   'ui.sortable',
   'ui.bootstrap',
   'ui.bootstrap.collapse',
