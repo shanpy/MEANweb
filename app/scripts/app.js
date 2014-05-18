@@ -10,12 +10,6 @@ angular.module('webappApp', [
   'ngAnimate',
   'ui.sortable',
   'ui.bootstrap',
-  'ui.bootstrap.collapse',
-  "ui.bootstrap.buttons",
-  "ui.bootstrap.accordion",
-  "ui.bootstrap.modal",
-  "ui.bootstrap.tpls",
-  "ui.bootstrap.carousel",
   "textAngular"
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
