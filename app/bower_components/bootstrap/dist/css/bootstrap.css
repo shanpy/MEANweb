@@ -2081,14 +2081,14 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #ebebeb;
+  background-color: #grey;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #fff;
+  color: yellow;
   background-color: grey;
 }
 .btn-primary:active,
