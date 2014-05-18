@@ -43,7 +43,7 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
   background-color: #ececec;
-  font-family: miama sans-serif;
+  font-family: miama, sans-serif;
 }
 
 /* Customize container */
