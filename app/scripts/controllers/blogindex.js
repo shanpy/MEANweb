@@ -1,51 +1,17 @@
 'use strict';
 
-console.log("blogindex.js is called");
 
 angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route,$timeout) {
 
 /********Slider********************/
 
-	$scope.ready = 'true';
-	$scope.article = '1';
-	
-	$scope.autoChanges = true;
-	$scope.time = '400';
-	$scope.easing = '0.250, 0.250, 0.750, 0.750';
-	$scope.position = 'Top';
-	$scope.scaley = '0';
-	$scope.scaleyEnabled = true;
-	$scope.scalex = '0';
-	$scope.scalexEnabled = false;
-	$scope.rotatey = '90';
-	$scope.rotateyEnabled = false;
-	$scope.rotatex = '90';
-	$scope.rotatexEnabled = true;
-	$scope.rotatez = '90';
-	$scope.rotatezEnabled = true;
-	$scope.translatex = '0';
-	$scope.translatexEnabled = false;
-	$scope.translatey = '0';
-	$scope.translateyEnabled = false;
-	$scope.translatez = '30';
-	$scope.translatezEnabled = true;
-	$scope.skewx = '45';
-	$scope.skewxEnabled = true;
-	$scope.skewy = '30';
-	$scope.skewyEnabled = true;
-
-	function doSomething() {		
-			switch($scope.article){
-			case "1":
-				$scope.article = "2";
-				break;
-			case "2":
-				$scope.article = "1";
-				break;
-			}
-		$timeout(doSomething, 1500);	  	  
+	$scope.news = function(){
+		$scope.selection = "news";
 	}
-	$timeout(doSomething, 1500);
+
+	$scope.blogupdates = function(){
+		$scope.selection = "blogupdates";
+	}
 
 /**************************Slide Show******
 		$scope.slideshowInterval = 10000;
