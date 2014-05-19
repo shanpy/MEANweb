@@ -3,6 +3,7 @@
  * (c) 2010-2014 Google, Inc. http://angularjs.org
  * License: MIT
  */
+ console.log("angular-animate.js is called");
 (function(window, angular, undefined) {'use strict';
 
 /* jshint maxlen: false */
