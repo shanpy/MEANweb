@@ -1,7 +1,9 @@
 #slider{
+  margin-top: 1em;
   left:10%;
-  right: 10%;
+  right:10%;
   width: 80%;
+  text-align: center;
   display: flex;
   justify-content: space-between;
 }
