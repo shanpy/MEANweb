@@ -1,4 +1,6 @@
 #slider{
+  left:10%;
+  right: 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -10,6 +12,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: transparent;
+  border: dotted 1px grey;
 }
 
 .animate-switch {
