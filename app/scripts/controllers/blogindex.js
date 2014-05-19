@@ -43,9 +43,9 @@ angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$
 				$scope.article = "1";
 				break;
 			}
-		$timeout(doSomething, 1500 + getRandomInt(1000) + TryParseInt($scope.time, 1000));	  	  
+		$timeout(doSomething, 1500);	  	  
 	}
-	$timeout(doSomething, 1500 + getRandomInt(1000) + TryParseInt($scope.time, 1000));
+	$timeout(doSomething, 1500);
 
 /**************************Slide Show******
 		$scope.slideshowInterval = 10000;
