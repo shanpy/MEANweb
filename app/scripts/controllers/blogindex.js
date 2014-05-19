@@ -2,7 +2,7 @@
 
 console.log("blogindex.js is called");
 
-angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route,$timeout, $animation) {
+angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route,$timeout) {
 
 /********Slider********************/
 

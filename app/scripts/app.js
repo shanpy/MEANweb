@@ -12,7 +12,7 @@ angular.module('webappApp', [
   'ui.bootstrap',
   "textAngular"
 ])
-  .config(function ($routeProvider, $locationProvider, $httpProvider,$animation) {
+  .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
 
     $routeProvider
