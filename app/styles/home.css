@@ -9,10 +9,13 @@
   overflow:hidden;
   margin-top: 1em;
   margin-bottom: 1em;
+  background-color: transparent;
 }
 
 .animate-switch {
   padding:10px;
+  color: grey;
+  text-align: center;
 }
 
 .animate-switch.ng-animate {
