@@ -1,7 +1,5 @@
 'use strict';
 
-console.log("app.js is called");
-
 angular.module('webappApp', [
   'ngCookies',
   'ngResource',

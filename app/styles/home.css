@@ -1,11 +1,14 @@
-
+#slider{
+  display: flex;
+  justify-content: space-between;
+}
 
 .animate-switch-container {
   position:relative;
-  background:white;
-  border:1px solid black;
-  height:40px;
+  height:2em;
   overflow:hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .animate-switch {
