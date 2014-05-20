@@ -1,3 +1,9 @@
+.home{
+  margin: 0,0,0,0;
+  padding: 0,0,0,0;
+
+}
+
 .blogs{
   padding-right: 15px;
   padding-left: 15px;
@@ -11,6 +17,7 @@
   padding: 20px;
   vertical-align: top;
 }
+
 #homecontainer{
   display: table;
   position: absolute;
@@ -30,7 +37,7 @@
 }
 
 
-
+/*
 #slider{
   margin-top: 1em;
   margin-left: auto;
