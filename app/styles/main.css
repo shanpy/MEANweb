@@ -4,8 +4,11 @@ background-color: white;
 }
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
   font-family: volkhov, serif;
   background-color: #ffff99;
 }
