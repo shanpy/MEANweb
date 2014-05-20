@@ -1,4 +1,8 @@
 /* Space out content a bit */
+html{
+background-color: white;
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 20px;

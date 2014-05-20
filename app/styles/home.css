@@ -14,15 +14,16 @@
   text-align: center;
 }
 #blogcontainer{
-  width: 60%;
-  background-color: #ffff66;  
+  width: 60%; 
   display: table-cell;
+  border-right: 1px, grey;
 }
 #updatecontainer{
   width: 40%;
-  background-color: #ffff66;  
   display: table-cell;
 }
+
+
 
 #slider{
   margin-top: 1em;
@@ -35,7 +36,8 @@
 }
 .animate-switch-container {
   position:relative;
-  height:3em;
+  height:80%;
+  bottom: 0;
   overflow:hidden;
   margin-top: 1em;
   margin-bottom: 1em;
