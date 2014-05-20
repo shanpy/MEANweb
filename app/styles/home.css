@@ -14,15 +14,13 @@
 
 #homecontainer{
   display: table;
-  border-right: 1px, grey;
-  border-left: 1px, grey;
   height: 80%; 
   position: relative;
 }
 #blogcontainer{
   width: 60%; 
   display: table-cell;
-  border-right: 2px, grey;
+  border-right: groove, 2px, grey;
 }
 #updatecontainer{
   width: 40%;
