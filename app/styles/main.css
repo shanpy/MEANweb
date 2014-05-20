@@ -6,6 +6,8 @@ background-color: white;
 body {
   width: 90%;
   left: 5%;
+  top:0;
+  bottom: 0;
   position: absolute;
   font-family: volkhov, serif;
   background-color: #ffff99;
