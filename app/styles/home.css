@@ -8,18 +8,19 @@
   float: none;
   padding: 20px;
   vertical-align: top;
+  text-align: center;
 }
 #homecontainer{
   display: table;
 }
 #blogcontainer{
   width: 60%;
-  background-color: LightSlateGrey;  
+  background-color: #ffff66;  
   display: table-cell;
 }
 #updatecontainer{
   width: 40%;
-  background-color: LightSlateGrey;  
+  background-color: #ffff66;  
   display: table-cell;
 }
 
