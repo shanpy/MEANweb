@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="app/styles/navbar.css">
 <div class="header" ng-controller="NavbarCtrl">
+    <div id="linkedin">      
+    <a href="http://www.linkedin.com/pub/pengyin-shan/31/490/9b6" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Pengyin Shan's LinkedIn profile" style="vertical-align:middle" border="0">View My LinkedIn profile</span></a>
+    </div>
 
   	<center><h1>Pengyin Shan & Web</h1>
   			<h3>a study corner/blog for Pengyin Shan to practice skills in web development.</h3>
@@ -12,5 +15,5 @@
     <li ng-hide="currentUser" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
     <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
     <li ng-show="currentUser" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
-  </ul>
+    </ul>
 </div>
