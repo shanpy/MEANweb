@@ -7,8 +7,7 @@ angular.module('webappApp', [
   'ngRoute',
   'ngAnimate',
   'ui.sortable',
-  'ui.bootstrap',
-  "textAngular"
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
