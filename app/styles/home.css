@@ -8,15 +8,12 @@
 
 #blogcontainer,#updatecontainer{
   float: none;
-  padding: 20px;
+  padding: 1em;
   vertical-align: top;
 }
 
 #homecontainer{
   display: table;
-  position: absolute;
-  left: 10%;
-  width: 80%;
   border-right: 1px, grey;
   border-left: 1px, grey;
 }
