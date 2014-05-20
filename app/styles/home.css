@@ -16,6 +16,8 @@
   display: table;
   border-right: 1px, grey;
   border-left: 1px, grey;
+  bottom: 0%;
+  position: relative;
 }
 #blogcontainer{
   width: 60%; 
