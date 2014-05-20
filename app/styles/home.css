@@ -12,11 +12,15 @@
 #homecontainer{
   display: table;
   text-align: center;
+  left: 10%;
+  right: 10%;
+  border-right: 1px, grey;
+  border-left: 1px, grey;
 }
 #blogcontainer{
   width: 60%; 
   display: table-cell;
-  border-right: 1px, grey;
+  border-right: 2px, grey;
 }
 #updatecontainer{
   width: 40%;
@@ -29,18 +33,12 @@
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
 }
 .animate-switch-container {
   position:relative;
   height:80%;
   bottom: 0;
   overflow:hidden;
-  margin-top: 1em;
-  margin-bottom: 1em;
   background-color: transparent;
   border: dotted 1px grey;
 }
