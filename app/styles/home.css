@@ -8,10 +8,10 @@
   float: none;
   padding: 20px;
   vertical-align: top;
-  text-align: center;
 }
 #homecontainer{
   display: table;
+  text-align: center;
 }
 #blogcontainer{
   width: 60%;
