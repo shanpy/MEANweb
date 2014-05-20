@@ -16,7 +16,7 @@
   display: table;
   border-right: 1px, grey;
   border-left: 1px, grey;
-  bottom: 10%;
+  height: 80%; 
   position: relative;
 }
 #blogcontainer{
