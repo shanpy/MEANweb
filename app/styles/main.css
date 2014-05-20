@@ -11,6 +11,7 @@ body {
   position: fixed;
   font-family: volkhov, serif;
   background-color: #ffff99;
+  overflow-y:auto;
 }
 
 
