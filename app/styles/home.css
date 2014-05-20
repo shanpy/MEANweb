@@ -16,6 +16,8 @@
   display: table;
   height: 80%; 
   position: relative;
+  left: 10%;
+  width: 80%;
 }
 #blogcontainer{
   width: 60%; 
