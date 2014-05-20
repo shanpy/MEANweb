@@ -5,9 +5,9 @@
 
 <div ng-controller='IndexblogCtrl' class="home">
       
-<div class="introduction">
+<div id="introduction">
 <p>
-  Currently I'm still working on this website and a few functions still not work. I'm working hard to solve problems and add more functions. <b>If you notice that AngularJS temporary not work, please wait for a few minites and refresh page. This behavior means I'm modifying website and getting some error.</b>
+  Currently I'm still working on this website and a few functions still not work. I'm working hard to solve problems and add more functions. <strong>If you notice that AngularJS temporary not work, please wait for a few minites and refresh page. This behavior means I'm modifying website and getting some error.</strong>
 </p>
 <p>
     Thanks for visiting and please come back to check updates!
@@ -15,22 +15,13 @@
 <br/>
 </div>
 
-<div id="slider">
-  <button class="btn btn-primary selectbutton" ng-click="news()">Get Lastest Tech News</button>
-  <button class="btn btn-primary selectbutton" ng-click="blogupdates()">Get Lastest Blog Article</button>
-</div>
-  <div class="animate-switch-container" ng-switch on="selection">
-    <div class="animate-switch" ng-switch-when="news">News Update Comming Soon...</div>
-    <div class="animate-switch" ng-switch-when="blogupdates">Blog Update Commint Soon...</div>
-  </div>
 
+<!--Subpart-->
+<div id="homecontainer">
 
-
-<p></p>
-
+<div id="blogcontainer">
 <div class="blogs">
 <br/>
-  <!-- Blog List Section-->
   <p>There are {{blogs.length}} posts</p>
   <p></p>
   <div ng-repeat = 'blog in blogs'>
@@ -44,12 +35,10 @@
     <div ng-show="getadmin(currentUser)">
     <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed; editblog(blog.id)">Edit Article</button>
     <button class="btn btn-default" ng-click="deleteblog(blog.id)">Delete Article</button>
+    <br/>
     </div>
-    <hr/>
     </div>
 
-
-   <!--Read Blog Part -->
     <div>
     <script type="text/ng-template" id="readblog.html">
         <div class="modal-header">
@@ -61,8 +50,6 @@
       </script>
     </div>
 
-
-<!--Edit Blog Part -->
     <div id="editblog" collapse = "isCollapsed">
       <h2>Edit Article</h2>
       <label for='title'>Title: </label>
@@ -70,21 +57,36 @@
       <label for='introduction'>Introduction: </label>
       <input ng-model='form.introduction' name='title'/>      
         <p>Content:
-  <textarea ng-model='form.content' cols='50' rows='15'></textarea>
+        <textarea ng-model='form.content' cols='50' rows='15'></textarea>
         </p>
       <p>
         <button class="btn btn-default" ng-click='doedit(form.id)'>Finish Editing</button>
       </p>
      </div>
 
-<!--Blog Options-->
 <div ng-show="getadmin(currentUser)">
 <a href='/addblog'>Add Article</a>
-<hr/>
+</div>
+</div>
+</div>
+
+<div id="updatecontainer">
+
+
+<div id="slider">
+  <button class="btn btn-primary selectbutton" ng-click="news()">Get Lastest Tech News</button>
+  <button class="btn btn-primary selectbutton" ng-click="blogupdates()">Get Lastest Blog Article</button>
+</div>
+  <div class="animate-switch-container" ng-switch on="selection">
+    <div class="animate-switch" ng-switch-when="news">News Update Comming Soon...</div>
+    <div class="animate-switch" ng-switch-when="blogupdates">Blog Update Commint Soon...</div>
+  </div>
+
 </div>
 </div>
 
 
+<!--Footer-->
 <div class="footer">
   <center>
   <p>Pengyin Shan, who graduated from The Ohio State University on Dec, 2013, is digging into the world of web development.

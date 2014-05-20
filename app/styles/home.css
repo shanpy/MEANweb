@@ -1,13 +1,37 @@
+#introduction{
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+
+#blogcontainer,#updatecontainer{
+  float: none;
+  padding: 20px;
+  vertical-align: top;
+}
+#homecontainer{
+  display: table;
+}
+#blogcontainer{
+  width: 60%;
+  background-color: LightSlateGrey;  
+  display: table-cell;
+}
+#updatecontainer{
+  width: 40%;
+  background-color: LightSlateGrey;  
+  display: table-cell;
+}
+
 #slider{
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
-
 .animate-switch-container {
   position:relative;
   height:3em;
@@ -17,13 +41,11 @@
   background-color: transparent;
   border: dotted 1px grey;
 }
-
 .animate-switch {
   padding:15px;
   color: grey;
   text-align: center;
 }
-
 .animate-switch.ng-animate {
   -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
   transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
@@ -34,7 +56,6 @@
   right:0;
   bottom:0;
 }
-
 .animate-switch.ng-leave.ng-leave-active,
 .animate-switch.ng-enter {
   top:-50px;
