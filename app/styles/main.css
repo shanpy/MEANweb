@@ -48,8 +48,8 @@ body {
 @media screen and (max-width: 800px) { 
   #updatecontainer{
   display: table-cell;
-  width: 20%;
-  border-left: 5px solid red;
+  width: 30%;
+  border-left: 5px solid blue;
 }
 }
 
@@ -63,11 +63,11 @@ body {
 /* Custom page footer */
 footer {
   width: 100%;
-  clear: both;
+  display: table-row;
   color: grey;
+  text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
-  text-align: center;
 }
 
 /* Customize container */
