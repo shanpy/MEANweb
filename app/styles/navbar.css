@@ -9,8 +9,7 @@ nav> ul {
 } 
 
 nav li { 
-text-align: center;
-float:none;
+text-align: left;
 list-style-type:none; 
 } 
 nav li a { 
