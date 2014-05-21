@@ -63,7 +63,8 @@ body {
 /* Custom page footer */
 footer {
   width: 100%;
-  display: table-row;
+  display: block;
+  bottom: 0;
   color: grey;
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
