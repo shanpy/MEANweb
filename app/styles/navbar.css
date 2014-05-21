@@ -1,33 +1,32 @@
 nav{
-	display: table;
 	width: 100%;
 	border-collapse: collapse;
 	border: none;
 }
 
 nav> ul { 
-	display:table-row;
+	overflow: hidden;
 } 
 
 nav li { 
 text-align: center;
 list-style-type:none;
-display: table-cell; 
+float: left;
 margin: 0;
 }
  
 nav li a { 
 display:block; 
-padding:.25em .8em; 
+padding:0 1em; 
 font-size:1.2em; 
-text-align:left; 
 color:#fff; 
 text-decoration:none;  
 -webkit-font-smoothing: antialiased;
 }
 
+nav li + li a {border-left:1px solid white;} 
+
 nav li:hover > a { 
 color:yellow; 
-background-color: grey;
 border:0; 
 } 
