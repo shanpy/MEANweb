@@ -11,8 +11,9 @@ height: 100%;
 body {
   font-family: volkhov, serif;
   min-height: 100%;
-  right: 5em;
-  left: 5em;
+  margin-left:auto;
+  margin-right:auto;
+  width: 90%;
 }
 
 .container-full {
@@ -26,12 +27,6 @@ body {
   top:0;
   position: relative;
 }
-@media screen and (max-width: 800px) { 
-  #navcontainer{
-    display: none;
-}
-}
-
 
 #homecontainer{
   display: table;
@@ -47,14 +42,14 @@ body {
 #updatecontainer{
   display: table-cell;
   width: 30%;
-  border-right: 1px double #FFCCCC;
+  border-right: double 3px #FFCCCC;
 }
 
 @media screen and (max-width: 800px) { 
   #updatecontainer{
   display: table-cell;
   width: 30%;
-  border-right: 1px double #FFCCCC;
+  border-right: double 3px #FFCCCC;
 }
 }
 
