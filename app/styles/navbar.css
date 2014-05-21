@@ -2,15 +2,21 @@ nav{
 	margin: 3em auto;
 	padding: 0;
 	font-size: 1em;
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
 }
 
 nav> ul { 
-	display:inline-block;
+	display:table-row;
 } 
 
 nav li { 
-text-align: left;
-list-style-type:none; 
+text-align: center;
+list-style-type:none;
+display: table-cell; 
+margin: 0;
 }
  
 nav li a { 
