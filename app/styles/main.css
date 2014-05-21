@@ -4,17 +4,13 @@
   padding: 0;
 }
 
-html, body{
-height: 100%;
-}
-
 body {
   font-family: volkhov, serif;
   min-height: 100%;
   margin-left:auto;
   margin-right:auto;
   width: 90%;
-  
+
   background-image: url(../images/linepaper.png);
 }
 
