@@ -2,17 +2,18 @@ nav{
 	border-collapse: collapse;
 	border: none;
 	width: 100%;
+	display: table;
 }
 
 nav> ul { 
-	overflow: hidden;
+	display: table-row;
+	width: 100%;
 } 
 
 nav li { 
 text-align: center;
 list-style-type:none;
-float: left;
-margin: 0;
+display: table-cell;;
 }
  
 nav li a { 
