@@ -1,4 +1,4 @@
-/* Space out content a bit */
+/*Containers*/
 html{
 background-color: white;
 height: 100%
@@ -14,30 +14,37 @@ body {
   overflow-y:auto;
 }
 
-
 .container-full {
   margin: 0 auto;
   width: 100%;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 80px;
-  padding-bottom: 19px;  
-  color: black;
-  font-family: sansita-one, sans-serif;
+#homecontainer{
+  margin: 0 auto;
+  width: 100%; 
 }
 
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;  
-  color: grey;
-  font-family: sansita-one, sans-serif;
+#navcontainer{
+  display: table-cell;
+  width: 20%;
+  padding: 10rem;
+  background-color: white;
 }
+
+#blogcontainer{
+  padding: 10rem 10rem;
+  background-color: #ffff99;
+  display: table-cell;
+}
+
+#navcontainer{
+  display: table-cell;
+  width: 20%;
+  padding: 10rem;
+  background-color: white;
+}
+
+
 
 /* Custom page footer */
 footer {
