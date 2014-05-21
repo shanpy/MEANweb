@@ -7,11 +7,13 @@ margin: 0;
 body {
   font-family: volkhov, serif;
   overflow-y:auto;
+  background-color: brown;
 }
 
 .container-full {
   margin: 0 0 0 0;
   height: 100%;
+  background-color: #ffff99;
 }
 
 #homecontainer{
@@ -24,7 +26,7 @@ body {
   display: table-cell;
   background-color: #ffff99;
   width: 20%;
-
+  border-right: 5px solid red;
 }
 @media screen and (max-width: 800px) { 
   #navcontainer{
