@@ -49,7 +49,8 @@ footer {
   color: grey;
   border-top: 1px solid #e5e5e5;
   font-family: kaushan-script, cursive;
-  clear:both;
+  bottom: 0;
+  text-align: center;
 }
 
 /* Customize container */
