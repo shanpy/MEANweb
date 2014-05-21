@@ -11,8 +11,8 @@ height: 100%;
 body {
   font-family: volkhov, serif;
   min-height: 100%;
-  width: 80%;
-  left: 10%;
+  right: 5em;
+  left: 5em;
 }
 
 .container-full {
