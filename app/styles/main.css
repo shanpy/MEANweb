@@ -24,12 +24,12 @@ body {
 #navcontainer{
   display: table-cell;
   width: 20%;
-  padding: 10rem;
+  padding: 10px;
   background-color: white;
 }
 
 #blogcontainer{
-  padding: 10rem 10rem;
+  padding: 10px 10px;
   background-color: #ffff99;
   display: table-cell;
 }
@@ -37,7 +37,7 @@ body {
 #navcontainer{
   display: table-cell;
   width: 20%;
-  padding: 10rem;
+  padding: 10px;
   background-color: white;
 }
 
