@@ -22,22 +22,20 @@ body {
 }
 
 #navcontainer{
-  display: table-cell;
   width: 20%;
-  padding: 10px;
+  float: left;
   background-color: white;
 }
 
 #blogcontainer{
-  padding: 10px 10px;
+  width: 80%;
   background-color: #ffff99;
-  display: table-cell;
+  float: left;
 }
 
-#navcontainer{
-  display: table-cell;
+#updatecontainer{
   width: 20%;
-  padding: 10px;
+  float: left;
   background-color: white;
 }
 
