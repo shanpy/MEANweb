@@ -12,12 +12,12 @@ nav> ul {
 	display:inline-block;
 } 
 
-nav.menu li { 
+nav li { 
 float:none;
 list-style-type:none; 
 position:relative; 
 } 
-nav.menu li a { 
+nav li a { 
 display:block; 
 padding:.25em .8em; 
 font-size:1.2em; 
@@ -27,7 +27,7 @@ text-decoration:none;
 -webkit-font-smoothing: antialiased;
 }
 
-nav.menu li:hover > a { 
+nav li:hover > a { 
 color:yellow; 
 background-color: grey;
 border:0; 

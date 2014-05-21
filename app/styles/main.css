@@ -20,7 +20,7 @@ body {
 #navcontainer{
   width: 20%;
   float: left;
-  background-color: white;
+  background-color: #ffff99;
 }
 #blogcontainer{
   width: 80%;
@@ -30,7 +30,7 @@ body {
 #updatecontainer{
   width: 20%;
   float: left;
-  background-color: white;
+  background-color: #ffff99;
 }
 
 .navinner{
