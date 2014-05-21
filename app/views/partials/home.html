@@ -25,8 +25,8 @@
 <!--Subpart-->
 
 <div id="blogcontainer">
-<div class="blogs">
-<br/>
+<div class="bloginner">
+
   <p>There are {{blogs.length}} posts</p>
   <p></p>
   <div ng-repeat = 'blog in blogs'>
@@ -73,11 +73,17 @@
 <a href='/addblog'>Add Article</a>
 </div>
 
+<div id="updatecontainer">
+<div class="updateinner">
+Update Comming Soon...
 </div>
 </div>
 
-<div id="updatecontainer">
-Update Comming Soon...
+
+</div>
+<div ng-include="'partials/footer.html'"></div>
+</div>
+
 <!--
 <div id="slider">
   <button class="btn btn-primary" ng-click="news()">Get Lastest Tech News</button>
@@ -89,12 +95,7 @@ Update Comming Soon...
     <div class="animate-switch" ng-switch-when="blogupdates">Blog Update Commint Soon...</div>
   </div>
 -->
-</div>
 
-</div>
-
-</div>
-<!--<div ng-include="'partials/footer.html'"></div>
 <!--
 <varcss style="display: none">
 .animate-enter, 

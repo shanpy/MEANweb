@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="app/styles/navbar.css">
 <div ng-controller="NavbarCtrl">
-    <nav> 
+    <nav>
+    <div class="navinner"> 
   	<ul>
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
         <a ng-href="{{item.link}}">{{item.title}}</a>
@@ -9,5 +10,6 @@
     <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
     <li ng-show="currentUser" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
     </ul>
+    </div>
     </nav>
 </div>

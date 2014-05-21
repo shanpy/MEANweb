@@ -7,7 +7,7 @@ nav{
 	padding: 0;
 	font-size: 1em;
 }
-
+nav .navinner {padding:10px;} 
 nav> ul { 
 	display:inline-block;
 } 
