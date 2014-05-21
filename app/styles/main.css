@@ -28,7 +28,7 @@ body {
   border-right: 5px solid red;
 }
 @media screen and (max-width: 800px) { 
-  #navcontainer{
+  #updatecontainer{
     display: none;
 }
 }
