@@ -7,7 +7,7 @@ margin: 0;
 body {
   font-family: volkhov, serif;
   overflow-y:auto;
-  background-color: brown;
+  background-color: #49311c;
 }
 
 .container-full {
@@ -60,7 +60,6 @@ footer {
   width: 100%;
   padding:.5em 0 .35em 0;
   color: grey;
-  border-top: 1px solid #e5e5e5;
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
   text-align: center;
