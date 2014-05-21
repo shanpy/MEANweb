@@ -27,11 +27,7 @@ body {
 }
 @media screen and (max-width: 800px) { 
   #navcontainer{
-  position: static;
-  display: block;
-  top:0;
-  width: 100%;
-  background-color: #ffff99;
+    display: none;
 }
 }
 
