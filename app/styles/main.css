@@ -5,12 +5,9 @@ height: 100%
 }
 
 body {
-  width: 90%;
-  left: 5%;
   min-height: 100%;
   position: absolute;
   font-family: volkhov, serif;
-  background-color: #ffff99;
   overflow-y:auto;
 }
 
