@@ -26,7 +26,6 @@ body {
 #blogcontainer{
   background-color: #ffff99;
   float: left;
-  width: 80%;
 }
 #updatecontainer{
   width: 20%;
@@ -35,7 +34,7 @@ body {
 }
 
 .navinner{
-  padding:10px 20px;
+  padding:10px 10px;
 }
 .bloginner{
   padding:10px;
