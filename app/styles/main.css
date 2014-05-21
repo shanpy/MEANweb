@@ -17,19 +17,18 @@ body {
   margin: 0 auto;
   width: 100%; 
   overflow: hidden;
+  display: table;
 }
 #navcontainer{
-  width: 20%;
-  float: left;
+  display: table-cell;
   background-color: #ffff99;
 }
 #blogcontainer{
   background-color: #ffff99;
-  float: left;
+  display: table-cell;
 }
 #updatecontainer{
-  width: 20%;
-  float: right;
+  display: table-cell;
   background-color: #ffff99;
 }
 
