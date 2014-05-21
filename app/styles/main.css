@@ -1,12 +1,10 @@
 /*Containers*/
-html{
-background-color: white;
-height: 100%
+html, body{
+height: 100%;
+margin: 0;
 }
 
 body {
-  min-height: 100%;
-  position: absolute;
   font-family: volkhov, serif;
   overflow-y:auto;
 }
