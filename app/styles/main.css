@@ -24,14 +24,7 @@ body {
   background-color: #ffff99;
   width: 20%;
 }
-@media screen,print{
-  #navcontainer{
-    background-color: #ffff99;
-    top:0;
-    width: 100%;
-    position: absolute;
-  }
-}
+
 #blogcontainer{
   background-color: #ffff99;
   display: table-cell;
