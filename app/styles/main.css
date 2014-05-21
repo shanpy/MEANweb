@@ -24,7 +24,14 @@ body {
   background-color: #ffff99;
   width: 20%;
 }
-
+@media screen and (max-width: 480px) { 
+  #navcontainer{
+  display: block;
+  top:0;
+  width: 100%;
+  background-color: #ffff99;
+}
+}
 #blogcontainer{
   background-color: #ffff99;
   display: table-cell;
