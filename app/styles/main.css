@@ -23,8 +23,9 @@ body {
   display: table-cell;
   background-color: #ffff99;
   width: 20%;
+
 }
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 800px) { 
   #navcontainer{
   display: block;
   top:0;
@@ -32,6 +33,7 @@ body {
   background-color: #ffff99;
 }
 }
+
 #blogcontainer{
   background-color: #ffff99;
   display: table-cell;
