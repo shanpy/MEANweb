@@ -1,5 +1,6 @@
 'use strict';
 
+window.alert("Hello, I'm currently re-design website layout. I'm very sorry for any trouble you may get. Please feel free to visit me if a few days and check for more superise! Thank you very much for visiting!");
 
 angular.module('webappApp').controller('IndexblogCtrl', function ($scope,$http,$rootScope,$location,$modal,$route,$timeout) {
 

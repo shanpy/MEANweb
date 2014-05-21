@@ -6,6 +6,8 @@
 }
 
 
+
+/*
 #blogcontainer,#updatecontainer{
   float: none;
   padding: 1em;
@@ -30,8 +32,6 @@
   display: table-cell;
 }
 
-
-/*
 #slider{
   margin-top: 1em;
   margin-left: auto;
