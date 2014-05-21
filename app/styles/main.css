@@ -26,6 +26,7 @@ body {
 #blogcontainer{
   background-color: #ffff99;
   float: left;
+  width: 80%;
 }
 #updatecontainer{
   width: 20%;
