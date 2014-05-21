@@ -48,7 +48,6 @@ body {
 @media screen and (max-width: 800px) { 
   #updatecontainer{
   display: table-cell;
-  background-color: #ffff99;
   width: 20%;
   border-left: 5px solid red;
 }
@@ -64,12 +63,11 @@ body {
 /* Custom page footer */
 footer {
   width: 100%;
-  padding:.5em 0 .35em 0;
+  clear: both;
   color: grey;
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
   text-align: center;
-  background-image: url(../images/linepaper.png);
 }
 
 /* Customize container */
