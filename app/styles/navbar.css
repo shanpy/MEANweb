@@ -29,5 +29,6 @@ nav li + li a {border-left:1px solid white;}
 
 nav li:hover > a { 
 color:yellow; 
-border:0; 
+border-left:1px dashed yellow; 
+border-right:1px dashed yellow; 
 } 

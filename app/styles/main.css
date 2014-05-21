@@ -38,18 +38,18 @@ body {
 
 .blogcontainer{
   display: table-cell;
+  margin-top: 1em;
 }
 #updatecontainer{
   display: table-cell;
   width: 30%;
   border-right: double 3px #FFCCCC;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 800px) { 
   #updatecontainer{
-  display: table-cell;
-  width: 30%;
-  border-right: double 3px #FFCCCC;
+   display: none;
 }
 }
 
