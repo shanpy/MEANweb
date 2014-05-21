@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
 }
-html,body{
-  height: 100%;
+
+html, body{
+height: 100%;
 }
 
 body {
@@ -32,7 +33,6 @@ body {
   height: 100%;
   width: 100%;
   table-layout: fixed;
-
   background-image: url(../images/linepaper.png);
 }
 
@@ -69,7 +69,6 @@ footer {
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
-
   background-image: url(../images/linepaper.png);
 }
 
