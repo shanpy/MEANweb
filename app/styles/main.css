@@ -72,6 +72,19 @@ footer {
   background-image: url(../images/linepaper.png);
 }
 
+@media screen and (max-width: 800px) { 
+  footer{
+  width: 100%;
+  display: block;
+  bottom: 0;
+  color: grey;
+  text-align:center; 
+  box-shadow:0 12px 8px -9px #555;
+  font-family: kaushan-script, cursive;
+  background-image: url(../images/linepaper.png);
+}
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {

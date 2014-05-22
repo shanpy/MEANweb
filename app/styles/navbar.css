@@ -23,12 +23,13 @@ nav{
 		text-align: center;
 		list-style-type:none;
 	}
+	#mediamenu li + li a {border-bottom:1px solid white;} 
 	#mediamenu li a{
 	color:#fff; 
 	text-decoration:none;  
 	-webkit-font-smoothing: antialiased;
 	}
-	#media li:hover > a{
+	#mediamenu li:hover > a{
 	color:yellow; 
 	}
 }
