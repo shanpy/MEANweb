@@ -1,7 +1,6 @@
-html, body{
-   margin:0;
-   padding:0;
+html{
    height:100%;
+   width: 100%;
 }
 
 body {
@@ -63,8 +62,6 @@ body {
 footer {
   width: 100%;
   display: block;
-  bottom: 0;
-  position: absolute;
   color: grey;
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
@@ -76,10 +73,8 @@ footer {
   footer{
   width: 100%;
   display: block;
-  bottom: 0;
   color: grey;
   text-align:center; 
-  position: absolute;
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
   background-image: url(../images/linepaper.png);
