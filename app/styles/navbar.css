@@ -1,11 +1,9 @@
 nav{
-
   	width: 50%;
 
-	border-collapse: collapse;
-	border: none;
 	display: table-cell;
-	margin: auto;
+	margin-right: 0;
+	padding-right: 0;
     padding-bottom: 2em;
 }
 
