@@ -1,11 +1,8 @@
 nav{
 	border-collapse: collapse;
 	border: none;
-	width: 100%;
-	display: table;
-	background-color: #00B2EE;
-	padding-bottom: 2em;
-	min-width: 800px;
+	width: 50%;
+	display: table-cell;
 }
 
 #mediamenu{
@@ -18,12 +15,12 @@ nav{
 	}
 	#mediamenu{
 		display: block;
+		padding-bottom: 2em;
 	}
 	#mediamenu li{
 		text-align: center;
 		list-style-type:none;
 	}
-	#mediamenu li + li a {border-bottom:1px solid white;} 
 	#mediamenu li a{
 	color:#fff; 
 	text-decoration:none;  

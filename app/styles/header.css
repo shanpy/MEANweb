@@ -1,6 +1,6 @@
 #header{
-  background-color: #00B2EE;
-  padding-bottom: 2em;
+  display: table-cell;
+  width: 50%;
 }
 
 #header h1 {

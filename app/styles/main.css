@@ -21,11 +21,12 @@ body {
 }
 
 #navcontainer{
-  display: block;
+  display: table-row;
   background-color: #00B2EE;
   width: 100%;
   top:0;
-  position: relative;
+  position: relative;  
+  padding-bottom: 2em;
 }
 
 #homecontainer{
