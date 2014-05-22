@@ -15,14 +15,21 @@ nav{
 @media screen and (max-width: 800px) { 
   nav{
    display: none;
-}
+	}
 	#mediamenu{
 		display: block;
 	}
-
 	#mediamenu li{
 		text-align: center;
 		list-style-type:none;
+	}
+	#mediamenu li a{
+	color:#fff; 
+	text-decoration:none;  
+	-webkit-font-smoothing: antialiased;
+	}
+	#media li:hover > a{
+	color:yellow; 
 	}
 }
 
