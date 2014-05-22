@@ -33,7 +33,7 @@ body {
 
 #homecontainer{
   display: table;
-  height: auto;
+  height: 100%;
   width: 100%;
   background-image: url(../images/linepaper.png);
 }
