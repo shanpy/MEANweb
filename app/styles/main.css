@@ -40,6 +40,7 @@ body {
   display: table-cell;
   margin-top: 1em;
 }
+
 #updatecontainer{
   display: table-cell;
   width: 30%;
@@ -53,12 +54,11 @@ body {
 }
 }
 
+
 .bloginner{
   padding:1em;
 }
-.updateinner{
-  padding:1em;
-}
+
 
 /* Custom page footer */
 footer {
@@ -69,6 +69,7 @@ footer {
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
+  border-right: double 3px #FFCCCC;
   background-image: url(../images/linepaper.png);
 }
 

@@ -3,6 +3,7 @@ nav{
 	border: none;
 	width: 100%;
 	display: table;
+	background-color: #00B2EE;
 }
 
 nav> ul { 
