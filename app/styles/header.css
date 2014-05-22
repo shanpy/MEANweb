@@ -1,11 +1,12 @@
 #header{
   display: table-cell;
   padding-bottom: 2em;
+  width: 40%;
+  margin-left: 0;
 }
 
 #space{
   display: table-cell;
-  width: 10%;
   padding-bottom: 2em;
 }
 
