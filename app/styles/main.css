@@ -27,7 +27,7 @@ body {
 }
 
 #navinner{
-  display: table-row;
+  display: block;
   width: 100%;
 }
 
