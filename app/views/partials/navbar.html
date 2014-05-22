@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="app/styles/header.css"> 
 <link rel="stylesheet" href="app/styles/navbar.css">
+
+<div id="navinner">
 <div ng-controller="NavbarCtrl">
 
     <div id="linkedin">      
@@ -14,7 +16,7 @@
      </div>
 
     <div id="space"></div>
-    
+
     <nav>
   	<ul>
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
@@ -36,4 +38,5 @@
     <li ng-show="currentUser" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
     </ul>
     </div>
+</div>
 </div>
