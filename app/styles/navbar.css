@@ -8,13 +8,21 @@ nav{
 	min-width: 800px;
 }
 
+#mediamenu{
+	display: none;
+}
 
 @media screen and (max-width: 800px) { 
   nav{
-   padding: 0px;
+   display: none;
 }
-	ul li a{
-		padding: 0, 0.5em;
+	#mediamenu{
+		display: block;
+	}
+
+	#mediamenu li{
+		text-align: center;
+		list-style-type:none;
 	}
 }
 
