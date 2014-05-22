@@ -3,6 +3,8 @@ nav{
 	border: none;
 	width: 50%;
 	display: table-cell;
+	
+  padding-bottom: 2em;
 }
 
 #mediamenu{
