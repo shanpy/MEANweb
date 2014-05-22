@@ -4,7 +4,7 @@ nav{
 	width: 100%;
 	display: table;
 	background-color: #00B2EE;
-	margin-bottom: 2em;
+	padding-bottom: 2em;
 }
 
 nav> ul { 
