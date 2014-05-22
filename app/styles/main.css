@@ -24,7 +24,11 @@ body {
   display: table-row;
   background-color: #00B2EE;
   width: 100%;
+  height: 100%;
   margin: auto;
+  text-align:center; 
+  box-shadow:0 12px 8px -9px #555;
+  top:0;
 }
 
 #homecontainer{
