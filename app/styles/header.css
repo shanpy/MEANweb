@@ -1,6 +1,14 @@
 #header{
   display: table-cell;
   width: 50%;
+
+  padding-bottom: 2em;
+}
+
+#space{
+  display: table-cell;
+  width: 10%;
+  padding-bottom: 2em;
 }
 
 #header h1 {
