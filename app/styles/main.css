@@ -24,8 +24,7 @@ body {
   display: table;
   background-color: #00B2EE;
   width: 100%;
-  box-shadow:8px 12px 0px -9px #555;
-  top:0;
+  box-shadow:0px 12px 20px -9px #555;
 }
 
 #navinner{
