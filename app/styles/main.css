@@ -39,7 +39,7 @@ body {
 
 #navinner{
     display: block;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.7);
     width: 100vw;
     margin-top: 30vh;
     margin-bottom: 30vh;
@@ -59,7 +59,7 @@ body {
 
 #introinner{
     display: block;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.7);
     width: 100vw;
     margin-top: 30vh;
     margin-bottom: 30vh;
@@ -84,7 +84,7 @@ body {
 
 #checkbloginner{
     display: block;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.7);
     width: 100vw;
     margin-top: 30vh;
     margin-bottom: 30vh;
@@ -109,12 +109,13 @@ body {
 
 #contactinner{
     display: block;
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.7);
     width: 100vw;
     margin-top: 30vh;
     margin-bottom: 30vh;
-    
+
     font-family: 'Leckerli One';
+    color: white;
 }
 
 

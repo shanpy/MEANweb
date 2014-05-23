@@ -1,5 +1,39 @@
+<link rel="stylesheet" href="app/styles/header.css"> 
+<link rel="stylesheet" href="app/styles/navbar.css">
+
 <div id="navcontainer">
-<div ng-include="'partials/navbar.html'"></div>
+<div id="navinner">
+<div ng-controller="NavbarCtrl">
+
+    <div id="linkedin">      
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/pengyin-shan/31/490/9b6" data-format="click" data-text="Pengyin Shan" data-related="false"></script>
+    </div>
+
+    <div id="header">
+    <center><h1>Pengyin Shan & Web</h1>
+            <h3>a study corner/blog for web development.</h3>
+        </center>
+     </div>
+
+    <nav>
+    <ul>
+    <li><a href="#introcontainer">Introduction</a></li>
+    <li><a href="#checkblogcontainer">Blogs</a></li>
+    <li><a href="#contactcontainer">Contact Me</a></li>
+    </ul>
+    </nav>
+    
+    <div id="mediamenu">
+    <ul>
+    <li><a href="#introcontainer">Introduction</a></li>
+    <li><a href="#checkblogcontainer">Blogs</a></li>
+    <li><a href="#contactcontainer">Contact Me</a></li>
+    </ul>
+    </div>
+
+</div>
+</div>
 </div>
 
 <div ng-controller='MainCtrl'>
