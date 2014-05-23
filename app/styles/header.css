@@ -23,19 +23,17 @@
 }
 
 #header h1 {
-  margin-top: 0;
-  margin-bottom: 0;
   color: black;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 10em;
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+  text-align: center;
 }
 
 #header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
   color: grey;
-  font-family: 'Lobster', cursive;
-  font-size: 5em;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
 }
 
 #linkedin{
