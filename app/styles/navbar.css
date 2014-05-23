@@ -8,6 +8,7 @@ nav{
 	display: none;
 }
 
+/*
 @media screen and (max-width: 800px) { 
   nav{
    display: none;
@@ -31,6 +32,7 @@ nav{
 	color:orange; 
 	}
 }
+*/
 
 nav> ul { 
 	display: block;
