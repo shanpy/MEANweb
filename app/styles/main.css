@@ -16,7 +16,8 @@ body {
 }
 
 .container-full {
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 #navcontainer{
