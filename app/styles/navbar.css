@@ -9,14 +9,10 @@ nav{
   nav{
    display: none;
 	}
-	#mediamenu{
+    #mediamenu{
 		display: block;
 		padding-bottom: 2em;
 		text-align: center;
-	}
-	#mediamenu li{
-		text-align: center;
-		list-style-type:none;
 	}
 }
 
