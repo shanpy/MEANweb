@@ -39,7 +39,7 @@ body {
 
 #navinner{
     display: block;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(255,255,255,0.5);
     width: 100vw;
     margin-top: 30vh;
     margin-bottom: 30vh;
@@ -49,13 +49,9 @@ body {
 #introcontainer{
   display:block;
   background-image:url(../images/osu.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   height: 100vh;
-  width: 100vw;
-  margin-bottom: 0;
-  margin-top: 0;
+  width: 100vh;
+  background-color: transparent;
 }
 
 #introinner{
@@ -70,13 +66,9 @@ body {
 #checkblogcontainer{
   display:block;
   background-image:url(../images/campus.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  margin-bottom: 0;
-  margin-top: 0;
+ height: 100vh;
+  width: 100vh;
+  background-color: transparent;
 }
 
 #checkbloginner{
@@ -91,13 +83,9 @@ body {
 #contactcontainer{
   display:block;
   background-image:url(../images/tree.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   height: 100vh;
-  width: 100vw;
-  margin-bottom: 0;
-  margin-top: 0;
+  width: 100vh;
+  background-color: transparent;
 }
 
 #contactinner{
@@ -118,7 +106,7 @@ body {
   height: 100vh;
   width: 100vh;
   background-color: transparent;
-  background-image: url(../images/linepage.png);
+  background-image: url(../images/linepaper.png);
 }
 
 .blogcontainer{
