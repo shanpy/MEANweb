@@ -31,9 +31,9 @@ body {
 #navinner{
     display: block;
     border-shadow: 10px 10px 10px black;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.2);
     width: 100vw;
-    top: 50vh;
+    top: 50%;
 }
 
 #homecontainer{
