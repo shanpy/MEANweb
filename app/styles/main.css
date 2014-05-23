@@ -28,6 +28,9 @@ body {
 #navcontainer{
   display: table;
   background-image: url(../images/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   margin-bottom: 0;
@@ -46,6 +49,9 @@ body {
 #introcontainer{
   display:block;
   background-image:url(../images/osu.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   margin-bottom: 0;
@@ -64,6 +70,9 @@ body {
 #checkblogcontainer{
   display:block;
   background-image:url(../images/campus.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   margin-bottom: 0;
@@ -82,6 +91,9 @@ body {
 #contactcontainer{
   display:block;
   background-image:url(../images/tree.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   margin-bottom: 0;
