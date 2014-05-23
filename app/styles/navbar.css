@@ -5,6 +5,11 @@ nav{
 	margin-right: auto;
 }
 
+#mediamenu{
+	display: none;
+}
+
+
 @media screen and (max-width: 800px) { 
   nav{
    display: none;
@@ -13,6 +18,19 @@ nav{
 		display: block;
 		padding-bottom: 2em;
 		text-align: center;
+	}
+	#mediamenu li { 
+		text-align: center;
+		list-style-type:none;
+		width: auto;
+	}
+	#mediamenu li a{
+		display:inline; 
+		font-size:1.5em; 
+		font-family: 'Leckerli One', cursive;
+		color:#C0C0C0 ; 
+		text-decoration:none;  
+		width: 100%;
 	}
 }
 
