@@ -120,6 +120,7 @@ a:hover{
 
 .graph{ 
   background-image: url(../images/ricepaper.png);
+  margin-left: 0;
 }
 #graph1{
   margin-left: 3em;
