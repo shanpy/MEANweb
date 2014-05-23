@@ -118,8 +118,8 @@ a:hover{
 }
 
 
-.graph{
-  background-color: transparent;
+.graph{ 
+  background-image: url(../images/linepaper.png);
 }
 #graph1{
   margin-left: 3em;
