@@ -14,6 +14,10 @@ angular.module('webappApp', [
 
     $routeProvider
       .when('/', {
+        templateUrl: 'partials/main',
+        controller: 'MainCtrl'
+      })
+      .when('/blogs', {
         templateUrl: 'partials/home',
         controller: 'IndexblogCtrl'
       })
