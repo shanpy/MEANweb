@@ -28,7 +28,7 @@ nav{
 	-webkit-font-smoothing: antialiased;
 	}
 	#mediamenu li:hover > a{
-	color:yellow; 
+	color:orange; 
 	}
 }
 
@@ -57,5 +57,5 @@ width: 100%;
 nav li + li a {border-left:1px solid white;} 
 
 nav li:hover > a { 
-color:yellow; 
+color:orange; 
 } 
