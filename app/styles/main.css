@@ -64,7 +64,7 @@ body {
 
 
 #checkblogcontainer{
-  display:block;
+  display:table;
   background-image:url(../images/campus.jpg);
  height: 100vh;
   width: 100vw;
@@ -81,7 +81,7 @@ body {
 
 
 #contactcontainer{
-  display:block;
+  display:table;
   background-image:url(../images/tree.jpg);
   height: 100vh;
   width: 100vw;
