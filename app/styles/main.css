@@ -4,7 +4,6 @@ html{
    margin: 0;
    padding: 0;
 
-  background-image: url(../images/background.jpg);
 }
 
 body {
@@ -22,22 +21,26 @@ body {
 
 #navcontainer{
   display: table;
-  background-color: transparent;
+  background-image: url(../images/background.jpg);
   height: 100vh;
   width: 100vh;
   border-bottom: 5px groove black;
 }
 
 #navinner{
-  display: block;
-  width: 100%;
+    display: block;
+    border-shadow: 10px 10px 10px black;
+    opacity:0.5; 
+    width: 100vh;
+    top: 50vh;
 }
 
 #homecontainer{
   display: table;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vh;
   background-color: transparent;
+  background-image: url(../images/linepage.png);
 }
 
 .blogcontainer{
@@ -66,17 +69,20 @@ body {
 
 /* Custom page footer */
 footer {
+  /*
   width: 100%;
   display: block;
   color: grey;
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
-  background-color: transparent;
+  background-color: transparent; */
+  display: none;
 }
 
 @media screen and (max-width: 800px) { 
   footer{
+    /*
   width: 100%;
   display: block;
   color: grey;
@@ -84,7 +90,8 @@ footer {
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
   padding-top: 2em;
-  margin-top: 2em;
+  margin-top: 2em; */
+  display: none;
 }
 }
 

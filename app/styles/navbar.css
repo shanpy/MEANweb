@@ -1,10 +1,13 @@
 nav{
-  	width: 40%;
+  	width: 100vh;
+  	top: 50vh;
 
 	display: table-cell;
 	margin-right: 0;
 	padding-right: 0;
     padding-bottom: 2em;
+
+    border-shadow: 10px 10px 10px black;
 }
 
 #mediamenu{
