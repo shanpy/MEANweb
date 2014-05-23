@@ -64,6 +64,11 @@ body {
     margin-left: 25vw;
     margin-top: 30vh;
     margin-bottom: 30vh; 
+
+    color: white;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
 }
 
 
@@ -85,6 +90,11 @@ body {
     margin-left: 25vw;
     margin-top: 30vh;
     margin-left: 30vh; 
+
+    color: white;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
 }
 
 
