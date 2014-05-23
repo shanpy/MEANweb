@@ -27,6 +27,7 @@
   margin-bottom: 0;
   color: black;
   font-family: sansita-one, sans-serif;
+  font-size: 20em;
 }
 
 #header h3 {
@@ -34,6 +35,7 @@
   margin-bottom: 0;
   color: grey;
   font-family: sansita-one;
+  font-size: 10em;
 }
 
 #linkedin{

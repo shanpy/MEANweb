@@ -1,9 +1,7 @@
 nav{
 
-	display: table-cell;
-	margin-right: 0;
-	padding-right: 0;
-    padding-bottom: 2em;
+	display: block;
+	text-align: center;
 
 }
 
