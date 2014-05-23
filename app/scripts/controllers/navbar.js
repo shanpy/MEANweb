@@ -23,4 +23,15 @@ angular.module('webappApp')
       return route === $location.path();
     };
 
+    $scope.gotointroduction = function() {
+      $location.path('/#introductioncontainer');
+    };
+
+    $scope.gotocheckblog = function() {
+      $location.path('/#checkblogcontainer');
+    };
+
+    $scope.gotocontactme = function() {
+      $location.path('/#contactmecontainer');
+    };
   });

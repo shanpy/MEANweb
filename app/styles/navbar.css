@@ -5,6 +5,21 @@ nav{
 	margin-right: auto;
 }
 
+@media screen and (max-width: 800px) { 
+  nav{
+   display: none;
+	}
+	#mediamenu{
+		display: block;
+		padding-bottom: 2em;
+		text-align: center;
+	}
+	#mediamenu li{
+		text-align: center;
+		list-style-type:none;
+	}
+}
+
 nav> ul { 
 	display: block;
 	width: 100%;
@@ -34,28 +49,3 @@ color:orange;
 } 
 
 
-/*
-@media screen and (max-width: 800px) { 
-  nav{
-   display: none;
-	}
-	#mediamenu{
-		display: block;
-		padding-bottom: 2em;
-		text-align: center;
-	}
-	#mediamenu li{
-		text-align: center;
-		list-style-type:none;
-	}
-	#mediamenu li a{
-	color:#C0C0C0 ; 
-	font-family: 'Leckerli One', cursive;
-	text-decoration:none;  
-	-webkit-font-smoothing: antialiased;
-	}
-	#mediamenu li:hover > a{
-	color:orange; 
-	}
-}
-*/
