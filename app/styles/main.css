@@ -12,12 +12,12 @@ html{
 }
 
 body {
-  font-family: 'Handlee', cursive;
   min-height: 100%;
   margin-left:auto;
   margin-right:auto;
   min-width: 100%;
   background-color: transparent;
+  font-family: 'Signika', sans-serif;
 }
 
 .container-full {
@@ -112,6 +112,8 @@ body {
   width: 100vw;
   background-color: transparent;
   background-image: url(../images/linepaper.png);
+
+  font-family: 'Handlee', cursive;
 }
 
 .blogcontainer{
