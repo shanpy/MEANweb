@@ -1,7 +1,8 @@
 nav{
 	display: table;
 	text-align: center;
-	margin-left: 40vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #mediamenu{
