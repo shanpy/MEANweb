@@ -23,7 +23,8 @@ body {
 #navcontainer{
   display: table;
   background-color: transparent;
-  width: 100%;
+  height: 100vh;
+  width: 100vh;
   border-bottom: 5px groove black;
 }
 
