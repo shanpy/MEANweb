@@ -61,9 +61,8 @@ body {
     display: block;
     background-color:rgba(255,255,255,0.5);
     width: 100vw;
-    margin-left: 25vw;
     margin-top: 30vh;
-    margin-bottom: 30vh; 
+    margin-bottom: 30vh;
 
     color: white;
     font-size: 2em;
@@ -84,12 +83,11 @@ body {
 }
 
 #checkbloginner{
-   display: block;
+    display: block;
     background-color:rgba(255,255,255,0.5);
     width: 100vw;
-    margin-left: 25vw;
     margin-top: 30vh;
-    margin-left: 30vh; 
+    margin-bottom: 30vh;
 
     color: white;
     font-size: 2em;
@@ -113,9 +111,9 @@ body {
     display: block;
     background-color:rgba(255,255,255,0.5);
     width: 100vw;
-    margin-left: 25vw;
     margin-top: 30vh;
-    margin-left: 30vh; 
+    margin-bottom: 30vh;
+    
     font-family: 'Leckerli One';
 }
 
