@@ -3,6 +3,8 @@ html{
    width: 100%;
    margin: 0;
    padding: 0;
+
+  background-image: url(../images/background.jpg);
 }
 
 body {
@@ -33,7 +35,6 @@ body {
   display: table;
   height: 100%;
   width: 100%;
-  background-image: url(../images/linepaper.png);
 }
 
 .blogcontainer{
@@ -68,7 +69,6 @@ footer {
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
-  background-image: url(../images/linepaper.png);
 }
 
 @media screen and (max-width: 800px) { 
@@ -79,7 +79,6 @@ footer {
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
-  background-image: url(../images/linepaper.png);
   padding-top: 2em;
   margin-top: 2em;
 }
