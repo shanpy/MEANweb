@@ -1,8 +1,8 @@
 nav{
-
 	display: block;
 	text-align: center;
-
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #mediamenu{
@@ -24,6 +24,7 @@ nav{
 	}
 	#mediamenu li a{
 	color:#fff; 
+	font-family: 'Leckerli One', cursive;
 	text-decoration:none;  
 	-webkit-font-smoothing: antialiased;
 	}
@@ -46,7 +47,7 @@ width: auto;
  
 nav li a { 
 display:inline; 
-padding:0.5em; 
+padding:0 1em 0 1em; 
 font-size:1.5em; 
 font-family: 'Leckerli One', cursive;
 color:#fff; 
