@@ -118,7 +118,9 @@ a:hover{
 }
 
 
-
+.graph{
+  background-color: transparent;
+}
 #graph1{
   margin-left: 3em;
   margin-bottom: 0;
