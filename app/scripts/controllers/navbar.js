@@ -24,6 +24,7 @@ angular.module('webappApp')
     };
 
     $scope.gotointroduction = function() {
+      console.log("gotointroduction");
       $location.path('/#introductioncontainer');
     };
 
