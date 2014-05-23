@@ -14,11 +14,11 @@ angular.module('webappApp', [
 
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/main',
+        templateUrl: 'partials/home',
         controller: 'MainCtrl'
       })
       .when('/blogs', {
-        templateUrl: 'partials/home',
+        templateUrl: 'partials/main',
         controller: 'IndexblogCtrl'
       })
       .when('/login', {
