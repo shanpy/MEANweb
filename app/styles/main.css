@@ -68,7 +68,6 @@ a:hover{
     text-align: center;
 }
 
-
 #checkblogcontainer{
   display:table;
   background-image:url(../images/ricepaper.png);
@@ -118,6 +117,12 @@ a:hover{
   font-family: 'Leckerli One', cursive;
 }
 
+
+
+#graph1{
+  margin-left: 3em;
+  margin-bottom: 0;
+}
 
 
 
