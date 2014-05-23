@@ -5,11 +5,6 @@
   margin-left: 0;
 }
 
-#space{
-  display: table-cell;
-  padding-bottom: 2em;
-}
-
 @media screen and (max-width: 800px) { 
   #space{
    display: none;
