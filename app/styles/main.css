@@ -25,11 +25,11 @@ body {
 }
 
 a{
-  color: grey;
+  color: orange;
 }
 
 a:hover{
-  color: black;
+  color: grey;
 }
 
 #navcontainer{
