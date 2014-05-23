@@ -1,5 +1,5 @@
 <div id="navcontainer">
-<div ng-include src="'navbar.html'"></div>
+<div ng-include="'partials/navbar.html'"></div>
 </div>
 
 <div ng-controller='MainCtrl'>
@@ -15,12 +15,29 @@
     <p>Please feel free to <a href="/blogs"> check my blog </a>.</p>
   </div>
 </div>
-
 </div>
 
 <div id="contactcontainer">
   <div id="contactinner">
-    <div ng-include src="'partials/navbar.html'"></div>
+    <div ng-controller='SendemailCtrl'>
+    <center>
+    <h2>Create An Email to Pengyin Shan</h2>
+    <hr/>
+    <label for='from'>From: </label>
+    <input ng-model='form.from' name='from'/>
+    <br/>
+    <label for='subject'>Subject: </label>
+    <input ng-model='form.subject' name='subject'/>
+    <br/>
+    <label for='text'>Content: </label>
+    <textarea ng-model='form.text' name='text'></textarea>
+    <br/>
+      <button ng-click="sendemail()">Send Email</button>
+      <button ng-click="cancel()">Cancel</button>
+    <br/>
+      <p id="sendemailprocess"></p>
+    </center>
+    </div>
   </div>
 </div>
 
