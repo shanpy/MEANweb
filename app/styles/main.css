@@ -13,6 +13,7 @@ body {
   margin-left:auto;
   margin-right:auto;
   width: 90%;
+  background-color: transparent;
 }
 
 .container-full {
@@ -21,7 +22,7 @@ body {
 
 #navcontainer{
   display: table;
-  background-color: #00B2EE;
+  background-color: transparent;
   width: 100%;
   border-bottom: 5px groove black;
 }
@@ -35,6 +36,7 @@ body {
   display: table;
   height: 100%;
   width: 100%;
+  background-color: transparent;
 }
 
 .blogcontainer{
@@ -69,6 +71,7 @@ footer {
   text-align:center; 
   box-shadow:0 12px 8px -9px #555;
   font-family: kaushan-script, cursive;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 800px) { 
