@@ -64,7 +64,7 @@ body {
     margin-top: 30vh;
     margin-bottom: 30vh;
 
-    color: white;
+    color: grey;
     font-size: 2em;
     font-family: 'Leckerli One';
     text-align: center;
@@ -89,7 +89,7 @@ body {
     margin-top: 30vh;
     margin-bottom: 30vh;
 
-    color: white;
+    color: grey;
     font-size: 2em;
     font-family: 'Leckerli One';
     text-align: center;
@@ -114,8 +114,10 @@ body {
     margin-top: 30vh;
     margin-bottom: 30vh;
 
+    color: grey;
+    font-size: 2em;
     font-family: 'Leckerli One';
-    color: white;
+    text-align: center;
 }
 
 

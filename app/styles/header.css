@@ -18,14 +18,14 @@
 }
 
 #header h1 {
-  color: white;
+  color: grey;
   font-family: 'Lobster', cursive;
   font-size: 5em;
   text-align: center;
 }
 
 #header h3 {
-  color: white;
+  color: grey;
   font-size: 2em;
   font-family: 'Pacifico', cursive;
   text-align: center;
