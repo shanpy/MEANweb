@@ -14,6 +14,7 @@ nav{
   nav{
    display: none;
 	}
+	/*
     #mediamenu{
 		display: block;
 		padding-bottom: 2em;
@@ -31,6 +32,10 @@ nav{
 		color:#C0C0C0 ; 
 		text-decoration:none;  
 		width: 100%;
+	}
+	*/
+	#backtotop{
+		display: none;
 	}
 }
 
