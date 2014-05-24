@@ -39,6 +39,7 @@ a:hover{
   color: grey;
 }
 
+
 #navcontainer{
   display: table;
   height: 100vh;
@@ -72,6 +73,10 @@ a:hover{
     color: grey;
     font-size: 2em;
     text-align: center;
+}
+#introinner p{
+  text-align: left;
+  font-size: 1.5em;
 }
 
 #graph1{
