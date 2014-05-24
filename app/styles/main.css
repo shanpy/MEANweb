@@ -67,8 +67,9 @@ a:hover{
 #introinner{
     display: table-cell;
     background-color:transparent;
-    width: 70vw;
+    width: 65vw;
     margin-top: 20vh;
+    margin-left: 5vw;
 
     color: grey;
     font-size: 2em;
