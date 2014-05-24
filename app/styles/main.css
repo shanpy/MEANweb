@@ -68,6 +68,10 @@ a:hover{
     text-align: center;
 }
 
+#introinner p{
+  float: left;
+}
+
 #checkblogcontainer{
   display:table;
   background-image:url(../images/ricepaper.png);
@@ -122,10 +126,10 @@ a:hover{
 
 .graph{
   background-color:rgba(255,255,255,0.5);
-  float: right;
 }
 #graph1{
-  height: 5em;
+  height: 10em;
+  float: right;
 }
 
 
