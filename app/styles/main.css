@@ -17,6 +17,7 @@ body {
   min-width: 100%;
   background-color: transparent;
   font-family: 'Signika', sans-serif;
+  font-size: 2em;
 }
 
 .container-full {
@@ -63,7 +64,7 @@ a:hover{
 }
 
 #introinner{
-    float: left;
+    display: table-cell;
     background-color:transparent;
     width: 70vw;
     margin-top: 20vh;
@@ -89,7 +90,7 @@ a:hover{
 }
 
 #checkbloginner{
-    display: block;
+    display: table-cell;
     background-color:rgba(255,255,255,0.5);
     width: 100vw;
     margin-top: 20vh;
