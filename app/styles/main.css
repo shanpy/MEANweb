@@ -91,14 +91,20 @@ a:hover{
 
 #checkbloginner{
     display: table-cell;
-    background-color:rgba(255,255,255,0.5);
-    width: 100vw;
+    width: 70vw;
     margin-top: 20vh;
 
     color: grey;
     font-size: 2em;
     text-align: center;
 }
+
+#graph1{
+  width: 30vw;
+  align:left;
+  margin-top: 20vh;
+}
+
 
 
 #contactcontainer{
@@ -110,7 +116,6 @@ a:hover{
 
 #contactinner{
     display: block;
-    background-color:rgba(255,255,255,0.5);
     width: 100vw;
     margin-top: 20vh;
 
