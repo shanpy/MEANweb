@@ -63,9 +63,9 @@ a:hover{
 }
 
 #introinner{
-    display: table-cell;
+    float: left;
     background-color:transparent;
-    width: 80vw;
+    width: 70vw;
     margin-top: 20vh;
 
     color: grey;
@@ -74,7 +74,7 @@ a:hover{
 }
 
 #graph1{
-  width: 20vw;
+  width: 30vw;
   align:right;
   margin-top: 20vh;
 }
