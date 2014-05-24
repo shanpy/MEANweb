@@ -69,7 +69,7 @@ a:hover{
 }
 
 #introinner p{
-  float: left;
+  display: inline;
 }
 
 #checkblogcontainer{
