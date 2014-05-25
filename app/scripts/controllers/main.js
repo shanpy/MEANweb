@@ -23,7 +23,7 @@ angular.module('webappApp')
 		$scope.currentIndex = index;
 	};
 	$scope.isCurrentSlideIndex = function (index){
-		
+
 		console.log(index);
 		return $scope.currentIndex === index;
 	};
@@ -34,7 +34,12 @@ angular.module('webappApp')
 		console.log("After click: " + $scope.currentIndex);
 	};
 	$scope.prev = function (){
-		$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+		if($scope.currentIndex < $scope.slides.length - 1){
+			++$scope.currentIndex;
+		}
+		else{
+			$scope.currentIndex = 0;
+		}
 		console.log("After click: " + $scope.currentIndex);
 	};
 
