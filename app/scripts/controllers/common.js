@@ -1,5 +1,5 @@
-/*I got this from http://www.nganimate.org/js/common.js for usage in slider. 
-Special Thanks for http://www.nganimate.org ! */
+//I got this from http://www.nganimate.org/js/common.js for usage in slider. 
+//Special Thanks for http://www.nganimate.org !
 
 
 setTimeout(function updateActiveMenu() {
