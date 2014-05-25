@@ -55,14 +55,14 @@ body {
     display: block;
     background-color:rgba(255,255,255,0.5);
     width: 100%;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 
 #introcontainer{
   display: table;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: transparent;
 }
 #introinner{
@@ -91,7 +91,7 @@ body {
 #checkblogcontainer{
   display:table;
   height: 100vh;
-  width: 65%;
+  width: 100%;
   background-color: transparent;
 }
 #checkbloginner{
@@ -114,7 +114,7 @@ body {
 #contactcontainer{
   display:table;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: transparent;
 }
 #contactinner{
