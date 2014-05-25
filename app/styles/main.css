@@ -113,7 +113,19 @@ body {
   width: 30vw;
   vertical-align: top;
 }
+.switch h5 {
+  color: #D14 !important;
+}
 
+.switch {
+  position: relative;
+}
+
+.switch > div {
+  width: 655px;
+  display: inline-block;
+  position: absolute;
+}
 
 
 #contactcontainer{
