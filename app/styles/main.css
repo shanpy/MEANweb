@@ -76,6 +76,7 @@ body {
   padding-bottom: 1em;
 }
 #introinner p{
+  text-indent: 2em;
   text-align: left;
   font-size: 1em;
   color: grey;  
