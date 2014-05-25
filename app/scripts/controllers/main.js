@@ -196,15 +196,6 @@ function formPostData(url, fields) {
 	$scope.skewy = '30';
 	$scope.skewyEnabled = true;
 	
-	
-	if(typeof getVisibleOpts != 'undefined'){
-		$scope.visible = getVisibleOpts();
-	}
-	
-	if(typeof setIniValues != 'undefined') {
-		setIniValues($scope);
-	}
-	
 	function watchFn() {
 		applyCss(generateCss(getCssObj($scope)))
 	}
