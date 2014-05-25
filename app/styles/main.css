@@ -72,11 +72,12 @@ body {
 }
 #introinner h2{
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
+  padding-bottom: 1em;
 }
 #introinner p{
   text-align: left;
-  font-size: 1em;
+  font-size: 1.5em;
   color: grey;  
   padding-left: 1em;
 }
@@ -95,18 +96,20 @@ body {
   background-color: transparent;
 }
 #checkbloginner{
-    display: table-cell;
-    width: 70vw;
+    display: block;
+    width: 100vw;
     margin-top: 10vh;
-    padding-left: 1em;
-    color: grey;
-    font-size: 2em;
-    text-align: center;
+}
+#checkbloginner p{
+  text-align: left;
+  font-size: 1.5em;
+  color: grey;  
+  padding-right: 1em;
 }
 #graph2{
+  float: left;
   width: 30vw;
-  align:left;
-  margin-top: 10vh;
+  vertical-align: top;
 }
 
 
