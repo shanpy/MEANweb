@@ -99,7 +99,7 @@ a:hover{
     display: table-cell;
     width: 70vw;
     margin-top: 20vh;
-
+    padding-left: 1em;
     color: grey;
     font-size: 2em;
     text-align: center;
@@ -124,7 +124,7 @@ a:hover{
     display: block;
     width: 100vw;
     margin-top: 20vh;
-
+    padding-left: 1em;
     color: grey;
     font-size: 2em;
     text-align: center;
