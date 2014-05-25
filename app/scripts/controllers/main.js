@@ -20,10 +20,10 @@ angular.module('webappApp')
 
 	$scope.currentIndex = 0;
 	$scope.next = function (){
-		$scope.currentIndex < scope.slides.length - 1 ? $scope.currentIndex++ : scope.currentIndex = 0;
+		$scope.currentIndex < $scope.slides.length - 1 ? $scope.currentIndex++ : $scope.currentIndex = 0;
 	};
 	$scope.prev = function (){
-		scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.slides.length - 1;
+		$scope.currentIndex > 0 ? $scope.currentIndex-- : $scope.currentIndex = $scope.slides.length - 1;
 	};
 	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
