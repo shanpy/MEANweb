@@ -142,6 +142,10 @@ a:hover{
   width: 50vw;
 }
 
+#checkbloginner button{
+  clear: both;
+}
+
 #backtotop a{
   background-color: transparent;
   position: fixed;
