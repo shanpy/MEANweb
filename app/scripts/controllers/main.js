@@ -7,13 +7,13 @@ angular.module('webappApp')
 
   	$scope.slides = [
   	{
-  		img : "./app/images/bird.png",
+  		src : "./app/images/bird.png",
   		title : "This is a test for blog update",
   		content: "This is a test graph for blog update 1."
 
   	},
   	{
-  		img : "./app/images/template.jpg",
+  		src : "./app/images/template.jpg",
   		title : "This is a test for blog update",
   		content: "This is a test graph for blog update 2."
   	}
@@ -21,7 +21,10 @@ angular.module('webappApp')
 
 	$scope.next = function (){
 		console.log("1: " + $scope.currentIndex);
-		$scope.currentIndex < $scope.slides.length - 1 ? $scope.currentIndex++ : $scope.currentIndex = 0;
+		if($scope.currentIndex < $scope.slides.length - 1){
+			$scope.currentIndex++;
+		} 
+		else{$scope.currentIndex = 0;}
 		console.log("2: " + $scope.currentIndex);
 	};
 	$scope.prev = function (){
