@@ -35,7 +35,7 @@ angular.module('webappApp')
 	});
 
 
-
+	/*
 	var timer;
 	var sliderFunc = function() {
 	  timer = $timeout(function() {
@@ -46,5 +46,5 @@ angular.module('webappApp')
 	sliderFunc();	 
 	$scope.$on('$destroy', function() {
 	  $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
-	});
+	});*/
 });
