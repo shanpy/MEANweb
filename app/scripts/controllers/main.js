@@ -2,8 +2,6 @@
 
 angular.module('webappApp')
   .controller('MainCtrl', function ($scope, $http, $timeout,$animate) {
-  	
-	$scope.currentIndex = 0;
 
   	$scope.slides = [
   	{
@@ -19,20 +17,23 @@ angular.module('webappApp')
   	}
   	];
 
+
+	$scope.currentIndex = 0;	
+	$scope.setCurrentSlideIndex = function (index){
+		$scope.currentIndex = index;
+	};
+	$scope.isCurrentSlideIndex = function (index){
+		return $scope.currentIndex === index;
+	};
+	
+
 	$scope.next = function (){
-		console.log("1: " + $scope.currentIndex);
-		if($scope.currentIndex < $scope.slides.length - 1){
-			$scope.currentIndex = $scope.currentIndex + 1;
-			console.log("5: " + $scope.currentIndex);
-		} 
-		else{$scope.currentIndex = 0;}
-		console.log("2: " + $scope.currentIndex);
+		 $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
 	};
 	$scope.prev = function (){
-		console.log("3: " + $scope.currentIndex);
-		$scope.currentIndex > 0 ? $scope.currentIndex-- : $scope.currentIndex = $scope.slides.length - 1;
-		console.log("4: " + $scope.currentIndex);
+		$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
 	};
+	
 	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
@@ -40,17 +41,23 @@ angular.module('webappApp')
 		$scope.slides[$scope.currentIndex].visible = true;
 	});
 
-
-	/*
-	var timer;
-	var sliderFunc = function() {
-	  timer = $timeout(function() {
-	    timer = $timeout(sliderFunc, 5000);    
-	    $scope.next();
-	  }, 5000);
-	};
-	sliderFunc();	 
-	$scope.$on('$destroy', function() {
-	  $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
-	});*/
+}).animation('.slide-animation',function(){
+	return {
+            addClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE                    
+                }
+                else {
+                    done();
+                }
+            },
+            removeClass: function (element, className, done) {
+                if (className == 'ng-hide') {
+                    // ANIMATION CODE GOES HERE
+                }
+                else {
+                    done();
+                }
+            }
+        };
 });

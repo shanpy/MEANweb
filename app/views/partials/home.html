@@ -70,7 +70,7 @@
 
 
    <div id="updateslider" style="border:1px solid black;">
-    <div class="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
+    <div class="updateslide" ng-repeat="slide in slides" ng-hide="!isCurrentSlideIndex($index)">
       <img ng-src={{slide.src}} style="width:200px; height=200px;"/>
       <h4>{{slide.title}}</h4>  
       <p>{{slide.content}}</p>     
@@ -83,6 +83,15 @@
       <h6>Next</h6>
     </a>
     </div>
+    <nav class="updatenav">
+      <div class="dotwrapper">
+        <ul class="dots">
+          <li class="dot" ng-repeat="slide in slides">
+            <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">{{slide.title}}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
    </div>
 
   </div>
@@ -120,31 +129,3 @@
 </div>
 
 </div>
-
-
-
-<varcss style="display: none">
-.animate-enter, 
-.animate-leave
-{ 
-  -webkit-transition: #time# #easing# all;
-  -moz-transition: #time# #easing# all;
-  -ms-transition: #time# #easing# all;
-  -o-transition: #time# #easing# all;
-  transition: #time# #easing# all;
-} 
-
-.animate-enter {
-  #positionEnter#;
-}
-.animate-enter.animate-enter-active {
-  #positionFinal#;
-}
-
-.animate-leave {
-  #positionFinal#;
-}
-.animate-leave.animate-leave-active{
-  #positionLeave#;
-}
-</varcss>
