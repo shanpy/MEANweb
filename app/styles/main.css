@@ -69,7 +69,7 @@ body {
     display: table-cell;
     background-color:transparent;
     width: 65%;
-    margin-top: 10vh;
+    padding:20,0,0,0;
     padding-left: 1em;
 
     color: grey;
@@ -78,7 +78,7 @@ body {
 }
 #introinner p{
   text-align: left;
-  font-size: 0.8em;
+  font-size: 0.8em;  
 }
 #graph1{
   align:right;
