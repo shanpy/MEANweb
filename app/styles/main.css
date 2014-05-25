@@ -132,12 +132,12 @@ a:hover{
     overflow: auto;
 }
 
-#checkbloginner label{
+#contactinner label{
   display: block;
   padding-left: 2em;
 }
 
-#checkbloginner button{
+#contactinner button{
   font-size: 0.8em;
 }
 
