@@ -22,7 +22,7 @@ angular.module('webappApp')
 	$scope.next = function (){
 		console.log("1: " + currentIndex);
 		if(currentIndex < $scope.slides.length - 1){
-			currentIndex = $currentIndex + 1;
+			currentIndex = currentIndex + 1;
 			console.log("5: " + currentIndex);
 		} 
 		else{currentIndex = 0;}
