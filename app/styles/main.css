@@ -128,6 +128,18 @@ a:hover{
     color: grey;
     font-size: 2em;
     text-align: center;
+
+    overflow: auto;
+}
+
+#checkbloginner label{
+  float: left;
+  width: 20vw;
+}
+
+#checkbloginner input,textarea{
+  float: left;
+  width: 50vw;
 }
 
 #backtotop a{
