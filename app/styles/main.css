@@ -67,7 +67,7 @@ body {
 }
 #introinner{
     display: table-cell;
-    width: 70vw;
+    width: 70%;
     margin-top: 10vh;
     padding-left: 1em;
     color: grey;
