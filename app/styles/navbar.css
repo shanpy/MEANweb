@@ -11,10 +11,10 @@ nav{
 
 
 @media screen and (max-width: 800px) { 
-  nav{
+  /*nav{
    display: none;
 	}
-	/*
+	*/
     #mediamenu{
 		display: block;
 		padding-bottom: 2em;
@@ -33,7 +33,6 @@ nav{
 		text-decoration:none;  
 		width: 100%;
 	}
-	*/
 	#backtotop{
 		display: none;
 	}
