@@ -71,7 +71,6 @@ body {
     margin-top: 10vh;
 }
 #introinner h2{
-  display: table-row;
   text-align: center;
   font-size: 1.5em;
 }
@@ -81,7 +80,7 @@ body {
   color: grey;  
   padding-left: 1em;
 }
-#graph2{
+#graph1{
   float: right;
   width: 30vw;
   margin-top: 10vh;
