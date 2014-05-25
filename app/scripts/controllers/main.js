@@ -36,12 +36,12 @@ angular.module('webappApp')
 	var timer;
 	var sliderFunc = function() {
 	  timer = $timeout(function() {
-	    scope.next();
+	    $scope.next();
 	    timer = $timeout(sliderFunc, 5000);
 	  }, 5000);
 	};
 	sliderFunc();	 
-	scope.$on('$destroy', function() {
+	$scope.$on('$destroy', function() {
 	  $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
 	});
 });
