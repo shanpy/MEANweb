@@ -113,18 +113,21 @@ body {
   width: 30vw;
   vertical-align: top;
 }
-.switch h5 {
-  color: #D14 !important;
+.updateslide.ng-hide-add,
+.updateslide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  display: block!important;
 }
-
-.switch {
-  position: relative;
+.updateslide.ng-hide-add.ng-hide-add-active,
+.updateslide.ng-hide-remove {
+  opacity: 0;
 }
-
-.switch > div {
-  width: 655px;
-  display: inline-block;
-  position: absolute;
+.updateslide.ng-hide-add,
+.updateslide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
 }
 
 
