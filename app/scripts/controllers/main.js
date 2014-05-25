@@ -32,8 +32,8 @@ angular.module('webappApp')
 		if($scope.currentIndex < $scope.slides.length - 1){
 			var tmp = $scope.currentIndex;
 			tmp++;			
-			console.log(tmp.value);
-			$scope.currentIndex = tmp.value;
+			console.log(tmp);
+			$scope.currentIndex = tmp;
 			console.log($scope.currentIndex);
 		}
 		else{
