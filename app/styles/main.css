@@ -69,7 +69,7 @@ a:hover{
     background-color:transparent;
     width: 65vw;
     margin-top: 20vh;
-    margin-left: 1em;
+    padding-left: 1em;
 
     color: grey;
     font-size: 2em;
