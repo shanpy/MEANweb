@@ -67,8 +67,45 @@
     <p>
     BTW, How do you feel about two drawings on this webpage? I just got interested in drawing so I bought a cheap Intuos tablet and begin to draw for my website:)
    </p>
+
+   <div id="updateslider">
+    <form style="display:none" ng-show="ready" style="text-align:center">
+      <div class="switch" sytle="width:30vw; height:30vh;" ng-swich on="article" ng-animate="'animate'">
+        <div ng-swich-when="1">
+          <table style="height:30vh;">
+            <tr>
+              <td style="width:10vw;">
+                <img src="./app/images/template.jpg" alt="firstupdate" style="width:200px; height=200px;"/>
+              </td>
+              <td style="width:20vw">
+                <h5>This is a test for blog update</h5>
+                <p style="font-size:1em">
+                  This is a test graph for blog update 1.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div ng-switch-when="2">
+          <table style="height:30vh;">
+            <tr>
+              <td style="width:10vw;">
+                <img src="./app/images/5-22.png" alt="secondupdate" style="width:200px; height=200px;"/>
+              </td>
+              <td style="width:20vw">
+                <h5>This is a test for blog update</h5>
+                <p style="font-size:1em">
+                  This is a test graph for blog update 2.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </form>
+   </div>
+
   </div>
-</div>
 </div>
 
 <div id="contactcontainer" name="contactcontainer" data-role="contactcontainer">
