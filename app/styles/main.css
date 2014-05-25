@@ -67,7 +67,7 @@ body {
 }
 #introinner{
     display: table-cell;
-    width: 100%;
+    width: 70vw;
     margin-top: 10vh;
     padding-left: 1em;
     color: grey;
@@ -79,6 +79,7 @@ body {
 #graph1{
   float:right;
   margin-top: 10vh;
+  width: 20em;
 }
 
 
