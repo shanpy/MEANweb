@@ -67,20 +67,18 @@ body {
 }
 #introinner{
     display: table-cell;
-    width: 70vw;
+    width: 100%;
     margin-top: 10vh;
     padding-left: 1em;
     color: grey;
-    text-align: center;
 }
 #introinner p{
   text-align: left;
   font-size: 0.8em;  
 }
 #graph1{
-  align:right;
+  float:right;
   margin-top: 10vh;
-  width: 30vw;
 }
 
 
