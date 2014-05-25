@@ -1,22 +1,4 @@
-setTimeout(function updateActiveMenu() {
-	try 
-	{
-		// Arrumando active menu
-	   var activeMenu = $('#menuList').find("[href='" + window.location.pathname + "']");
-	   if (activeMenu.length == 0)
-	   {
-		   $($('#menuList').find("li")[1]).addClass('active');
-	   }else {
-		   $(activeMenu[0]).parent().addClass('active');
-	   }
-	   
-	   // Escondendo conteudo
-	   $('.some').hide();
-	}
-	catch(e)
-	{}
-	prettyPrint();
-}, 100);
+
 
 function applyCss(css) {
 	$('#tmpStyle').remove();
