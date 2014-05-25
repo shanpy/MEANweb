@@ -129,21 +129,22 @@ body {
     overflow: auto;
 }
 #contactinner h2{
-  font-family: 'Leckerli One', cursive;
   display: block;
   text-align: center;
   font-size: 1em;
   font-weight: normal;
+  padding-bottom: 1em;
 }
 #contactinner label{
   display: block;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: normal;
 }
 #contactinner button{
   font-size: 0.8em;
   display: block;
+  text-align: center;
 }
 
 
