@@ -133,17 +133,12 @@ a:hover{
 }
 
 #checkbloginner label{
-  float: left;
-  width: 20vw;
-}
-
-#checkbloginner input,textarea{
-  float: left;
-  width: 50vw;
+  display: block;
+  padding-left: 2em;
 }
 
 #checkbloginner button{
-  clear: both;
+  font-size: 0.8em;
 }
 
 #backtotop a{
