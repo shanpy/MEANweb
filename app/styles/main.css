@@ -70,6 +70,11 @@ body {
     width: 100vw;
     margin-top: 10vh;
 }
+#introinner h2{
+  display: table-row;
+  text-align: center;
+  font-size: 1.5em;
+}
 #introinner p{
   text-align: left;
   font-size: 1em;
@@ -78,7 +83,7 @@ body {
 }
 #graph2{
   float: right;
-  width: 50vw;
+  width: 30vw;
   margin-top: 10vh;
 }
 
