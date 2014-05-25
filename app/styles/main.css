@@ -54,7 +54,7 @@ body {
 #navinner{
     display: block;
     background-color:rgba(255,255,255,0.5);
-    width: 100vw;
+    width: 100%;
     margin-top: 20vh;
 }
 
@@ -68,7 +68,7 @@ body {
 #introinner{
     display: table-cell;
     background-color:transparent;
-    width: 65vw;
+    width: 65%;
     margin-top: 20vh;
     padding-left: 1em;
 
@@ -81,7 +81,7 @@ body {
   font-size: 0.8em;
 }
 #graph1{
-  width: 30vw;
+  width: 35%;
   align:right;
   margin-top: 20vh;
 }
