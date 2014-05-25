@@ -141,10 +141,10 @@ body {
   font-size: 0.8em;
   font-weight: normal;
 }
-#contactinner button{
+#buttonarea{
   font-size: 0.8em;
   display: block;
-  text-align: justify;
+  text-align: center;
 }
 
 

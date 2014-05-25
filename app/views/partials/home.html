@@ -82,8 +82,10 @@
     <input ng-model='form.subject' name='subject'/>
     <label for='text'>Content: </label>
     <textarea ng-model='form.text' name='text'></textarea>
+    <div id="buttonarea">
       <button ng-click="sendemail()">Send Email</button>
       <button ng-click="cancel()">Cancel</button>
+    </div>
     <br/>
       <p id="sendemailprocess"></p>
     </div>
