@@ -21,17 +21,19 @@ angular.module('webappApp')
 	$scope.currentIndex = 0;
 	$scope.next = function (){
 		$scope.currentIndex < $scope.slides.length - 1 ? $scope.currentIndex++ : $scope.currentIndex = 0;
+		console.log($scope.currentIndex);
 	};
 	$scope.prev = function (){
 		$scope.currentIndex > 0 ? $scope.currentIndex-- : $scope.currentIndex = $scope.slides.length - 1;
+		console.log($scope.currentIndex);
 	};
 	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
 		});
+		$scope.slides[$scope.currentIndex].visible = true;
 	});
-	$scope.slides[$scope.currentIndex].visible = true;
-	console.log($scope.currentIndex);
+
 
 
 	var timer;
