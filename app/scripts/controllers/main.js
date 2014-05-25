@@ -29,11 +29,14 @@ angular.module('webappApp')
 
 	$scope.next = function (){
 		 $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+		console.log("After click: " + $scope.currentIndex);
 	};
 	$scope.prev = function (){
 		$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+		console.log("After click: " + $scope.currentIndex);
 	};
-	
+
+
 	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
