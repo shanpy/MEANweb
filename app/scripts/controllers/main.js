@@ -5,7 +5,7 @@ angular.module('webappApp')
 
   	$scope.slides = [
   	{
-  		src : "./app/images/bird.png",
+  		src : "./app/images/5-22.png",
   		title : "This is a test for blog update",
   		content: "This is a test graph for blog update 1."
 
@@ -18,8 +18,17 @@ angular.module('webappApp')
   	];
 
 
-	$scope.currentIndex = 0;
+	$scope.currentIndex = 0;	
+	$scope.setCurrentSlideIndex = function (index){
+		$scope.currentIndex = index;
+	};
+	$scope.isCurrentSlideIndex = function (index){
+		
+		console.log(index);
+		return $scope.currentIndex === index;
+	};
 	
+
 	$scope.next = function (){
 		 $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
 		console.log("After click: " + $scope.currentIndex);
