@@ -2,6 +2,19 @@
 
 angular.module('webappApp')
   .controller('MainCtrl', function ($scope, $http, $timeout,$animate) {
+  	
+  	function getRandomInt(max){
+	return Math.floor(Math.random() * max);
+}
+	function applyCss(css) {
+	$('#tmpStyle').remove();
+	$('body').append('<style id="tmpStyle">' + css + '</style>');
+	var newcss = css.replace(/\t/g, '    ');
+	$('#csscode').html("<pre class='prettyprint linenums lang-css'>" + newcss + "</pre>");
+	prettyPrint();
+}
+
+
   	$scope.ready="true";
   	$scope.article="1";
 
