@@ -21,14 +21,17 @@ angular.module('webappApp')
 
 
 	$scope.currentIndex = 0;
-
+	$scope.slides[$scope.currentIndex].visible = true;
+	
 	$scope.next = function (){
-		 $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+		$scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
 		console.log("After click: " + $scope.currentIndex);
 	};
 	$scope.prev = function (){
 		if($scope.currentIndex < $scope.slides.length - 1){
-			++$scope.currentIndex;
+			var tmp = $scope.currentIndex;
+			tmp++;
+			$scope.currentIndex = tmp;
 		}
 		else{
 			$scope.currentIndex = 0;
@@ -44,23 +47,4 @@ angular.module('webappApp')
 		$scope.slides[$scope.currentIndex].visible = true;
 	});
 
-}).animation('.slide-animation',function(){
-	return {
-            addClass: function (element, className, done) {
-                if (className == 'ng-hide') {
-                    // ANIMATION CODE GOES HERE                    
-                }
-                else {
-                    done();
-                }
-            },
-            removeClass: function (element, className, done) {
-                if (className == 'ng-hide') {
-                    // ANIMATION CODE GOES HERE
-                }
-                else {
-                    done();
-                }
-            }
-        };
 });
