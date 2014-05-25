@@ -76,10 +76,10 @@ body {
   text-align: left;
   font-size: 0.8em;  
 }
-#graph1{
-  float:right;
+#graph2{
+  width: 30vw;
+  align:right;
   margin-top: 10vh;
-  width: 20em;
 }
 
 
