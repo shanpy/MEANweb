@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('webappApp')
-  .controller('MainCtrl', function ($scope, $http, $timeout, $animate) {
+  .controller('MainCtrl', function ($scope, $http, $timeout,$animate) {
   	$scope.ready="true";
   	$scope.article="1";
 
