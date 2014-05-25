@@ -70,7 +70,7 @@
 
 
    <div id="updateslider" style="border:1px solid black;">
-    <div class="updateslide" ng-repeat="slide in slides" ng-hide="!isCurrentSlideIndex($index)">
+    <div class="updateslide" ng-repeat="slide in slides">
       <img ng-src={{slide.src}} style="width:200px; height=200px;"/>
       <h4>{{slide.title}}</h4>  
       <p>{{slide.content}}</p>     

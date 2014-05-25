@@ -18,15 +18,8 @@ angular.module('webappApp')
   	];
 
 
-	$scope.currentIndex = 0;	
-	$scope.setCurrentSlideIndex = function (index){
-		$scope.currentIndex = index;
-	};
-	$scope.isCurrentSlideIndex = function (index){
-		return $scope.currentIndex === index;
-	};
+	$scope.currentIndex = 0;
 	
-
 	$scope.next = function (){
 		 $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
 		console.log("After click: " + $scope.currentIndex);
