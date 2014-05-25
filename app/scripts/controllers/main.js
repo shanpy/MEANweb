@@ -31,6 +31,7 @@ angular.module('webappApp')
 		});
 	});
 	$scope.slides[$scope.currentIndex].visible = true;
+	console.log($scope.currentIndex);
 
 
 	var timer;
