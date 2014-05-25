@@ -3,6 +3,8 @@
 angular.module('webappApp')
   .controller('MainCtrl', function ($scope, $http, $timeout,$animate) {
   	
+	$scope.currentIndex = 0;
+	
   	$scope.slides = [
   	{
   		img : "./app/images/bird.png",
@@ -16,10 +18,7 @@ angular.module('webappApp')
   		content: "This is a test graph for blog update 2."
   	}
   	];
-	
 
-	$scope.currentIndex = 0;
-	
 	$scope.next = function (){
 		$scope.currentIndex < $scope.slides.length - 1 ? $scope.currentIndex++ : $scope.currentIndex = 0;
 		console.log($scope.currentIndex);
@@ -40,8 +39,8 @@ angular.module('webappApp')
 	var timer;
 	var sliderFunc = function() {
 	  timer = $timeout(function() {
+	    timer = $timeout(sliderFunc, 5000);    
 	    $scope.next();
-	    timer = $timeout(sliderFunc, 5000);
 	  }, 5000);
 	};
 	sliderFunc();	 
