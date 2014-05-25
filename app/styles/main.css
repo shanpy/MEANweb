@@ -67,11 +67,9 @@ body {
 }
 #introinner{
     display: table-cell;
-    background-color:transparent;
-    width: 65%;
-    padding:20,0,0,0;
+    width: 70vw;
+    margin-top: 10vh;
     padding-left: 1em;
-
     color: grey;
     font-size: 2em;
     text-align: center;
@@ -83,7 +81,7 @@ body {
 #graph1{
   align:right;
   margin-top: 10vh;
-  width: 35vw;
+  width: 30vw;
 }
 
 
