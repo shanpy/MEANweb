@@ -3,7 +3,7 @@
 angular.module('webappApp')
   .controller('MainCtrl', function ($scope, $http, $timeout,$animate) {
   	
-	$scope.currentIndex = 0;
+	var currentIndex = 0;
 
   	$scope.slides = [
   	{
@@ -20,24 +20,24 @@ angular.module('webappApp')
   	];
 
 	$scope.next = function (){
-		console.log("1: " + $scope.currentIndex);
-		if($scope.currentIndex < $scope.slides.length - 1){
-			$scope.currentIndex = $scope.currentIndex+1;
-			console.log("5: " + $scope.currentIndex);
+		console.log("1: " + currentIndex);
+		if(currentIndex < $scope.slides.length - 1){
+			currentIndex = $currentIndex + 1;
+			console.log("5: " + currentIndex);
 		} 
-		else{$scope.currentIndex = 0;}
-		console.log("2: " + $scope.currentIndex);
+		else{currentIndex = 0;}
+		console.log("2: " + currentIndex);
 	};
 	$scope.prev = function (){
-		console.log("3: " + $scope.currentIndex);
-		$scope.currentIndex > 0 ? $scope.currentIndex-- : $scope.currentIndex = $scope.slides.length - 1;
-		console.log("4: " + $scope.currentIndex);
+		console.log("3: " + currentIndex);
+		currentIndex > 0 ? currentIndex-- : currentIndex = $scope.slides.length - 1;
+		console.log("4: " + currentIndex);
 	};
 	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
 		});
-		$scope.slides[$scope.currentIndex].visible = true;
+		$scope.slides[currentIndex].visible = true;
 	});
 
 
