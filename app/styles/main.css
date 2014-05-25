@@ -68,7 +68,7 @@ body {
 #introinner{
     display: block;
     width: 100vw;
-    margin-top: 5vh;
+    margin-top: 7.5vh;
 }
 #introinner h2{
   text-align: center;
@@ -76,7 +76,7 @@ body {
   padding-bottom: 1em;
 }
 #introinner p{
-  text-indent: 2em;
+  text-indent: 1em;
   text-align: left;
   font-size: 1em;
   color: grey;  
