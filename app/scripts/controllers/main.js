@@ -34,6 +34,7 @@ angular.module('webappApp')
 			console.log(tmp);
 			tmp++;
 			$scope.currentIndex = tmp;
+			console.log($scope.currentIndex);
 		}
 		else{
 			$scope.currentIndex = 0;
