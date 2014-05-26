@@ -111,13 +111,14 @@ body {
 #updateslider{
   text-align: left;
   padding-right: 1em;
-  border: 1px solid black;
 }
 #updateslide{
   width: 100%;
 }
 #updateslide img{
   float: left;
+  height: 100%;
+  padding-right: 1em;
 }
 #updateslide h4{
   font-size: 1em;
