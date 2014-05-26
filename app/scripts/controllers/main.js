@@ -50,11 +50,14 @@ angular.module('webappApp')
 	  timer = $timeout(function() {
 	    $scope.next();
 	    timer = $timeout(sliderFunc, 8000);
-	  }, 5000);
+	  }, 8000);
 	};
 	sliderFunc(); 
 	$scope.$on('$destroy', function() {
 	  $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
 	});
 
+	$scope.stop = function(){
+	$timeout.cancel(timer);
+	};
 });
