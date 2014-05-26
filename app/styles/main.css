@@ -126,10 +126,10 @@ body {
   display: block;
 }
 #updateslider button{
-  font-size: 0.1em;
+  font-size: 0.5em;
   border:none;
   display: inline;
-  text-align: right;
+  text-align: center;
   color: orange;
 }
 #updateslide #content{
