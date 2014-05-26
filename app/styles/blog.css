@@ -9,6 +9,7 @@
   display: table;
   margin-top: 0;
   width: 100vw;
+  height: 100vh;
   background-color: transparent;
 
   font-family: 'Handlee', cursive;
@@ -19,12 +20,13 @@
 .blogcontainer{
   display: table-cell;
   margin-top: 1em;
-  
+
   background-image: url(../images/blog/linepaper.png);
 }
 
 #updatecontainer{
   display: table-cell;
+  background-image: url(../images/blog/linepaper.png);
   width: 30%;
   border-right: double 3px #FFCCCC;
   margin-top: 1em;
