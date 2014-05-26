@@ -45,4 +45,16 @@ angular.module('webappApp')
 		$scope.slides[$scope.currentIndex.index].visible = true;
 	});
 
+	var timer;
+	var sliderFunc = function() {
+	  timer = $timeout(function() {
+	    $scope.next();
+	    timer = $timeout(sliderFunc, 5000);
+	  }, 5000);
+	};
+	sliderFunc(); 
+	$scope.$on('$destroy', function() {
+	  $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
+	});
+
 });
