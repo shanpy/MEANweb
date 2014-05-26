@@ -126,8 +126,8 @@ body {
   display: block;
 }
 #updateslider button{
-  font-size: 0.5em;
-  border:none;
+  font-size: 0.8em;
+  background-color:transparent;
   display: inline;
   text-align: center;
   color: orange;
