@@ -7,6 +7,7 @@
 
 #homecontainer{
   display: table;
+  margin-top: 10%;
   width: 100vw;
   background-color: transparent;
   background-image: url(../images/blog/linepaper.png);
