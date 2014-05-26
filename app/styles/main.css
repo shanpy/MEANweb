@@ -125,11 +125,12 @@ body {
   font-size: 1.2em;
   display: block;
 }
-#updateslide h6{
+#updateslide button{
   font-size: 0.1em;
   border:none;
   display: inline;
   text-align: justify;
+  color: orange;
 }
 #updateslide #content{
   font-size: 0.8em;
