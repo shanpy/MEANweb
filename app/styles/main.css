@@ -115,6 +115,9 @@ body {
 #updateslide{
   width: 100%;
 }
+#prevnext{
+  display: inline-block;
+}
 #updateslide img{
   float: left;
   height: 100%;
