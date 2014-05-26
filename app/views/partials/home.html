@@ -71,18 +71,19 @@
 
    <div id="updateslider">
     <h3>Latest Website/Blog Update: </h3>
-    <div id="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
-      <img ng-src={{slide.src}} style="width:20em; height=20em;"/>
-      <h4>{{slide.title}}</h4>  
-      <div id="content" ng-bind-html="slide.content"></div>    
-    </div>
-    <div>
     <a href="#" ng-click="prev()">
       <h6>Prev</h6>
     </a>
     <a href="#" ng-click="next()">
       <h6>Next</h6>
     </a>
+    <div id="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
+      <img ng-src={{slide.src}} style="width:20em; height=20em;"/>
+      <h4>{{slide.title}}</h4>  
+      <div id="content" ng-bind-html="slide.content"></div>    
+    </div>
+    <div>
+    
     </div>
    </div>
 
