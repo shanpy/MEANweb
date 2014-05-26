@@ -41,7 +41,7 @@ angular.module('webappApp')
 	};
 
 
-	$scope.watch('currentIndex.index', function(){
+	$scope.watch('currentIndex', function(){
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
 		});
