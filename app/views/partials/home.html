@@ -70,10 +70,11 @@
    </p>
 
    <div id="updateslider">
+    <h3>Latest Blog Update: </h3>
     <div id="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
       <img ng-src={{slide.src}} style="width:20em; height=20em;"/>
       <h4>{{slide.title}}</h4>  
-      <p>{{slide.content}}</p>     
+      <div id="content" ng-bind-html={{slide.content}}></div>    
     </div>
     <div class="arrows">
     <a href="#" ng-click="prev()">

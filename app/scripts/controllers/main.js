@@ -5,15 +5,19 @@ angular.module('webappApp')
 
   	$scope.slides = [
   	{
-  		src : "./app/images/5-22.png",
-  		title : "This is a test for blog update",
-  		content: "This is a test graph for blog update 1."
+  		src : "./app/images/blogupdate/5-22.png",
+  		title : "Website Old Layout",
+  		content: "<p>During the week of May 26th, 2014, I re-designed website layout.</p>"+
+  				"<p>Scrrenshot left is how website looks previously.</p>"+
+  				"<p>I really like this design and I decide to continue using it in blog section.</p>"
 
   	},
   	{
-  		src : "./app/images/template.jpg",
-  		title : "This is a test for blog update",
-  		content: "This is a test graph for blog update 2."
+  		src : "./app/images/blogupdate/campus.jpg",
+  		title : "The pros and cons of using photo as website background",
+  		content: "<p>I used to try using good photos as website ground and went to OSU campus for some beautiful photos. However after I made them backgrounds, it turns out to be too colorful for my website.</p>"+
+  				"<p>For pages with lots of paragraph, photo background really make things too complex.</p>"+
+  				"<p>So my conclusion is: For any website that only have a few words on it(for example, a homepage with only header and nav bar), photo background can make it really stylish. If a page has lots of content, a simple background will be easier for user to read.</p>"
   	}
   	];
 
@@ -47,7 +51,7 @@ angular.module('webappApp')
 	var sliderFunc = function() {
 	  timer = $timeout(function() {
 	    $scope.next();
-	    timer = $timeout(sliderFunc, 5000);
+	    timer = $timeout(sliderFunc, 8000);
 	  }, 5000);
 	};
 	sliderFunc(); 

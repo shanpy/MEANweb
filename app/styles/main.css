@@ -99,7 +99,7 @@ body {
 #checkbloginner{
     display: block;
     width: 100vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 #checkbloginner p{
   text-align: left;
@@ -124,7 +124,10 @@ body {
   font-size: 1em;
   display: block;
 }
-#updateslide p{
+#updateslide h6{
+  font-size: 1em;
+}
+#updateslide #content{
   font-size: 0.8em;
   display: block;
 }
