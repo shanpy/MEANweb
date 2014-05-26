@@ -7,6 +7,14 @@
 
   font-family: 'Handlee', cursive;
 }
+
+#blogheader{
+	margin-top: 0;
+	height: 10%;
+	background-color: #00B2EE;
+	border-buttom:5px solid black;
+}
+
 .blogcontainer{
   display: table-cell;
   margin-top: 1em;
@@ -30,10 +38,3 @@
   padding:1em;
 }
 
-
-#blogheader{
-	margin-top: 0vh;
-	height: 10vh;
-	background-color: #00B2EE;
-	border-buttom:5px solid black;
-}
