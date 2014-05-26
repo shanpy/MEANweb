@@ -116,7 +116,7 @@ body {
   width: 100%;
 }
 #prevnext{
-  display: inline-block;
+  display: inline;
 }
 #updateslide img{
   float: left;
