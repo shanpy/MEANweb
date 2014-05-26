@@ -62,16 +62,16 @@
 <div id="checkblogcontainer" name="checkblogcontainer" data-role="checkblogcontainer">
   <div id="checkbloginner">
     <img id="graph2" src="./app/images/bird.png" alt="graph2"/>  
+   
     <p>I periodically post my idea and experince in web development here.</p>
     <p>Please feel free to <a href="/blogs"> check my blog </a>.</p>
     <p>
     BTW, How do you feel about two drawings on this webpage? I just got interested in drawing so I bought a cheap Intuos tablet and begin to draw for my website:)
    </p>
 
-
-   <div id="updateslider" style="border:1px solid black;">
-    <div class="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
-      <img ng-src={{slide.src}} style="width:200px; height=200px;"/>
+   <div id="updateslider">
+    <div id="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
+      <img ng-src={{slide.src}} style="width:20em; height=20em;"/>
       <h4>{{slide.title}}</h4>  
       <p>{{slide.content}}</p>     
     </div>
@@ -87,6 +87,7 @@
 
   </div>
 </div>
+
 
 <div id="contactcontainer" name="contactcontainer" data-role="contactcontainer">
   <div id="contactinner">
