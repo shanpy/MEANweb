@@ -22,26 +22,23 @@ angular.module('webappApp')
 	$scope.slides[$scope.currentIndex.index].visible = true;
 	
 	$scope.next = function (){
-		$scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
-		console.log("After click: " + $scope.currentIndex);
+		$scope.currentIndex.index = ($scope.currentIndex.index > 0) ? --$scope.currentIndex.index : $scope.slides.length - 1;
 	};
 	$scope.prev = function (){
 		console.log("Before click: " + $scope.currentIndex.index);
 		if($scope.currentIndex.index < $scope.slides.length - 1){
 			var tmp = $scope.currentIndex.index;
-			tmp++;			
-			console.log(tmp);
+			tmp++;
 			$scope.currentIndex.index = tmp;
-			console.log($scope.currentIndex.index);
 		}
 		else{
-			$scope.currentIndex = 0;
+			$scope.currentIndex.index = 0;
 		}
-		console.log("After click: " + $scope.currentIndex);
 	};
 
 
 	$scope.watch('currentIndex', function(){
+		console.log("$watch work!");
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
 		});
