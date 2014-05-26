@@ -115,6 +115,9 @@ body {
 #updateslide{
   width: 100%;
 }
+#prevnext{
+  text-align: justify;
+}
 #prevnext a{
   display: inline;
 }
