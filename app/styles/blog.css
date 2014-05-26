@@ -7,10 +7,9 @@
 
 #homecontainer{
   display: table;
-  margin-top: 10%;
+  margin-top: 0;
   width: 100vw;
   background-color: transparent;
-  background-image: url(../images/blog/linepaper.png);
 
   font-family: 'Handlee', cursive;
 }
@@ -20,6 +19,8 @@
 .blogcontainer{
   display: table-cell;
   margin-top: 1em;
+  
+  background-image: url(../images/blog/linepaper.png);
 }
 
 #updatecontainer{
