@@ -37,7 +37,7 @@ angular.module('webappApp')
 	};
 
 
-	$scope.watch('currentIndex', function(){
+	$scope.$watchCollection('currentIndex', function(){
 		console.log("$watch work!");
 		$scope.slides.forEach(function(slide){
 			slide.visible = false;
