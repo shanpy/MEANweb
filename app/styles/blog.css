@@ -1,4 +1,39 @@
+#homecontainer{
+  display: table;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  background-image: url(../images/blog/linepaper.png);
+
+  font-family: 'Handlee', cursive;
+}
+.blogcontainer{
+  display: table-cell;
+  margin-top: 1em;
+}
+
+#updatecontainer{
+  display: table-cell;
+  width: 30%;
+  border-right: double 3px #FFCCCC;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 800px) { 
+  #updatecontainer{
+   display: none;
+}
+}
+
 
 .bloginner{
   padding:1em;
+}
+
+
+#blogheader{
+	margin-top: 0vh;
+	height: 10vh;
+	background-color: #00B2EE;
+	border-buttom:5px solid black;
 }

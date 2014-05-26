@@ -60,4 +60,7 @@ angular.module('webappApp')
 	$scope.stop = function(){
 	$timeout.cancel(timer);
 	};
+	$scope.restart = function(){
+		sliderFunc(); 
+	};
 });
