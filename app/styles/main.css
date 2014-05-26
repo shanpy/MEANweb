@@ -125,11 +125,11 @@ body {
   font-size: 1.2em;
   display: block;
 }
-#updateslide button{
+#updateslider button{
   font-size: 0.1em;
   border:none;
   display: inline;
-  text-align: justify;
+  text-align: right;
   color: orange;
 }
 #updateslide #content{
