@@ -126,6 +126,7 @@ body {
 }
 #updateslide h6{
   font-size: 1em;
+  border:none;
 }
 #updateslide #content{
   font-size: 0.8em;

@@ -74,9 +74,9 @@
     <div id="updateslide" ng-repeat="slide in slides" ng-show="slide.visible">
       <img ng-src={{slide.src}} style="width:20em; height=20em;"/>
       <h4>{{slide.title}}</h4>  
-      <div id="content" ng-bind-html={{slide.content}}></div>    
+      <div id="content" ng-bind-html="slide.content"></div>    
     </div>
-    <div class="arrows">
+    <div>
     <a href="#" ng-click="prev()">
       <h6>Prev</h6>
     </a>
