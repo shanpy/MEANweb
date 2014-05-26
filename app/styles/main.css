@@ -115,12 +115,7 @@ body {
 #updateslide{
   width: 100%;
 }
-#prevnext{
-  text-align: justify;
-}
-#prevnext a{
-  display: inline;
-}
+
 #updateslide img{
   float: left;
   height: 100%;
@@ -133,6 +128,8 @@ body {
 #updateslide h6{
   font-size: 0.1em;
   border:none;
+  display: inline;
+  text-align: justify;
 }
 #updateslide #content{
   font-size: 0.8em;
