@@ -115,7 +115,7 @@ body {
 #updateslide{
   width: 100%;
 }
-#prevnext{
+#prevnext a{
   display: inline;
 }
 #updateslide img{
