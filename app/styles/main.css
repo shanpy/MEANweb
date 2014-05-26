@@ -121,15 +121,15 @@ body {
   padding-right: 1em;
 }
 #updateslide h3{
-  font-size: 1em;
+  font-size: 1.2em;
   display: block;
 }
 #updateslide h6{
-  font-size: 0.8em;
+  font-size: 0.1em;
   border:none;
 }
 #updateslide #content{
-  font-size: 0.5em;
+  font-size: 0.8em;
   display: block;
 }
 #updateslide #content p{
