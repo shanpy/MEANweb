@@ -7,7 +7,7 @@ angular.module('webappApp')
   	{
   		src : "./app/images/blogupdate/5-22.png",
   		title : "Website Old Layout",
-  		content: "<p>During the week of May 26th, 2014, I re-designed website layout.</p><p>Screenshot on left is how website looks previously.</p><p>I really like this design and I decide to continue using it in blog section.</p>"
+  		content: "<p>During the week of May 26th, 2014, I re-designed website layout.</p><p>Screenshot on left is how website looks previously.</p><p>I really like this design and I decide to continue using it in blog section.</p><p>Update on 6/2: I update this view in blog, adding mobile support.</p>"
 
   	},
   	{
