@@ -1,8 +1,10 @@
 #header{
   display: table-cell;
   padding-bottom: 2em;
-  width: 40%;
+  width: 20%;
   margin-left: 0;
+  background-color: #00B2EE;
+  border-buttom:5px solid black;
 }
 
 @media screen and (max-width: 800px) { 

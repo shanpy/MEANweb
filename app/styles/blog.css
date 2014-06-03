@@ -5,13 +5,6 @@ html,body{
   margin: 0;
 }
 
-#blogheader{
-	margin-top: 0;
-	height: 10%;
-	background-color: #00B2EE;
-	border-buttom:5px solid black;
-}
-
 #homecontainer{
   display: table;
   margin-top: 0;
