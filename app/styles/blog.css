@@ -28,7 +28,7 @@
 
 #updatecontainer{
   display: table-cell;
-  width: 30%;
+  width: 50%;
   border-right: double 3px #FFCCCC;
   margin-top: 1em;
 }
