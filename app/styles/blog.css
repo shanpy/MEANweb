@@ -1,12 +1,15 @@
 #headercontainer{
-  background-color: #00B2EE; 
+  background-color: #00B2EE;
+  margin-top: 0;
+  height: 100%;
+  width: 100%; 
 }
 
 #homecontainer{
   display: table;
   margin-top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
 
   font-family: 'Handlee', cursive;
