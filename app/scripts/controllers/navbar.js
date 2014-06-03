@@ -12,7 +12,7 @@ angular.module('webappApp')
     $scope.logout = function() {
       Auth.logout()
       .then(function() {
-        $location.path('/login');
+        $location.path('/blogs');
       });
     };
 
