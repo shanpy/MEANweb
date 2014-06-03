@@ -9,6 +9,7 @@
         </center>
      </div>
 
+     <div id="blognav">
     <nav>
   	<ul>
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
@@ -19,7 +20,8 @@
     <li ng-show="currentUser" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
     </ul>
     </nav>
-
+    </div>
+    
     <div id="mediamenu">
     <ul>
     <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
