@@ -33,12 +33,13 @@
   margin-top: 1em;
 }
 
+/*
 @media screen and (max-width: 800px) { 
   #updatecontainer{
    display: none;
 }
 }
-
+*/
 
 .bloginner{
   padding:1em;
