@@ -18,6 +18,8 @@ body {
   background-color: transparent;
   font-family: 'Signika', sans-serif;
   font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .container-full {
