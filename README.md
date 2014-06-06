@@ -12,7 +12,10 @@ I began to work on this project from mid April, 2014. I created this website bec
 
 I started building website using Yoeman framework becuase it has great integration for MEAN stack. I've deployed it to Heroku and I'm still working on implementing more features for it.
 
+Just for reference, "app" folder mainly contains code in front-end (AngularJS). "lib" folder mainly contains code in back-end (Mongoose, Node.js, Express.js).
+
 This website is very basic now and I'm working hard to add a brunch of new feautures in my free time. I'm also in the process of cleaning code. 
 
 Please feel free to email me at shanpy901115@gmail.com or connect me on LinkedIn.
+
 
